@@ -1,0 +1,38 @@
+# Production config and secrets
+config.lua
+*.local.lua
+*.local.php
+.env
+.env.*
+*.pem
+*.key
+id_*
+!*.example
+
+# Build/runtime artifacts
+/build/
+/cache/
+/data/logs/
+/logs/
+canary
+canary.exe
+*.log
+*.core
+core.*
+
+# Database/runtime backups
+/backups/
+*.sql.gz
+*.dump
+*.bak
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large world maps are distributed outside regular Git.
+*.otbm
+*.otb
+*.sec

@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+BACKUP_ROOT="/opt/backups/canary"
+KEEP_DAYS="${KEEP_DAYS:-14}"
+STAMP="$(date +%Y%m%d-%H%M%S)"
+DEST="$BACKUP_ROOT/$STAMP"
+DB_NAME="canary"
+DB_USER="canary"
+DB_PASS_FILE="/root/canary_db_password.txt"
+
+mkdir -p "$DEST"
+chmod 700 "$BACKUP_ROOT" "$DEST"
+
+if [[ ! -r "$DB_PASS_FILE" ]]; then
+  echo "Missing DB password file: $DB_PASS_FILE" >&2
+  exit 1
+fi
+
+DB_PASS="$(cat "$DB_PASS_FILE")"
+
+echo "[$(date -Is)] Dumping database..."
+mysqldump --single-transaction --quick --routines --events -u"$DB_USER" -p"$DB_PASS" "$DB_NAME" | gzip -9 > "$DEST/${DB_NAME}.sql.gz"
+
+echo "[$(date -Is)] Archiving server files..."
+tar -czf "$DEST/canary-config.tar.gz" \
+  -C /opt/otserver/canary \
+  config.lua data/XML data-otservbr-global/XML 2>/dev/null || true
+
+tar -czf "$DEST/myaac-site.tar.gz" \
+  -C /var/www html/config.local.php html/plugins html/templates html/images html/system 2>/dev/null || true
+
+tar -czf "$DEST/system-config.tar.gz" \
+  /etc/nginx/sites-available/myaac \
+  /etc/systemd/system/canary.service \
+  /etc/cron.d/canary-backup \
+  /etc/php/8.2/fpm/pool.d/www.conf \
+  /etc/mysql/mariadb.conf.d/99-canary.cnf \
+  /etc/sysctl.d/99-canary.conf 2>/dev/null || true
+
+sha256sum "$DEST"/* > "$DEST/SHA256SUMS"
+chmod -R go-rwx "$DEST"
+
+find "$BACKUP_ROOT" -mindepth 1 -maxdepth 1 -type d -mtime +"$KEEP_DAYS" -exec rm -rf {} +
+
+echo "[$(date -Is)] Backup complete: $DEST"
+du -sh "$DEST"
