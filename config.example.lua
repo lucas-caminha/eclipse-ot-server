@@ -232,8 +232,8 @@ hazardSpawnPlunderMultiplier = 25
 -- Loyalty system
 loyaltyEnabled = true
 loyaltyPointsPerCreationDay = 1
-loyaltyPointsPerPremiumDaySpent = 0
-loyaltyPointsPerPremiumDayPurchased = 0
+loyaltyPointsPerPremiumDaySpent = 4
+loyaltyPointsPerPremiumDayPurchased = 4
 loyaltyBonusPercentageMultiplier = 1.0
 
 -- Custom PvP system

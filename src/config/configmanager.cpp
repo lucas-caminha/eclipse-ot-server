@@ -287,8 +287,8 @@ bool ConfigManager::load() {
 	loadIntConfig(L, QUICK_LOOT_MAX_CORPSES, "quickLootMaxCorpses", 30);
 	loadIntConfig(L, LOW_LEVEL_BONUS_EXP, "lowLevelBonusExp", 50);
 	loadIntConfig(L, LOYALTY_POINTS_PER_CREATION_DAY, "loyaltyPointsPerCreationDay", 1);
-	loadIntConfig(L, LOYALTY_POINTS_PER_PREMIUM_DAY_PURCHASED, "loyaltyPointsPerPremiumDayPurchased", 0);
-	loadIntConfig(L, LOYALTY_POINTS_PER_PREMIUM_DAY_SPENT, "loyaltyPointsPerPremiumDaySpent", 0);
+	loadIntConfig(L, LOYALTY_POINTS_PER_PREMIUM_DAY_PURCHASED, "loyaltyPointsPerPremiumDayPurchased", 4);
+	loadIntConfig(L, LOYALTY_POINTS_PER_PREMIUM_DAY_SPENT, "loyaltyPointsPerPremiumDaySpent", 4);
 	loadIntConfig(L, MAX_ALLOWED_ON_A_DUMMY, "maxAllowedOnADummy", 1);
 	loadIntConfig(L, MAX_CONTAINER_ITEM, "maxItem", 5000);
 	loadIntConfig(L, MAX_CONTAINER, "maxContainer", 500);
