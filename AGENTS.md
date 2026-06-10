@@ -1,3 +1,13 @@
+## Project Context
+
+- This repository is the Eclipse OT server fork/customization layer on top of `opentibiabr/canary`.
+- Preserve upstream Canary compatibility where practical; keep Eclipse-specific changes focused, documented, and easy to review.
+- Current runtime identity is documented in `README.md`: Eclipse OT, PvP world, protocol `15.11`, Canary `3.5.0`, main datapack `data-otservbr-global`.
+- Do not commit production secrets or runtime artifacts, especially `config.lua`, database dumps, compiled binaries, `build/`, `cache/`, logs, SSH keys, or real account/player data.
+- Prefer `config.example.lua` and documentation updates when a deployment-facing setting changes.
+- For custom gameplay work, follow the direction in `docs/customization-plan.md`: Brazilian PvP audience, medium/high rates, long-term progression, boss-gated progression, clear tiers, and documented custom systems.
+- Avoid chaotic one-off custom edits. When adding a new custom system, keep files grouped by feature and document the behavior, requirements, rewards, storage/KV keys, and operational notes.
+
 ## Git Safety
 
 - Before committing or pushing, always check `git status --short --branch` and `git branch -vv`.
