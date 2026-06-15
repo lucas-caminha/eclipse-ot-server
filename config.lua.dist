@@ -536,12 +536,12 @@ sortLootByChance = false
 -- NOTE: rateExp, rateSkill and rateMagic is used when 'rateUseStages = false' - or a fallback only
 -- To configure rates see file data/stages.lua
 -- lowLevelBonusExp works up to level 50
-rateUseStages = false
-lowLevelBonusExp = 50
-rateExp = 1
-rateSkill = 1
+rateUseStages = true
+lowLevelBonusExp = 0
+rateExp = 5
+rateSkill = 3
 rateLoot = 1
-rateMagic = 1
+rateMagic = 3
 rateSpawn = 1
 
 -- Killing in the name of Quest
