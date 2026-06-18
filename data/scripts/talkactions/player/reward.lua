@@ -1,12 +1,13 @@
 local config = {
 	items = {
-		{ id = 35284, charges = 64400 },
-		{ id = 35279, charges = 64400 },
-		{ id = 35281, charges = 64400 },
-		{ id = 35283, charges = 64400 },
-		{ id = 35282, charges = 64400 },
-		{ id = 35280, charges = 64400 },
-		{ id = 44066, charges = 64400 },
+		{ id = 35279, charges = 1800 }, -- durable exercise sword
+		{ id = 35280, charges = 1800 }, -- durable exercise axe
+		{ id = 35281, charges = 1800 }, -- durable exercise club
+		{ id = 35282, charges = 1800 }, -- durable exercise bow
+		{ id = 35283, charges = 1800 }, -- durable exercise rod
+		{ id = 35284, charges = 1800 }, -- durable exercise wand
+		{ id = 44066, charges = 1800 }, -- durable exercise shield
+		{ id = 50294, charges = 1800 }, -- durable exercise wraps
 	},
 	storage = tonumber(Storage.PlayerWeaponReward), -- storage key, player can only win once
 }
@@ -14,7 +15,7 @@ local config = {
 local function sendExerciseRewardModal(player)
 	local window = ModalWindow({
 		title = "Exercise Reward",
-		message = "choose a item",
+		message = "Choose your exercise weapon.",
 	})
 	for _, it in pairs(config.items) do
 		local iType = ItemType(it.id)
@@ -25,8 +26,13 @@ local function sendExerciseRewardModal(player)
 				end
 
 				local inbox = player:getStoreInbox()
+				if not inbox then
+					player:sendTextMessage(MESSAGE_LOOK, "Your store inbox is unavailable.")
+					return true
+				end
+
 				local inboxItems = inbox:getItems()
-				if inbox and #inboxItems < inbox:getMaxCapacity() and player:getFreeCapacity() >= iType:getWeight() then
+				if #inboxItems < inbox:getMaxCapacity() then
 					local item = inbox:addItem(it.id, it.charges)
 					if item then
 						item:setActionId(IMMOVABLE_ACTION_ID)
@@ -53,7 +59,7 @@ end
 
 local exerciseRewardModal = TalkAction("!reward")
 function exerciseRewardModal.onSay(player, words, param)
-	if not configManager.getBoolean(configKeys.TOGGLE_RECEIVE_REWARD) or player:getTown():getId() < TOWNS_LIST.AB_DENDRIEL then
+	if not configManager.getBoolean(configKeys.TOGGLE_RECEIVE_REWARD) then
 		return true
 	end
 	if player:getStorageValue(config.storage) > 0 then
