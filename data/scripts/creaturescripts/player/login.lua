@@ -171,6 +171,7 @@ function playerLoginGlobal.onLogin(player)
 	player:registerEvent("BossParticipation")
 	player:registerEvent("UpdatePlayerOnAdvancedLevel")
 	player:registerEvent("LevelRewards")
+	player:registerEvent("FreeLootPouch")
 
 	-- Load the server-side quest tracker after the client has finished entering the game.
 	-- The tracker is persisted in player KV and no longer depends only on client cache.
