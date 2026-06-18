@@ -26,7 +26,7 @@ prizes.
 | 130 | spellbook of vigilance, furious frock |
 | 150 | spellbook of ancient arcana, jungle wand |
 | 180 | spirit guide, soulful legs |
-| 200 | wand of destruction, cocoa grimoire, gnome helmet, gnome legs, firemind raiment |
+| 200 | wand of destruction |
 
 ### Elder Druid
 
@@ -41,7 +41,7 @@ prizes.
 | 130 | spellbook of vigilance, furious frock |
 | 150 | spellbook of ancient arcana, jungle rod |
 | 180 | spirit guide, soulful legs |
-| 200 | rod of destruction, creamy grimoire, gnome helmet, gnome legs, earthmind raiment |
+| 200 | rod of destruction |
 
 ### Royal Paladin
 
@@ -54,7 +54,7 @@ prizes.
 | 120 | rift bow, prismatic armor |
 | 150 | depth lorica, prismatic legs, jungle bow |
 | 180 | dark whispers |
-| 200 | bow of destruction, gnome armor, gnome shield, firesoul tabard |
+| 200 | bow of destruction |
 
 ### Elite Knight
 
@@ -68,7 +68,7 @@ prizes.
 | 130 | ornate shield |
 | 150 | prismatic helmet |
 | 180 | ectoplasmic shield, ornate legs |
-| 200 | blade of destruction, axe of destruction, mace of destruction, ornate chestplate |
+| 200 | blade of destruction, axe of destruction, mace of destruction |
 
 ### Exalted Monk
 
@@ -83,4 +83,4 @@ prizes.
 | 135 | depth claws, jungle survivor legs |
 | 150 | bambus jo, robe of enlightenment, gnomish footwraps |
 | 180 | dark vision bandana |
-| 200 | nunchaku of destruction, energy robe |
+| 200 | nunchaku of destruction |

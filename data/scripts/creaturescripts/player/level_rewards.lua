@@ -36,10 +36,6 @@ local rewards = {
 		},
 		[200] = {
 			{ id = 27457, count = 1 }, -- wand of destruction
-			{ id = 45639, count = 1 }, -- cocoa grimoire
-			{ id = 27647, count = 1 }, -- gnome helmet
-			{ id = 27649, count = 1 }, -- gnome legs
-			{ id = 22534, count = 1 }, -- firemind raiment
 		},
 	},
 
@@ -80,10 +76,6 @@ local rewards = {
 		},
 		[200] = {
 			{ id = 27458, count = 1 }, -- rod of destruction
-			{ id = 45640, count = 1 }, -- creamy grimoire
-			{ id = 27647, count = 1 }, -- gnome helmet
-			{ id = 27649, count = 1 }, -- gnome legs
-			{ id = 22535, count = 1 }, -- earthmind raiment
 		},
 	},
 
@@ -118,9 +110,6 @@ local rewards = {
 		},
 		[200] = {
 			{ id = 27455, count = 1 }, -- bow of destruction
-			{ id = 27648, count = 1 }, -- gnome armor
-			{ id = 27650, count = 1 }, -- gnome shield
-			{ id = 22530, count = 1 }, -- firesoul tabard
 		},
 	},
 
@@ -162,7 +151,6 @@ local rewards = {
 			{ id = 27449, count = 1 }, -- blade of destruction
 			{ id = 27451, count = 1 }, -- axe of destruction
 			{ id = 27453, count = 1 }, -- mace of destruction
-			{ id = 13993, count = 1 }, -- ornate chestplate
 		},
 	},
 
@@ -203,7 +191,6 @@ local rewards = {
 		},
 		[200] = {
 			{ id = 50168, count = 1 }, -- nunchaku of destruction
-			{ id = 50279, count = 1 }, -- energy robe
 		},
 	},
 }
