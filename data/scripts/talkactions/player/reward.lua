@@ -1,13 +1,13 @@
 local config = {
 	items = {
-		{ id = 35279, charges = 1800 }, -- durable exercise sword
-		{ id = 35280, charges = 1800 }, -- durable exercise axe
-		{ id = 35281, charges = 1800 }, -- durable exercise club
-		{ id = 35282, charges = 1800 }, -- durable exercise bow
-		{ id = 35283, charges = 1800 }, -- durable exercise rod
-		{ id = 35284, charges = 1800 }, -- durable exercise wand
-		{ id = 44066, charges = 1800 }, -- durable exercise shield
-		{ id = 50294, charges = 1800 }, -- durable exercise wraps
+		{ id = 35285, charges = 14400 }, -- lasting exercise sword
+		{ id = 35286, charges = 14400 }, -- lasting exercise axe
+		{ id = 35287, charges = 14400 }, -- lasting exercise club
+		{ id = 35288, charges = 14400 }, -- lasting exercise bow
+		{ id = 35289, charges = 14400 }, -- lasting exercise rod
+		{ id = 35290, charges = 14400 }, -- lasting exercise wand
+		{ id = 44067, charges = 14400 }, -- lasting exercise shield
+		{ id = 50295, charges = 14400 }, -- lasting exercise wraps
 	},
 	storage = tonumber(Storage.PlayerWeaponReward), -- storage key, player can only win once
 }
