@@ -8,7 +8,7 @@ return {
 		{
 			icons = { "Great_Health_Potion.png" },
 			name = "Great Health Potion",
-			price = 18,
+			price = 10,
 			itemtype = 239,
 			count = 100,
 			description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -17,7 +17,7 @@ return {
 		{
 			icons = { "Great_Health_Potion.png" },
 			name = "Great Health Potion",
-			price = 41,
+			price = 25,
 			itemtype = 239,
 			count = 250,
 			description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -26,7 +26,7 @@ return {
 		{
 			icons = { "Great_Mana_Potion.png" },
 			name = "Great Mana Potion",
-			price = 11,
+			price = 10,
 			itemtype = 238,
 			count = 100,
 			description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -35,7 +35,7 @@ return {
 		{
 			icons = { "Great_Mana_Potion.png" },
 			name = "Great Mana Potion",
-			price = 26,
+			price = 15,
 			itemtype = 238,
 			count = 250,
 			description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -44,7 +44,7 @@ return {
 		{
 			icons = { "Great_Spirit_Potion.png" },
 			name = "Great Spirit Potion",
-			price = 18,
+			price = 10,
 			itemtype = 7642,
 			count = 100,
 			description = "<i>Restores your character's hit points and mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -53,7 +53,7 @@ return {
 		{
 			icons = { "Great_Spirit_Potion.png" },
 			name = "Great Spirit Potion",
-			price = 41,
+			price = 25,
 			itemtype = 7642,
 			count = 250,
 			description = "<i>Restores your character's hit points and mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -62,7 +62,7 @@ return {
 		{
 			icons = { "Health_Potion.png" },
 			name = "Health Potion",
-			price = 6,
+			price = 5,
 			itemtype = 266,
 			count = 125,
 			description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -71,7 +71,7 @@ return {
 		{
 			icons = { "Health_Potion.png" },
 			name = "Health Potion",
-			price = 11,
+			price = 10,
 			itemtype = 266,
 			count = 300,
 			description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -80,7 +80,7 @@ return {
 		{
 			icons = { "Mana_Potion.png" },
 			name = "Mana Potion",
-			price = 6,
+			price = 5,
 			itemtype = 268,
 			count = 125,
 			description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -89,7 +89,7 @@ return {
 		{
 			icons = { "Mana_Potion.png" },
 			name = "Mana Potion",
-			price = 12,
+			price = 10,
 			itemtype = 268,
 			count = 300,
 			description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -98,7 +98,7 @@ return {
 		{
 			icons = { "Strong_Health_Potion.png" },
 			name = "Strong Health Potion",
-			price = 10,
+			price = 5,
 			itemtype = 236,
 			count = 100,
 			description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -107,7 +107,7 @@ return {
 		{
 			icons = { "Strong_Health_Potion.png" },
 			name = "Strong Health Potion",
-			price = 21,
+			price = 15,
 			itemtype = 236,
 			count = 250,
 			description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -116,7 +116,7 @@ return {
 		{
 			icons = { "Strong_Mana_Potion.png" },
 			name = "Strong Mana Potion",
-			price = 7,
+			price = 5,
 			itemtype = 237,
 			count = 100,
 			description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -125,7 +125,7 @@ return {
 		{
 			icons = { "Strong_Mana_Potion.png" },
 			name = "Strong Mana Potion",
-			price = 17,
+			price = 10,
 			itemtype = 237,
 			count = 250,
 			description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -134,7 +134,7 @@ return {
 		{
 			icons = { "Supreme_Health_Potion.png" },
 			name = "Supreme Health Potion",
-			price = 47,
+			price = 25,
 			itemtype = 23375,
 			count = 100,
 			description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -143,7 +143,7 @@ return {
 		{
 			icons = { "Supreme_Health_Potion.png" },
 			name = "Supreme Health Potion",
-			price = 113,
+			price = 60,
 			itemtype = 23375,
 			count = 250,
 			description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -152,7 +152,7 @@ return {
 		{
 			icons = { "Ultimate_Health_Potion.png" },
 			name = "Ultimate Health Potion",
-			price = 29,
+			price = 15,
 			itemtype = 7643,
 			count = 100,
 			description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -161,7 +161,7 @@ return {
 		{
 			icons = { "Ultimate_Health_Potion.png" },
 			name = "Ultimate Health Potion",
-			price = 68,
+			price = 35,
 			itemtype = 7643,
 			count = 250,
 			description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -170,7 +170,7 @@ return {
 		{
 			icons = { "Ultimate_Mana_Potion.png" },
 			name = "Ultimate Mana Potion",
-			price = 33,
+			price = 20,
 			itemtype = 23373,
 			count = 100,
 			description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -179,7 +179,7 @@ return {
 		{
 			icons = { "Ultimate_Mana_Potion.png" },
 			name = "Ultimate Mana Potion",
-			price = 79,
+			price = 40,
 			itemtype = 23373,
 			count = 250,
 			description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -188,7 +188,7 @@ return {
 		{
 			icons = { "Ultimate_Spirit_Potion.png" },
 			name = "Ultimate Spirit Potion",
-			price = 33,
+			price = 20,
 			itemtype = 23374,
 			count = 100,
 			description = "<i>Restores your character's hit points and mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
@@ -197,7 +197,7 @@ return {
 		{
 			icons = { "Ultimate_Spirit_Potion.png" },
 			name = "Ultimate Spirit Potion",
-			price = 79,
+			price = 40,
 			itemtype = 23374,
 			count = 250,
 			description = "<i>Restores your character's hit points and mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",

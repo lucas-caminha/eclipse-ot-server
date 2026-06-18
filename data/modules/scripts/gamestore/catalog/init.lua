@@ -2,9 +2,7 @@ local modules = {
 	"premium_time",
 	"consumables",
 	"consumables_blessings",
-	"consumables_casks",
 	"consumables_exercise_weapons",
-	"consumables_kegs",
 	"consumables_potions",
 	"consumables_runes",
 	"cosmetics",
@@ -21,9 +19,6 @@ local modules = {
 	"extras",
 	"extras_extras_services",
 	"extras_usefull_things",
-	"tournament",
-	"tournament_tickets",
-	"tournament_exclusive_offers",
 }
 
 local basePath = CORE_DIRECTORY .. "/modules/scripts/gamestore/catalog/"
