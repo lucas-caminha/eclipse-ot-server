@@ -8,13 +8,12 @@ local config = {
 
 	[VOCATION.ID.SORCERER] = {
 		items = {
+			{ 3387, 1 }, -- demon helmet
+			{ 3567, 1 }, -- blue robe
+			{ 3398, 1 }, -- dwarven legs
+			{ 3079, 1 }, -- boots of haste
 			{ 3059, 1 }, -- spellbook
-			{ 3074, 1 }, -- wand of vortex
-			{ 7991, 1 }, -- magician's robe
-			{ 7992, 1 }, -- mage hat
-			{ 3362, 1 }, -- studded legs
-			{ 3552, 1 }, -- leather boots
-			{ 3572, 1 }, -- scarf
+			{ 3072, 1 }, -- wand of decay
 		},
 
 		container = {
@@ -26,13 +25,12 @@ local config = {
 
 	[VOCATION.ID.DRUID] = {
 		items = {
+			{ 3387, 1 }, -- demon helmet
+			{ 3567, 1 }, -- blue robe
+			{ 3398, 1 }, -- dwarven legs
+			{ 3079, 1 }, -- boots of haste
 			{ 3059, 1 }, -- spellbook
-			{ 3066, 1 }, -- snakebite rod
-			{ 7991, 1 }, -- magician's robe
-			{ 7992, 1 }, -- mage hat
-			{ 3362, 1 }, -- studded legs
-			{ 3552, 1 }, -- leather boots
-			{ 3572, 1 }, -- scarf
+			{ 3070, 1 }, -- moonlight rod
 		},
 
 		container = {
@@ -44,38 +42,34 @@ local config = {
 
 	[VOCATION.ID.PALADIN] = {
 		items = {
-			{ 3425, 1 }, -- dwarven shield
-			{ 3277, 1 }, -- spear
-			{ 3571, 1 }, -- ranger's cloak
-			{ 8095, 1 }, -- ranger legs
-			{ 3552, 1 }, -- leather boots
-			{ 3572, 1 }, -- scarf
-			{ 3374, 1 }, -- legion helmet
+			{ 3387, 1 }, -- demon helmet
+			{ 8063, 1 }, -- paladin armor
+			{ 3398, 1 }, -- dwarven legs
+			{ 3079, 1 }, -- boots of haste
+			{ 7438, 1 }, -- elvish bow
 		},
 
 		container = {
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
 			{ 266, 10 }, -- health potion
-			{ 3350, 1 }, -- bow
-			{ 3447, 50 }, -- 50 arrows
+			{ 3447, 100 }, -- arrow
 		},
 	},
 
 	[VOCATION.ID.KNIGHT] = {
 		items = {
-			{ 3425, 1 }, -- dwarven shield
-			{ 7773, 1 }, -- steel axe
-			{ 3359, 1 }, -- brass armor
-			{ 3354, 1 }, -- brass helmet
-			{ 3372, 1 }, -- brass legs
-			{ 3552, 1 }, -- leather boots
-			{ 3572, 1 }, -- scarf
+			{ 3387, 1 }, -- demon helmet
+			{ 3366, 1 }, -- magic plate armor
+			{ 3398, 1 }, -- dwarven legs
+			{ 3079, 1 }, -- boots of haste
+			{ 3414, 1 }, -- mastermind shield
+			{ 3265, 1 }, -- two handed sword
 		},
 
 		container = {
-			{ 7774, 1 }, -- jagged sword
-			{ 3327, 1 }, -- daramanian mace
+			{ 3266, 1 }, -- battle axe
+			{ 3311, 1 }, -- clerical mace
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
 			{ 266, 10 }, -- health potion
@@ -84,16 +78,15 @@ local config = {
 
 	[VOCATION.ID.MONK] = {
 		items = {
-			{ 50171, 1 }, -- jo staff
-			{ 3359, 1 }, -- brass armor
-			{ 3354, 1 }, -- brass helmet
-			{ 3372, 1 }, -- brass legs
-			{ 3552, 1 }, -- leather boots
-			{ 3572, 1 }, -- scarf
+			{ 3387, 1 }, -- demon helmet
+			{ 50258, 1 }, -- monk robe
+			{ 3398, 1 }, -- dwarven legs
+			{ 3079, 1 }, -- boots of haste
+			{ 50271, 1 }, -- fists of enlightenment
 		},
 
 		container = {
-			{ 3425, 1 }, -- dwarven shield
+			{ 50181, 1 }, -- pair of monk fists
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
 			{ 266, 10 }, -- health potion
@@ -104,7 +97,7 @@ local config = {
 local sendFirstItems = CreatureEvent("SendFirstItems")
 
 function sendFirstItems.onLogin(player)
-	local targetVocation = config[player:getVocation():getId()]
+	local targetVocation = config[player:getVocation():getBaseId()]
 	if not targetVocation or player:getLastLoginSaved() ~= 0 then
 		return true
 	end
