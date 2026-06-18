@@ -24,12 +24,15 @@ function playerLoginGlobal.onLogin(player)
 	-- Promotion
 	local vocation = player:getVocation()
 	local promotion = vocation:getPromotion()
-	if player:isPremium() then
-		local hasPromotion = player:kv():get("promoted")
-		if not player:isPromoted() and hasPromotion then
-			player:setVocation(promotion)
-		end
-	elseif player:isPromoted() then
+	local hasPromotion = player:kv():get("promoted")
+	if player:getLastLoginSaved() == 0 and promotion then
+		player:setVocation(promotion)
+		player:kv():set("promoted", true)
+	elseif player:isPromoted() and not hasPromotion then
+		player:kv():set("promoted", true)
+	elseif hasPromotion and not player:isPromoted() and promotion then
+		player:setVocation(promotion)
+	elseif not player:isPremium() and player:isPromoted() and not hasPromotion then
 		player:setVocation(vocation:getDemotion())
 	end
 
@@ -167,6 +170,7 @@ function playerLoginGlobal.onLogin(player)
 	player:registerEvent("DropLoot")
 	player:registerEvent("BossParticipation")
 	player:registerEvent("UpdatePlayerOnAdvancedLevel")
+	player:registerEvent("LevelRewards")
 
 	-- Load the server-side quest tracker after the client has finished entering the game.
 	-- The tracker is persisted in player KV and no longer depends only on client cache.

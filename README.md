@@ -17,7 +17,7 @@ This repository tracks the server-side code, datapack, safe configuration exampl
 - MOTD: `Welcome to Eclipse OT. Rise through the darkness.`
 - World type: PvP
 - Datapack: `data-otservbr-global`
-- Rates: exp `20`, skill `20`, magic `10`, loot `3`, spawn `2`
+- Rates: staged experience from `800x` to `5x`; staged skills and magic level; loot `3`, spawn `2`
 
 ## What Is Not Committed
 
@@ -39,4 +39,5 @@ Use `config.example.lua` as the starting point for deployments.
 - [Operations](docs/operations.md)
 - [Changelog](docs/changelog.md)
 - [Customization Plan](docs/customization-plan.md)
+- [Progression Rates](docs/rates.md)
 - [World Map Assets](docs/world-map.md)

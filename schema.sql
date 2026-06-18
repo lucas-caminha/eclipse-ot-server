@@ -873,11 +873,19 @@ INSERT INTO `accounts`
 -- Create player on GOD account
 -- Create sample characters
 INSERT INTO `players`
-(`id`, `name`, `group_id`, `account_id`, `level`, `vocation`, `health`, `healthmax`, `experience`, `lookbody`, `lookfeet`, `lookhead`, `looklegs`, `looktype`, `maglevel`, `mana`, `manamax`, `manaspent`, `town_id`, `conditions`, `cap`, `sex`, `skill_club`, `skill_club_tries`, `skill_sword`, `skill_sword_tries`, `skill_axe`, `skill_axe_tries`, `skill_dist`, `skill_dist_tries`) VALUES
-(1, 'Rook Sample', 1, 1, 2, 0, 155, 155, 100, 113, 115, 95, 39, 129, 2, 60, 60, 5936, 1, '', 410, 1, 12, 155, 12, 155, 12, 155, 12, 93),
-(2, 'Sorcerer Sample', 1, 1, 8, 1, 185, 185, 4200, 113, 115, 95, 39, 129, 0, 90, 90, 0, 8, '', 470, 1, 10, 0, 10, 0, 10, 0, 10, 0),
-(3, 'Druid Sample', 1, 1, 8, 2, 185, 185, 4200, 113, 115, 95, 39, 129, 0, 90, 90, 0, 8, '', 470, 1, 10, 0, 10, 0, 10, 0, 10, 0),
-(4, 'Paladin Sample', 1, 1, 8, 3, 185, 185, 4200, 113, 115, 95, 39, 129, 0, 90, 90, 0, 8, '', 470, 1, 10, 0, 10, 0, 10, 0, 10, 0),
-(5, 'Knight Sample', 1, 1, 8, 4, 185, 185, 4200, 113, 115, 95, 39, 129, 0, 90, 90, 0, 8, '', 470, 1, 10, 0, 10, 0, 10, 0, 10, 0),
-(6, 'Monk Sample', 1, 1, 8, 9, 185, 185, 4200, 113, 115, 95, 39, 129, 0, 90, 90, 0, 8, '', 470, 1, 10, 0, 10, 0, 10, 0, 10, 0),
-(7, 'GOD', 6, 1, 2, 0, 155, 155, 100, 113, 115, 95, 39, 75, 0, 60, 60, 0, 8, '', 410, 1, 10, 0, 10, 0, 10, 0, 10, 0);
+(`id`, `name`, `group_id`, `account_id`, `level`, `vocation`, `health`, `healthmax`, `experience`, `lookbody`, `lookfeet`, `lookhead`, `looklegs`, `looktype`, `maglevel`, `mana`, `manamax`, `manaspent`, `town_id`, `posx`, `posy`, `posz`, `conditions`, `cap`, `sex`, `skill_club`, `skill_club_tries`, `skill_sword`, `skill_sword_tries`, `skill_axe`, `skill_axe_tries`, `skill_dist`, `skill_dist_tries`) VALUES
+(1, 'Rook Sample', 1, 1, 20, 0, 245, 245, 98800, 113, 115, 95, 39, 129, 2, 150, 150, 5936, 8, 32369, 32241, 7, '', 590, 1, 12, 155, 12, 155, 12, 155, 12, 93),
+(2, 'Sorcerer Sample', 1, 1, 20, 5, 245, 245, 98800, 113, 115, 95, 39, 129, 0, 450, 450, 0, 8, 32369, 32241, 7, '', 590, 1, 10, 0, 10, 0, 10, 0, 10, 0),
+(3, 'Druid Sample', 1, 1, 20, 6, 245, 245, 98800, 113, 115, 95, 39, 129, 0, 450, 450, 0, 8, 32369, 32241, 7, '', 590, 1, 10, 0, 10, 0, 10, 0, 10, 0),
+(4, 'Paladin Sample', 1, 1, 20, 7, 305, 305, 98800, 113, 115, 95, 39, 129, 0, 270, 270, 0, 8, 32369, 32241, 7, '', 710, 1, 10, 0, 10, 0, 10, 0, 10, 0),
+(5, 'Knight Sample', 1, 1, 20, 8, 365, 365, 98800, 113, 115, 95, 39, 129, 0, 150, 150, 0, 8, 32369, 32241, 7, '', 770, 1, 10, 0, 10, 0, 10, 0, 10, 0),
+(6, 'Monk Sample', 1, 1, 20, 10, 305, 305, 98800, 113, 115, 95, 39, 129, 0, 210, 210, 0, 8, 32369, 32241, 7, '', 770, 1, 10, 0, 10, 0, 10, 0, 10, 0),
+(7, 'GOD', 6, 1, 2, 0, 155, 155, 100, 113, 115, 95, 39, 75, 0, 60, 60, 0, 8, 32366, 32239, 7, '', 410, 1, 10, 0, 10, 0, 10, 0, 10, 0);
+
+INSERT INTO `kv_store`
+(`key_name`, `timestamp`, `value`) VALUES
+('player.2.promoted', 0, 0x3001),
+('player.3.promoted', 0, 0x3001),
+('player.4.promoted', 0, 0x3001),
+('player.5.promoted', 0, 0x3001),
+('player.6.promoted', 0, 0x3001);
