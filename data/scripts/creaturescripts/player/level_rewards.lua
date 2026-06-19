@@ -1,232 +1,182 @@
-local rewards = {
+local CRYSTAL_COIN_ID = ITEM_CRYSTAL_COIN or 3043
+
+local RewardType = {
+	ITEM = "item",
+	MOUNT = "mount",
+	OUTFIT = "outfit",
+}
+
+local commonRewards = {
+	[50] = {
+		{ type = RewardType.ITEM, id = CRYSTAL_COIN_ID, count = 5, name = "5 crystal coins" },
+		{ type = RewardType.MOUNT, id = 13, name = "Donkey" },
+	},
+	[100] = {
+		{ type = RewardType.ITEM, id = CRYSTAL_COIN_ID, count = 10, name = "10 crystal coins" },
+		{ type = RewardType.OUTFIT, female = 136, male = 128, name = "Citizen outfit" },
+	},
+	[150] = {
+		{ type = RewardType.ITEM, id = CRYSTAL_COIN_ID, count = 15, name = "15 crystal coins" },
+	},
+	[200] = {
+		{ type = RewardType.ITEM, id = CRYSTAL_COIN_ID, count = 20, name = "20 crystal coins" },
+		{ type = RewardType.MOUNT, id = 23, name = "Armoured War Horse" },
+	},
+	[250] = {
+		{ type = RewardType.ITEM, id = 51464, count = 1, name = "powerful vampirism scroll" },
+	},
+	[275] = {
+		{ type = RewardType.ITEM, id = 51462, count = 1, name = "powerful strike scroll" },
+		{ type = RewardType.ITEM, id = CRYSTAL_COIN_ID, count = 27, name = "27 crystal coins" },
+	},
+	[300] = {
+		{ type = RewardType.ITEM, id = 51467, count = 1, name = "powerful void scroll" },
+		{ type = RewardType.ITEM, id = CRYSTAL_COIN_ID, count = 30, name = "30 crystal coins" },
+	},
+}
+
+local vocationRewards = {
 	[VOCATION.BASE_ID.SORCERER] = {
-		[40] = {
-			{ id = 8092, count = 1 }, -- wand of starstorm
-			{ id = 8073, count = 1 }, -- spellbook of warding
-		},
-		[50] = {
-			{ id = 8074, count = 1 }, -- spellbook of mind control
-			{ id = 9103, count = 1 }, -- batwing hat
-		},
-		[60] = {
-			{ id = 8075, count = 1 }, -- spellbook of lost souls
-			{ id = 10439, count = 1 }, -- Zaoan robe
-		},
-		[75] = {
-			{ id = 8039, count = 1 }, -- dragon robe
-		},
-		[80] = {
-			{ id = 8864, count = 1 }, -- yalahari mask
-		},
-		[100] = {
-			{ id = 11687, count = 1 }, -- royal scale robe
-			{ id = 11691, count = 1 }, -- snake god's wristguard
-		},
-		[130] = {
-			{ id = 16107, count = 1 }, -- spellbook of vigilance
-			{ id = 19391, count = 1 }, -- furious frock
-		},
-		[150] = {
-			{ id = 14769, count = 1 }, -- spellbook of ancient arcana
-			{ id = 35522, count = 1 }, -- jungle wand
-		},
-		[180] = {
-			{ id = 29431, count = 1 }, -- spirit guide
-			{ id = 32618, count = 1 }, -- soulful legs
-		},
-		[200] = {
-			{ id = 27457, count = 1 }, -- wand of destruction
+		[250] = {
+			{ type = RewardType.OUTFIT, female = 141, male = 133, name = "Summoner outfit" },
 		},
 	},
-
 	[VOCATION.BASE_ID.DRUID] = {
-		[40] = {
-			{ id = 8082, count = 1 }, -- underworld rod
-			{ id = 8073, count = 1 }, -- spellbook of warding
-		},
-		[50] = {
-			{ id = 8074, count = 1 }, -- spellbook of mind control
-			{ id = 9103, count = 1 }, -- batwing hat
-		},
-		[60] = {
-			{ id = 8075, count = 1 }, -- spellbook of lost souls
-			{ id = 10439, count = 1 }, -- Zaoan robe
-		},
-		[75] = {
-			{ id = 8038, count = 1 }, -- robe of the ice queen
-		},
-		[80] = {
-			{ id = 8864, count = 1 }, -- yalahari mask
-		},
-		[100] = {
-			{ id = 11687, count = 1 }, -- royal scale robe
-			{ id = 11691, count = 1 }, -- snake god's wristguard
-		},
-		[130] = {
-			{ id = 16107, count = 1 }, -- spellbook of vigilance
-			{ id = 19391, count = 1 }, -- furious frock
-		},
-		[150] = {
-			{ id = 14769, count = 1 }, -- spellbook of ancient arcana
-			{ id = 35521, count = 1 }, -- jungle rod
-		},
-		[180] = {
-			{ id = 29431, count = 1 }, -- spirit guide
-			{ id = 32618, count = 1 }, -- soulful legs
-		},
-		[200] = {
-			{ id = 27458, count = 1 }, -- rod of destruction
+		[250] = {
+			{ type = RewardType.OUTFIT, female = 148, male = 144, name = "Druid outfit" },
 		},
 	},
-
 	[VOCATION.BASE_ID.PALADIN] = {
-		[50] = {
-			{ id = 8027, count = 1 }, -- composite hornbow
-			{ id = 10384, count = 1 }, -- Zaoan armor
-		},
-		[60] = {
-			{ id = 8022, count = 1 }, -- chain bolter
-			{ id = 3394, count = 1 }, -- amazon armor
-		},
-		[80] = {
-			{ id = 8026, count = 1 }, -- warsinger bow
-			{ id = 8863, count = 1 }, -- yalahari leg piece
-		},
-		[100] = {
-			{ id = 8060, count = 1 }, -- master archer's armor
-			{ id = 11689, count = 1 }, -- elite draken helmet
-		},
-		[120] = {
-			{ id = 22866, count = 1 }, -- rift bow
-			{ id = 16110, count = 1 }, -- prismatic armor
-		},
-		[150] = {
-			{ id = 13994, count = 1 }, -- depth lorica
-			{ id = 16111, count = 1 }, -- prismatic legs
-			{ id = 35518, count = 1 }, -- jungle bow
-		},
-		[180] = {
-			{ id = 29427, count = 1 }, -- dark whispers
-		},
-		[200] = {
-			{ id = 27455, count = 1 }, -- bow of destruction
+		[250] = {
+			{ type = RewardType.OUTFIT, female = 137, male = 129, name = "Hunter outfit" },
 		},
 	},
-
 	[VOCATION.BASE_ID.KNIGHT] = {
-		[40] = {
-			{ id = 7386, count = 1 }, -- mercenary sword
-			{ id = 7413, count = 1 }, -- titan axe
-		},
-		[50] = {
-			{ id = 7391, count = 1 }, -- thaian sword
-			{ id = 3335, count = 1 }, -- twin axe
-			{ id = 3279, count = 1 }, -- war hammer
-			{ id = 10384, count = 1 }, -- Zaoan armor
-		},
-		[75] = {
-			{ id = 6527, count = 1 }, -- avenger
-			{ id = 20064, count = 1 }, -- crude umbral blade
-			{ id = 20070, count = 1 }, -- crude umbral axe
-			{ id = 20076, count = 1 }, -- crude umbral mace
-		},
-		[80] = {
-			{ id = 8862, count = 1 }, -- yalahari armor
-			{ id = 11688, count = 1 }, -- shield of corruption
-		},
-		[100] = {
-			{ id = 8053, count = 1 }, -- fireborn giant armor
-		},
-		[130] = {
-			{ id = 14000, count = 1 }, -- ornate shield
-		},
-		[150] = {
-			{ id = 16109, count = 1 }, -- prismatic helmet
-		},
-		[180] = {
-			{ id = 29430, count = 1 }, -- ectoplasmic shield
-			{ id = 13999, count = 1 }, -- ornate legs
-		},
-		[200] = {
-			{ id = 27449, count = 1 }, -- blade of destruction
-			{ id = 27451, count = 1 }, -- axe of destruction
-			{ id = 27453, count = 1 }, -- mace of destruction
+		[250] = {
+			{ type = RewardType.OUTFIT, female = 139, male = 131, name = "Knight outfit" },
 		},
 	},
-
 	[VOCATION.BASE_ID.MONK] = {
-		[40] = {
-			{ id = 50182, count = 1 }, -- nunchaku
-			{ id = 50269, count = 1 }, -- legs of enlightenment
-		},
-		[50] = {
-			{ id = 50273, count = 1 }, -- nunchaku of enlightenment
-			{ id = 50259, count = 1 }, -- Zaoan monk robe
-		},
-		[70] = {
-			{ id = 50274, count = 1 }, -- coned hat of enlightenment
-		},
-		[80] = {
-			{ id = 50187, count = 1 }, -- legs of wisdom
-			{ id = 50289, count = 1 }, -- yalahari footwraps
-		},
-		[100] = {
-			{ id = 50272, count = 1 }, -- sai of enlightenment
-			{ id = 50263, count = 1 }, -- merudri scale mail
-		},
-		[125] = {
-			{ id = 50261, count = 1 }, -- merudri nanbando
-		},
-		[135] = {
-			{ id = 50176, count = 1 }, -- depth claws
-			{ id = 50186, count = 1 }, -- jungle survivor legs
-		},
-		[150] = {
-			{ id = 50270, count = 1 }, -- bambus jo
-			{ id = 50268, count = 1 }, -- robe of enlightenment
-			{ id = 50290, count = 1 }, -- gnomish footwraps
-		},
-		[180] = {
-			{ id = 50190, count = 1 }, -- dark vision bandana
-		},
-		[200] = {
-			{ id = 50168, count = 1 }, -- nunchaku of destruction
+		[250] = {
+			{ type = RewardType.OUTFIT, female = 1825, male = 1824, name = "Monk outfit" },
 		},
 	},
 }
 
-local levels = { 40, 50, 60, 70, 75, 80, 100, 120, 125, 130, 135, 150, 180, 200 }
+local levels = { 50, 100, 150, 200, 250, 275, 300 }
 
-local function giveLevelReward(player, level, rewardItems)
+local function appendRewards(target, source)
+	if not source then
+		return
+	end
+
+	for i = 1, #source do
+		target[#target + 1] = source[i]
+	end
+end
+
+local function getLevelRewards(vocationId, level)
+	local levelRewards = {}
+
+	appendRewards(levelRewards, commonRewards[level])
+
+	local rewardsByVocation = vocationRewards[vocationId]
+	if rewardsByVocation then
+		appendRewards(levelRewards, rewardsByVocation[level])
+	end
+
+	return levelRewards
+end
+
+local function getInboxSlotsNeeded(reward)
+	if reward.type ~= RewardType.ITEM then
+		return 0
+	end
+
+	local count = reward.count or 1
+	local itemType = ItemType(reward.id)
+	if itemType and itemType:isStackable() then
+		return math.ceil(count / itemType:getStackSize())
+	end
+
+	return count
+end
+
+local function addItemReward(inbox, reward, level)
+	local itemType = ItemType(reward.id)
+	local stackSize = itemType and itemType:isStackable() and itemType:getStackSize() or 1
+	local remaining = reward.count or 1
+
+	while remaining > 0 do
+		local count = math.min(remaining, stackSize)
+		local item = inbox:addItem(reward.id, count)
+		if not item then
+			return false
+		end
+
+		item:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, string.format("Level %d reward from Eclipse OT.", level))
+		remaining = remaining - count
+	end
+
+	return true
+end
+
+local function addMountReward(player, reward)
+	if not player:hasMount(reward.id) then
+		player:addMount(reward.id)
+	end
+
+	return true
+end
+
+local function addOutfitReward(player, reward)
+	if not player:hasOutfit(reward.female) then
+		player:addOutfit(reward.female)
+	end
+
+	if not player:hasOutfit(reward.male) then
+		player:addOutfit(reward.male)
+	end
+
+	return true
+end
+
+local function giveLevelReward(player, level, rewards)
 	local inbox = player:getStoreInbox()
 	if not inbox then
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your level reward could not be delivered. Please contact the staff.")
 		return false
 	end
 
+	local slotsNeeded = 0
+	for i = 1, #rewards do
+		slotsNeeded = slotsNeeded + getInboxSlotsNeeded(rewards[i])
+	end
+
 	local inboxItems = inbox:getItems()
-	if #inboxItems + #rewardItems > inbox:getMaxCapacity() then
+	if #inboxItems + slotsNeeded > inbox:getMaxCapacity() then
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Your level %d reward is waiting, but your Store Inbox is full.", level))
 		return false
 	end
 
 	local received = {}
-	for i = 1, #rewardItems do
-		local reward = rewardItems[i]
-		local item = inbox:addItem(reward.id, reward.count or 1)
-		if item then
-			item:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, string.format("Level %d reward from Eclipse OT.", level))
-			local itemType = ItemType(reward.id)
-			received[#received + 1] = itemType and itemType:getName() or tostring(reward.id)
+	for i = 1, #rewards do
+		local reward = rewards[i]
+		if reward.type == RewardType.ITEM then
+			if not addItemReward(inbox, reward, level) then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Your level %d reward could not be fully delivered. Please contact the staff.", level))
+				return false
+			end
+		elseif reward.type == RewardType.MOUNT then
+			addMountReward(player, reward)
+		elseif reward.type == RewardType.OUTFIT then
+			addOutfitReward(player, reward)
 		end
+
+		received[#received + 1] = reward.name or tostring(reward.id)
 	end
 
-	if #received ~= #rewardItems then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Your level %d reward could not be fully delivered. Please contact the staff.", level))
-		return false
-	end
-
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Level %d reward sent to your Store Inbox: %s.", level, table.concat(received, ", ")))
+	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Level %d reward granted: %s.", level, table.concat(received, ", ")))
 	return true
 end
 
@@ -236,16 +186,13 @@ local function processLevelRewards(player, fromLevel, toLevel)
 		return true
 	end
 
-	local rewardsByLevel = rewards[vocation:getBaseId()]
-	if not rewardsByLevel then
-		return true
-	end
-
+	local vocationId = vocation:getBaseId()
 	local kv = player:kv():scoped("level-rewards")
 	for i = 1, #levels do
 		local level = levels[i]
-		if fromLevel < level and toLevel >= level and rewardsByLevel[level] and not kv:get(tostring(level)) then
-			if giveLevelReward(player, level, rewardsByLevel[level]) then
+		local rewards = getLevelRewards(vocationId, level)
+		if fromLevel < level and toLevel >= level and #rewards > 0 and not kv:get(tostring(level)) then
+			if giveLevelReward(player, level, rewards) then
 				kv:set(tostring(level), true)
 			end
 		end
