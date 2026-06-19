@@ -8,7 +8,7 @@ return {
 		{
 			icons = { "Flower_Bed.png" },
 			name = "Flower Bed",
-			price = 150,
+			price = 75,
 			itemtype = { 39788, 39789 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -17,7 +17,7 @@ return {
 		{
 			icons = { "Grandiose_Bed.png" },
 			name = "Grandiose Bed",
-			price = 150,
+			price = 75,
 			itemtype = { 35936, 35937 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -26,7 +26,7 @@ return {
 		{
 			icons = { "Homely_Bed.png" },
 			name = "Homely Bed",
-			price = 120,
+			price = 60,
 			itemtype = { 34320, 34321 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -35,7 +35,7 @@ return {
 		{
 			icons = { "Knightly_Bed.png" },
 			name = "Knightly Bed",
-			price = 180,
+			price = 90,
 			itemtype = { 39437, 39438 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -44,7 +44,7 @@ return {
 		{
 			icons = { "Kraken_Bed.png" },
 			name = "Kraken Bed",
-			price = 150,
+			price = 75,
 			itemtype = { 37201, 37202 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -53,7 +53,7 @@ return {
 		{
 			icons = { "Log_Bed.png" },
 			name = "Log Bed",
-			price = 150,
+			price = 75,
 			itemtype = { 37031, 37032 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -62,7 +62,7 @@ return {
 		{
 			icons = { "Magnificent_Bed.png" },
 			name = "Magnificent Bed",
-			price = 180,
+			price = 90,
 			itemtype = { 35859, 35860 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -71,7 +71,7 @@ return {
 		{
 			icons = { "Opulent_Kline.png" },
 			name = "Opulent Kline",
-			price = 120,
+			price = 60,
 			itemtype = { 42359, 42360 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -80,7 +80,7 @@ return {
 		{
 			icons = { "Ornate_Bed.png" },
 			name = "Ornate Bed",
-			price = 180,
+			price = 90,
 			itemtype = { 35871, 35872 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -89,7 +89,7 @@ return {
 		{
 			icons = { "Seafarer_Bed.png" },
 			name = "Seafarer Bed",
-			price = 180,
+			price = 90,
 			itemtype = { 42287, 42288 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -98,7 +98,7 @@ return {
 		{
 			icons = { "Sleeping_Mat.png" },
 			name = "Sleeping Mat",
-			price = 120,
+			price = 60,
 			itemtype = { 37793, 37794 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -107,7 +107,7 @@ return {
 		{
 			icons = { "Vengothic_Bed.png" },
 			name = "Vengothic Bed",
-			price = 180,
+			price = 90,
 			itemtype = { 35883, 35884 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -116,7 +116,7 @@ return {
 		{
 			icons = { "Verdant_Bed.png" },
 			name = "Verdant Bed",
-			price = 150,
+			price = 75,
 			itemtype = { 26096, 26097 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",
@@ -125,7 +125,7 @@ return {
 		{
 			icons = { "Wrought-Iron_Bed.png" },
 			name = "Wrought-Iron Bed",
-			price = 150,
+			price = 75,
 			itemtype = { 35206, 35207 },
 			count = 1,
 			description = "<i>Sleep in a bed to restore soul, mana and hit points and to train your skills!</i>\n\n{house}\n{boxicon}comes in 2 boxes which can only be unwrapped by purchasing character, put the 2 parts together to get a functional bed\n{storeinbox}\n{usablebyallicon}if not already occupied, it can be used by every Premium character that has access to the house\n{useicon}use it to sleep in it\n{backtoinbox}\n",

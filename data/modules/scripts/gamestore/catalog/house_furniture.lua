@@ -8,7 +8,7 @@ return {
 		{
 			icons = { "Alchemistic_Cabinet.png" },
 			name = "Alchemistic Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 27664,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -17,7 +17,7 @@ return {
 		{
 			icons = { "Alchemistic_Chair.png" },
 			name = "Alchemistic Chair",
-			price = 50,
+			price = 25,
 			itemtype = 27662,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -26,7 +26,7 @@ return {
 		{
 			icons = { "Alchemistic_Table.png" },
 			name = "Alchemistic Table",
-			price = 80,
+			price = 40,
 			itemtype = 27665,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -35,7 +35,7 @@ return {
 		{
 			icons = { "Artist_Chair.png" },
 			name = "Artist Chair",
-			price = 50,
+			price = 25,
 			itemtype = 34036,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -44,7 +44,7 @@ return {
 		{
 			icons = { "Artist_Chest.png" },
 			name = "Artist Chest",
-			price = 50,
+			price = 25,
 			itemtype = 34040,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -53,7 +53,7 @@ return {
 		{
 			icons = { "Artist_Shelf.png" },
 			name = "Artist Shelf",
-			price = 110,
+			price = 55,
 			itemtype = 34030,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -62,7 +62,7 @@ return {
 		{
 			icons = { "Artist_Table.png" },
 			name = "Artist Table",
-			price = 80,
+			price = 40,
 			itemtype = 34034,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -71,7 +71,7 @@ return {
 		{
 			icons = { "Comfy_Cabinet.png" },
 			name = "Comfy Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 28942,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -80,7 +80,7 @@ return {
 		{
 			icons = { "Comfy_Chair.png" },
 			name = "Comfy Chair",
-			price = 70,
+			price = 35,
 			itemtype = 28934,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -89,7 +89,7 @@ return {
 		{
 			icons = { "Comfy_Chest.png" },
 			name = "Comfy Chest",
-			price = 60,
+			price = 30,
 			itemtype = 28938,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -98,7 +98,7 @@ return {
 		{
 			icons = { "Comfy_Table.png" },
 			name = "Comfy Table",
-			price = 60,
+			price = 30,
 			itemtype = 28936,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -107,7 +107,7 @@ return {
 		{
 			icons = { "Cupboard.png" },
 			name = "Cupboard",
-			price = 90,
+			price = 45,
 			itemtype = 34276,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -116,7 +116,7 @@ return {
 		{
 			icons = { "Dwarven_Stone_Cabinet.png" },
 			name = "Dwarven Stone Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 31192,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -125,7 +125,7 @@ return {
 		{
 			icons = { "Dwarven_Stone_Chair.png" },
 			name = "Dwarven Stone Chair",
-			price = 50,
+			price = 25,
 			itemtype = 31185,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -134,7 +134,7 @@ return {
 		{
 			icons = { "Dwarven_Stone_Chest.png" },
 			name = "Dwarven Stone Chest",
-			price = 80,
+			price = 40,
 			itemtype = 31187,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -143,7 +143,7 @@ return {
 		{
 			icons = { "Dwarven_Stone_Table.png" },
 			name = "Dwarven Stone Table",
-			price = 50,
+			price = 25,
 			itemtype = 31191,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use it to open up some storage space\n{backtoinbox}",
@@ -152,7 +152,7 @@ return {
 		{
 			icons = { "Ferocious_Cabinet.png" },
 			name = "Ferocious Cabinet",
-			price = 110,
+			price = 55,
 			itemtype = 23421,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -161,7 +161,7 @@ return {
 		{
 			icons = { "Ferocious_Chair.png" },
 			name = "Ferocious Chair",
-			price = 50,
+			price = 25,
 			itemtype = 23409,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -170,7 +170,7 @@ return {
 		{
 			icons = { "Ferocious_Table.png" },
 			name = "Ferocious Table",
-			price = 50,
+			price = 25,
 			itemtype = 23414,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -179,7 +179,7 @@ return {
 		{
 			icons = { "Ferocious_Trunk.png" },
 			name = "Ferocious Trunk",
-			price = 80,
+			price = 40,
 			itemtype = 23423,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -188,7 +188,7 @@ return {
 		{
 			icons = { "Flower_Cabinet.png" },
 			name = "Flower Cabinet",
-			price = 90,
+			price = 45,
 			itemtype = 39775,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -197,7 +197,7 @@ return {
 		{
 			icons = { "Flower_Chair.png" },
 			name = "Flower Chair",
-			price = 60,
+			price = 30,
 			itemtype = 39768,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -206,7 +206,7 @@ return {
 		{
 			icons = { "Flower_Chest.png" },
 			name = "Flower Chest",
-			price = 60,
+			price = 30,
 			itemtype = 39777,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -215,7 +215,7 @@ return {
 		{
 			icons = { "Flower_Table.png" },
 			name = "Flower Table",
-			price = 80,
+			price = 40,
 			itemtype = 39772,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -224,7 +224,7 @@ return {
 		{
 			icons = { "Grandiose_Chair.png" },
 			name = "Grandiose Chair",
-			price = 60,
+			price = 30,
 			itemtype = 35915,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -233,7 +233,7 @@ return {
 		{
 			icons = { "Grandiose_Couch_Left.png" },
 			name = "Grandiose Couch Left",
-			price = 60,
+			price = 30,
 			itemtype = 35959,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -242,7 +242,7 @@ return {
 		{
 			icons = { "Grandiose_Couch_Middle.png" },
 			name = "Grandiose Couch Middle",
-			price = 60,
+			price = 30,
 			itemtype = 35960,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -251,7 +251,7 @@ return {
 		{
 			icons = { "Grandiose_Couch_Right.png" },
 			name = "Grandiose Couch Right",
-			price = 60,
+			price = 30,
 			itemtype = 35961,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -260,7 +260,7 @@ return {
 		{
 			icons = { "Grandiose_Cupboard.png" },
 			name = "Grandiose Cupboard",
-			price = 100,
+			price = 50,
 			itemtype = 35911,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -269,7 +269,7 @@ return {
 		{
 			icons = { "Grandiose_Gilded_Chest.png" },
 			name = "Grandiose Gilded Chest",
-			price = 90,
+			price = 45,
 			itemtype = 35923,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -278,7 +278,7 @@ return {
 		{
 			icons = { "Grandiose_Refined_Chest.png" },
 			name = "Grandiose Refined Chest",
-			price = 70,
+			price = 35,
 			itemtype = 35919,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -287,7 +287,7 @@ return {
 		{
 			icons = { "Grandiose_Table.png" },
 			name = "Grandiose Table",
-			price = 50,
+			price = 25,
 			itemtype = 35913,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -296,7 +296,7 @@ return {
 		{
 			icons = { "Heart_Cabinet.png" },
 			name = "Heart Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 33032,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -305,7 +305,7 @@ return {
 		{
 			icons = { "Heart_Chair.png" },
 			name = "Heart Chair",
-			price = 50,
+			price = 25,
 			itemtype = 33036,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -314,7 +314,7 @@ return {
 		{
 			icons = { "Heart_Chest.png" },
 			name = "Heart Chest",
-			price = 80,
+			price = 40,
 			itemtype = 33043,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -323,7 +323,7 @@ return {
 		{
 			icons = { "Heart_Table.png" },
 			name = "Heart Table",
-			price = 80,
+			price = 40,
 			itemtype = 33043,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -332,7 +332,7 @@ return {
 		{
 			icons = { "Hrodmir_Chair.png" },
 			name = "Hrodmir Chair",
-			price = 50,
+			price = 25,
 			itemtype = 31693,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -341,7 +341,7 @@ return {
 		{
 			icons = { "Hrodmir_Chest.png" },
 			name = "Hrodmir Chest",
-			price = 80,
+			price = 40,
 			itemtype = 31687,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -350,7 +350,7 @@ return {
 		{
 			icons = { "Hrodmir_Cupboard.png" },
 			name = "Hrodmir Cupboard",
-			price = 100,
+			price = 50,
 			itemtype = 31705,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -359,7 +359,7 @@ return {
 		{
 			icons = { "Hrodmir_Table.png" },
 			name = "Hrodmir Table",
-			price = 50,
+			price = 25,
 			itemtype = 31679,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -368,7 +368,7 @@ return {
 		{
 			icons = { "Ice_Cabinet.png" },
 			name = "Ice Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 32775,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -377,7 +377,7 @@ return {
 		{
 			icons = { "Ice_Chest.png" },
 			name = "Ice Chest",
-			price = 80,
+			price = 40,
 			itemtype = 32780,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -386,7 +386,7 @@ return {
 		{
 			icons = { "Ice_Stool.png" },
 			name = "Ice Stool",
-			price = 50,
+			price = 25,
 			itemtype = 32778,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -395,7 +395,7 @@ return {
 		{
 			icons = { "Ice_Table.png" },
 			name = "Ice Table",
-			price = 60,
+			price = 30,
 			itemtype = 32777,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -404,7 +404,7 @@ return {
 		{
 			icons = { "Katana_Display.png" },
 			name = "Katana Display",
-			price = 70,
+			price = 35,
 			itemtype = 37804,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -413,7 +413,7 @@ return {
 		{
 			icons = { "Kitchen_Chair.png" },
 			name = "Kitchen Chair",
-			price = 50,
+			price = 25,
 			itemtype = 34292,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -422,7 +422,7 @@ return {
 		{
 			icons = { "Kitchen_Chest.png" },
 			name = "Kitchen Chest",
-			price = 50,
+			price = 25,
 			itemtype = 34296,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -431,7 +431,7 @@ return {
 		{
 			icons = { "Kitchen_Table.png" },
 			name = "Kitchen Table",
-			price = 100,
+			price = 50,
 			itemtype = 34285,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -440,7 +440,7 @@ return {
 		{
 			icons = { "Knightly_Bench_Large_Left.png" },
 			name = "Knightly Bench Large Left",
-			price = 80,
+			price = 40,
 			itemtype = 39518,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -449,7 +449,7 @@ return {
 		{
 			icons = { "Knightly_Bench_Large_Right.png" },
 			name = "Knightly Bench Large Right",
-			price = 80,
+			price = 40,
 			itemtype = 39520,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -458,7 +458,7 @@ return {
 		{
 			icons = { "Knightly_Bench_Left.png" },
 			name = "Knightly Bench Left",
-			price = 60,
+			price = 30,
 			itemtype = 39517,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -467,7 +467,7 @@ return {
 		{
 			icons = { "Knightly_Bench_Middle.png" },
 			name = "Knightly Bench Middle",
-			price = 80,
+			price = 40,
 			itemtype = 39519,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -476,7 +476,7 @@ return {
 		{
 			icons = { "Knightly_Bench_Right.png" },
 			name = "Knightly Bench Right",
-			price = 60,
+			price = 30,
 			itemtype = 39521,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -485,7 +485,7 @@ return {
 		{
 			icons = { "Knightly_Cabinet.png" },
 			name = "Knightly Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 39441,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -494,7 +494,7 @@ return {
 		{
 			icons = { "Knightly_Chair.png" },
 			name = "Knightly Chair",
-			price = 70,
+			price = 35,
 			itemtype = 39419,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -503,7 +503,7 @@ return {
 		{
 			icons = { "Knightly_Chess_Table.png" },
 			name = "Knightly Chess Table",
-			price = 60,
+			price = 30,
 			itemtype = 39427,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -512,7 +512,7 @@ return {
 		{
 			icons = { "Knightly_Chest.png" },
 			name = "Knightly Chest",
-			price = 60,
+			price = 30,
 			itemtype = 39504,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -521,7 +521,7 @@ return {
 		{
 			icons = { "Knightly_Decorative_Shield.png" },
 			name = "Knightly Decorative Shield",
-			price = 60,
+			price = 30,
 			itemtype = 39502,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -530,7 +530,7 @@ return {
 		{
 			icons = { "Knightly_Table.png" },
 			name = "Knightly Table",
-			price = 60,
+			price = 30,
 			itemtype = 39423,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -539,7 +539,7 @@ return {
 		{
 			icons = { "Kraken_Cabinet.png" },
 			name = "Kraken Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 37179,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -548,7 +548,7 @@ return {
 		{
 			icons = { "Kraken_Chair.png" },
 			name = "Kraken Chair",
-			price = 60,
+			price = 30,
 			itemtype = 37174,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -557,7 +557,7 @@ return {
 		{
 			icons = { "Kraken_Chest.png" },
 			name = "Kraken Chest",
-			price = 70,
+			price = 35,
 			itemtype = 37181,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -566,7 +566,7 @@ return {
 		{
 			icons = { "Kraken_Table.png" },
 			name = "Kraken Table",
-			price = 60,
+			price = 30,
 			itemtype = 37178,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -575,7 +575,7 @@ return {
 		{
 			icons = { "Leaf_Chair.png" },
 			name = "Leaf Chair",
-			price = 80,
+			price = 40,
 			itemtype = 37004,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -584,7 +584,7 @@ return {
 		{
 			icons = { "Log Chest.png" },
 			name = "Log Chest",
-			price = 80,
+			price = 40,
 			itemtype = 37011,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -593,7 +593,7 @@ return {
 		{
 			icons = { "Magnificent_Cabinet.png" },
 			name = "Magnificent Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 23419,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -602,7 +602,7 @@ return {
 		{
 			icons = { "Magnificent_Chair.png" },
 			name = "Magnificent Chair",
-			price = 60,
+			price = 30,
 			itemtype = 23405,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -611,7 +611,7 @@ return {
 		{
 			icons = { "Magnificent_Table.png" },
 			name = "Magnificent Table",
-			price = 60,
+			price = 30,
 			itemtype = 23418,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -620,7 +620,7 @@ return {
 		{
 			icons = { "Magnificent_Trunk.png" },
 			name = "Magnificent Trunk",
-			price = 70,
+			price = 35,
 			itemtype = 23427,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -629,7 +629,7 @@ return {
 		{
 			icons = { "Opulent_Book_Case.png" },
 			name = "Opulent Book Case",
-			price = 100,
+			price = 50,
 			itemtype = 42332,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -638,7 +638,7 @@ return {
 		{
 			icons = { "Opulent_Chair.png" },
 			name = "Opulent Chair",
-			price = 60,
+			price = 30,
 			itemtype = 42320,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -647,7 +647,7 @@ return {
 		{
 			icons = { "Opulent_Chest.png" },
 			name = "Opulent Chest",
-			price = 60,
+			price = 30,
 			itemtype = 42328,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -656,7 +656,7 @@ return {
 		{
 			icons = { "Opulent_Item_Stand.png" },
 			name = "Opulent Item Stand",
-			price = 50,
+			price = 25,
 			itemtype = 42350,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -665,7 +665,7 @@ return {
 		{
 			icons = { "Opulent_Spice_Rack.png" },
 			name = "Opulent Spice Rack",
-			price = 100,
+			price = 50,
 			itemtype = 42334,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -674,7 +674,7 @@ return {
 		{
 			icons = { "Opulent_Table.png" },
 			name = "Opulent Table",
-			price = 70,
+			price = 35,
 			itemtype = 42324,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -683,7 +683,7 @@ return {
 		{
 			icons = { "Ornate_Cabinet.png" },
 			name = "Ornate Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 26162,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -692,7 +692,7 @@ return {
 		{
 			icons = { "Ornate_Chair.png" },
 			name = "Ornate Chair",
-			price = 50,
+			price = 25,
 			itemtype = 26158,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -701,7 +701,7 @@ return {
 		{
 			icons = { "Ornate_Chest.png" },
 			name = "Ornate Chest",
-			price = 80,
+			price = 40,
 			itemtype = 26165,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -710,7 +710,7 @@ return {
 		{
 			icons = { "Ornate_Table.png" },
 			name = "Ornate Table",
-			price = 50,
+			price = 25,
 			itemtype = 26161,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -719,7 +719,7 @@ return {
 		{
 			icons = { "Round_Side_Table.png" },
 			name = "Round Side Table",
-			price = 50,
+			price = 25,
 			itemtype = 31208,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -728,7 +728,7 @@ return {
 		{
 			icons = { "Rustic_Cabinet.png" },
 			name = "Rustic Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 23700,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -737,7 +737,7 @@ return {
 		{
 			icons = { "Rustic_Chair.png" },
 			name = "Rustic Chair",
-			price = 50,
+			price = 25,
 			itemtype = 23695,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -746,7 +746,7 @@ return {
 		{
 			icons = { "Rustic_Table.png" },
 			name = "Rustic Table",
-			price = 50,
+			price = 25,
 			itemtype = 23698,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -755,7 +755,7 @@ return {
 		{
 			icons = { "Rustic_Trunk.png" },
 			name = "Rustic Trunk",
-			price = 80,
+			price = 40,
 			itemtype = 23702,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -764,7 +764,7 @@ return {
 		{
 			icons = { "Sculptor_Chair.png" },
 			name = "Sculptor Chair",
-			price = 50,
+			price = 25,
 			itemtype = 34050,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -773,7 +773,7 @@ return {
 		{
 			icons = { "Sculptor_Chest.png" },
 			name = "Sculptor Chest",
-			price = 50,
+			price = 25,
 			itemtype = 34054,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -782,7 +782,7 @@ return {
 		{
 			icons = { "Sculptor_Shelf.png" },
 			name = "Sculptor Shelf",
-			price = 110,
+			price = 55,
 			itemtype = 34044,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -791,7 +791,7 @@ return {
 		{
 			icons = { "Sculptor_Table.png" },
 			name = "Sculptor Table",
-			price = 80,
+			price = 40,
 			itemtype = 34048,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -800,7 +800,7 @@ return {
 		{
 			icons = { "Seafarer_Cabinet.png" },
 			name = "Seafarer Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 42273,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -809,7 +809,7 @@ return {
 		{
 			icons = { "Seafarer_Chair.png" },
 			name = "Seafarer Chair",
-			price = 60,
+			price = 30,
 			itemtype = 42267,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -818,7 +818,7 @@ return {
 		{
 			icons = { "Seafarer_Chest.png" },
 			name = "Seafarer Chest",
-			price = 60,
+			price = 30,
 			itemtype = 42275,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -827,7 +827,7 @@ return {
 		{
 			icons = { "Seafarer_Table.png" },
 			name = "Seafarer Table",
-			price = 70,
+			price = 35,
 			itemtype = 42271,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -836,7 +836,7 @@ return {
 		{
 			icons = { "Shroom_Cupboard.png" },
 			name = "Shroom Cupboard",
-			price = 80,
+			price = 40,
 			itemtype = 37009,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -845,7 +845,7 @@ return {
 		{
 			icons = { "Skeletal_Cabinet.png" },
 			name = "Skeletal Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 28687,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -854,7 +854,7 @@ return {
 		{
 			icons = { "Skeletal_Chair.png" },
 			name = "Skeletal Chair",
-			price = 50,
+			price = 25,
 			itemtype = 28676,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -863,7 +863,7 @@ return {
 		{
 			icons = { "Skeletal_Chest.png" },
 			name = "Skeletal Chest",
-			price = 80,
+			price = 40,
 			itemtype = 28682,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -872,7 +872,7 @@ return {
 		{
 			icons = { "Skeletal_Table.png" },
 			name = "Skeletal Table",
-			price = 50,
+			price = 25,
 			itemtype = 28680,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -881,7 +881,7 @@ return {
 		{
 			icons = { "Square_Side_Table.png" },
 			name = "Square Side Table",
-			price = 50,
+			price = 25,
 			itemtype = 31207,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -890,7 +890,7 @@ return {
 		{
 			icons = { "Stump_Table.png" },
 			name = "Stump Table",
-			price = 50,
+			price = 25,
 			itemtype = 37008,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -899,7 +899,7 @@ return {
 		{
 			icons = { "Toolbox.png" },
 			name = "Toolbox",
-			price = 50,
+			price = 25,
 			itemtype = 35171,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -908,7 +908,7 @@ return {
 		{
 			icons = { "Vengothic_Cabinet.png" },
 			name = "Vengothic Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 25227,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -917,7 +917,7 @@ return {
 		{
 			icons = { "Vengothic_Chair.png" },
 			name = "Vengothic Chair",
-			price = 50,
+			price = 25,
 			itemtype = 25223,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -926,7 +926,7 @@ return {
 		{
 			icons = { "Vengothic_Chest.png" },
 			name = "Vengothic Chest",
-			price = 80,
+			price = 40,
 			itemtype = 25229,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -935,7 +935,7 @@ return {
 		{
 			icons = { "Vengothic_Table.png" },
 			name = "Vengothic Table",
-			price = 50,
+			price = 25,
 			itemtype = 25225,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -944,7 +944,7 @@ return {
 		{
 			icons = { "Verdant_Cabinet.png" },
 			name = "Verdant Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 26105,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -953,7 +953,7 @@ return {
 		{
 			icons = { "Verdant_Chair.png" },
 			name = "Verdant Chair",
-			price = 50,
+			price = 25,
 			itemtype = 26103,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -962,7 +962,7 @@ return {
 		{
 			icons = { "Verdant_Table.png" },
 			name = "Verdant Table",
-			price = 80,
+			price = 40,
 			itemtype = 26111,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -971,7 +971,7 @@ return {
 		{
 			icons = { "Verdant_Trunk.png" },
 			name = "Verdant Trunk",
-			price = 50,
+			price = 25,
 			itemtype = 26107,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -980,7 +980,7 @@ return {
 		{
 			icons = { "Volcanic_Chair.png" },
 			name = "Volcanic Chair",
-			price = 60,
+			price = 30,
 			itemtype = 36634,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -989,7 +989,7 @@ return {
 		{
 			icons = { "Volcanic_Chest.png" },
 			name = "Volcanic Chest",
-			price = 80,
+			price = 40,
 			itemtype = 36630,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -998,7 +998,7 @@ return {
 		{
 			icons = { "Volcanic_Shelf.png" },
 			name = "Volcanic Shelf",
-			price = 100,
+			price = 50,
 			itemtype = 36640,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1007,7 +1007,7 @@ return {
 		{
 			icons = { "Volcanic_Table.png" },
 			name = "Volcanic Table",
-			price = 50,
+			price = 25,
 			itemtype = 36638,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1016,7 +1016,7 @@ return {
 		{
 			icons = { "Wooden_Bookcase.png" },
 			name = "Wooden Bookcase",
-			price = 50,
+			price = 25,
 			itemtype = 31194,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1025,7 +1025,7 @@ return {
 		{
 			icons = { "Wooden_Cabinet.png" },
 			name = "Wooden Cabinet",
-			price = 90,
+			price = 45,
 			itemtype = 35175,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1034,7 +1034,7 @@ return {
 		{
 			icons = { "Wooden_Stool.png" },
 			name = "Wooden Stool",
-			price = 50,
+			price = 25,
 			itemtype = 35167,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1043,7 +1043,7 @@ return {
 		{
 			icons = { "Workbench.png" },
 			name = "Workbench",
-			price = 90,
+			price = 45,
 			itemtype = 35163,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1052,7 +1052,7 @@ return {
 		{
 			icons = { "Zaoan_Cabinet.png" },
 			name = "Zaoan Cabinet",
-			price = 100,
+			price = 50,
 			itemtype = 37782,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1061,7 +1061,7 @@ return {
 		{
 			icons = { "Zaoan_Hassock.png" },
 			name = "Zaoan Hassock",
-			price = 60,
+			price = 30,
 			itemtype = 37778,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1070,7 +1070,7 @@ return {
 		{
 			icons = { "Zaoan_Side_Table.png" },
 			name = "Zaoan Side Table",
-			price = 60,
+			price = 30,
 			itemtype = 37803,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",

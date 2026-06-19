@@ -8,7 +8,7 @@ return {
 		{
 			icons = { "Alchemistic_Bookstand.png" },
 			name = "Alchemistic Bookstand",
-			price = 100,
+			price = 50,
 			itemtype = 27679,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -17,7 +17,7 @@ return {
 		{
 			icons = { "Alchemistic_Cupboard.png" },
 			name = "Alchemistic Cupboard",
-			price = 50,
+			price = 25,
 			itemtype = 27689,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -26,7 +26,7 @@ return {
 		{
 			icons = { "Alchemistic_Scales.png" },
 			name = "Alchemistic Scales",
-			price = 120,
+			price = 60,
 			itemtype = 27683,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -35,7 +35,7 @@ return {
 		{
 			icons = { "All-Seeing_Tapestry.png" },
 			name = "All-Seeing Tapestry",
-			price = 60,
+			price = 30,
 			itemtype = 23450,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -44,7 +44,7 @@ return {
 		{
 			icons = { "Anglerfish_Lamp.png" },
 			name = "Anglerfish Lamp",
-			price = 120,
+			price = 60,
 			itemtype = 28675,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -53,7 +53,7 @@ return {
 		{
 			icons = { "Anvil.png" },
 			name = "Anvil",
-			price = 120,
+			price = 60,
 			itemtype = 35185,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -62,7 +62,7 @@ return {
 		{
 			icons = { "Arrival_at_Thais_Painting.png" },
 			name = "Arrival The Thais Paint",
-			price = 50,
+			price = 25,
 			itemtype = 27698,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -71,7 +71,7 @@ return {
 		{
 			icons = { "Rolled-up_Azure_Carpet.png" },
 			name = "Azure Carpet",
-			price = 35,
+			price = 20,
 			itemtype = 23710,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -80,7 +80,7 @@ return {
 		{
 			icons = { "Rolled-up_Azure_Carpet.png" },
 			name = "Azure Carpet",
-			price = 175,
+			price = 90,
 			itemtype = 23710,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -89,7 +89,7 @@ return {
 		{
 			icons = { "Baby_Bonelord.png" },
 			name = "Baby Bonelord",
-			price = 250,
+			price = 125,
 			itemtype = 34026,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -98,7 +98,7 @@ return {
 		{
 			icons = { "Baby_Dragon.png" },
 			name = "Baby Dragon",
-			price = 250,
+			price = 125,
 			itemtype = 23442,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -107,7 +107,7 @@ return {
 		{
 			icons = { "Baby_Elephant.png" },
 			name = "Baby Elephant",
-			price = 250,
+			price = 125,
 			itemtype = 35153,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -116,7 +116,7 @@ return {
 		{
 			icons = { "Baby_Polar_Bear.png" },
 			name = "Baby Polar Bear",
-			price = 250,
+			price = 125,
 			itemtype = 32790,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -125,7 +125,7 @@ return {
 		{
 			icons = { "Baby_Rotworm.png" },
 			name = "Baby Rotworm",
-			price = 150,
+			price = 75,
 			itemtype = 28690,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -134,7 +134,7 @@ return {
 		{
 			icons = { "Baby_Seal.png" },
 			name = "Baby Seal",
-			price = 250,
+			price = 125,
 			itemtype = 32788,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -143,7 +143,7 @@ return {
 		{
 			icons = { "Baby_Unicorn.png" },
 			name = "Baby Unicorn",
-			price = 250,
+			price = 125,
 			itemtype = 31703,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -152,7 +152,7 @@ return {
 		{
 			icons = { "Rolled-up_Bamboo_Mat.png" },
 			name = "Bamboo Mat",
-			price = 25,
+			price = 15,
 			itemtype = 23433,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -161,7 +161,7 @@ return {
 		{
 			icons = { "Rolled-up_Bamboo_Mat.png" },
 			name = "Bamboo Mat",
-			price = 125,
+			price = 65,
 			itemtype = 23433,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -170,7 +170,7 @@ return {
 		{
 			icons = { "Barrel.png" },
 			name = "Barrel",
-			price = 60,
+			price = 30,
 			itemtype = 34300,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -179,7 +179,7 @@ return {
 		{
 			icons = { "Barrel_&_Anchor_Lamp.png" },
 			name = "Barrel & Anchor Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 31937,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -188,7 +188,7 @@ return {
 		{
 			icons = { "Bat.png" },
 			name = "Bat",
-			price = 180,
+			price = 90,
 			itemtype = 33040,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -197,7 +197,7 @@ return {
 		{
 			icons = { "Bath_Tub.png" },
 			name = "Bath Tub",
-			price = 250,
+			price = 125,
 			itemtype = 26076,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -206,7 +206,7 @@ return {
 		{
 			icons = { "Bellflower.png" },
 			name = "Bellflower",
-			price = 50,
+			price = 25,
 			itemtype = 28697,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -215,7 +215,7 @@ return {
 		{
 			icons = { "Bitter-Smack_Leaf.png" },
 			name = "Bitter-Smack Leaf",
-			price = 50,
+			price = 25,
 			itemtype = 25217,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -224,7 +224,7 @@ return {
 		{
 			icons = { "Blank_Zaoan_Panel.png" },
 			name = "Blank Zaoan Panel",
-			price = 50,
+			price = 25,
 			itemtype = 37777,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -233,7 +233,7 @@ return {
 		{
 			icons = { "Blooming_Cactus.png" },
 			name = "Blooming Cactus",
-			price = 50,
+			price = 25,
 			itemtype = 25216,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -242,7 +242,7 @@ return {
 		{
 			icons = { "Blue_Round_Cushion.png" },
 			name = "Blue Round Cushion",
-			price = 50,
+			price = 25,
 			itemtype = 31222,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -251,7 +251,7 @@ return {
 		{
 			icons = { "Blue_Square_Cushion.png" },
 			name = "Blue Square Cushion",
-			price = 50,
+			price = 25,
 			itemtype = 31219,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -260,7 +260,7 @@ return {
 		{
 			icons = { "Brocade_Tapestry.png" },
 			name = "Brocade Tapestry",
-			price = 50,
+			price = 25,
 			itemtype = 23725,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -269,7 +269,7 @@ return {
 		{
 			icons = { "Captain_Crab.png" },
 			name = "Captain Crab",
-			price = 180,
+			price = 90,
 			itemtype = 42308,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -278,7 +278,7 @@ return {
 		{
 			icons = { "Carnivorous_Plant.png" },
 			name = "Carnivorous Plant",
-			price = 50,
+			price = 25,
 			itemtype = 28689,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -287,7 +287,7 @@ return {
 		{
 			icons = { "Cat_in_a_Basket.png" },
 			name = "Cat in a Basket",
-			price = 150,
+			price = 75,
 			itemtype = 23451,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -296,7 +296,7 @@ return {
 		{
 			icons = { "Chameleon.png" },
 			name = "Chameleon",
-			price = 250,
+			price = 125,
 			itemtype = 25213,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -305,7 +305,7 @@ return {
 		{
 			icons = { "Chest_of_Abundance.png" },
 			name = "Chest of Abundance",
-			price = 120,
+			price = 60,
 			itemtype = 28945,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -314,7 +314,7 @@ return {
 		{
 			icons = { "Rolled-up_Colourful_Carpet.png" },
 			name = "Colourful Carpet",
-			price = 35,
+			price = 20,
 			itemtype = 24417,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -323,7 +323,7 @@ return {
 		{
 			icons = { "Rolled-up_Colourful_Carpet.png" },
 			name = "Colourful Carpet",
-			price = 175,
+			price = 90,
 			itemtype = 24417,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -332,7 +332,7 @@ return {
 		{
 			icons = { "Rolled-up_Colourful_PomPom_Carpet.png" },
 			name = "Colourful Pom-Pom Carpet",
-			price = 30,
+			price = 15,
 			itemtype = 35889,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -341,7 +341,7 @@ return {
 		{
 			icons = { "Rolled-up_Colourful_PomPom_Carpet.png" },
 			name = "Colourful Pom-Pom Carpet",
-			price = 150,
+			price = 75,
 			itemtype = 35889,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -350,7 +350,7 @@ return {
 		{
 			icons = { "Rolled-up_Crested_Carpet.png" },
 			name = "Crested Carpet",
-			price = 25,
+			price = 15,
 			itemtype = 26152,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -359,7 +359,7 @@ return {
 		{
 			icons = { "Rolled-up_Crested_Carpet.png" },
 			name = "Crested Carpet",
-			price = 125,
+			price = 65,
 			itemtype = 26152,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -368,7 +368,7 @@ return {
 		{
 			icons = { "Rolled-up_Crimson_Carpet.png" },
 			name = "Crimson Carpet",
-			price = 35,
+			price = 20,
 			itemtype = 23707,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -377,7 +377,7 @@ return {
 		{
 			icons = { "Rolled-up_Crimson_Carpet.png" },
 			name = "Crimson Carpet",
-			price = 175,
+			price = 90,
 			itemtype = 23707,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -386,7 +386,7 @@ return {
 		{
 			icons = { "Crystal_Lamp.png" },
 			name = "Crystal Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 31196,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -395,7 +395,7 @@ return {
 		{
 			icons = { "Curly_Hortensis_Lamp.png" },
 			name = "Curly Hortensis Lamp",
-			price = 120,
+			price = 60,
 			itemtype = 31695,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -404,7 +404,7 @@ return {
 		{
 			icons = { "Dark_Parquet.png" },
 			name = "Dark Parquet",
-			price = 30,
+			price = 15,
 			itemtype = 23713,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -413,7 +413,7 @@ return {
 		{
 			icons = { "Rolled-up_Decorated_Carpet.png" },
 			name = "Decorated Carpet",
-			price = 35,
+			price = 20,
 			itemtype = 26154,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -422,7 +422,7 @@ return {
 		{
 			icons = { "Rolled-up_Decorated_Carpet.png" },
 			name = "Decorated Carpet",
-			price = 175,
+			price = 90,
 			itemtype = 26154,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -431,7 +431,7 @@ return {
 		{
 			icons = { "Demon_Baller.png" },
 			name = "Demon Baller",
-			price = 250,
+			price = 125,
 			itemtype = 36646,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -440,7 +440,7 @@ return {
 		{
 			icons = { "Demon_Pet.png" },
 			name = "Demon Pet",
-			price = 250,
+			price = 125,
 			itemtype = 26173,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -449,7 +449,7 @@ return {
 		{
 			icons = { "Demon_Skull.png" },
 			name = "Demon Skull",
-			price = 50,
+			price = 25,
 			itemtype = 31212,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -458,7 +458,7 @@ return {
 		{
 			icons = { "Demon_Statue.png" },
 			name = "Demon Statue",
-			price = 25,
+			price = 15,
 			itemtype = 34058,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -467,7 +467,7 @@ return {
 		{
 			icons = { "Rolled-up_Diamond_Carpet.png" },
 			name = "Diamond Carpet",
-			price = 25,
+			price = 15,
 			itemtype = 24420,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -476,7 +476,7 @@ return {
 		{
 			icons = { "Rolled-up_Diamond_Carpet.png" },
 			name = "Diamond Carpet",
-			price = 125,
+			price = 65,
 			itemtype = 24420,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -485,7 +485,7 @@ return {
 		{
 			icons = { "Djinn_Lamp.png" },
 			name = "Djinn Lamp",
-			price = 180,
+			price = 90,
 			itemtype = 42363,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -494,7 +494,7 @@ return {
 		{
 			icons = { "Dog_House.png" },
 			name = "Dog House",
-			price = 150,
+			price = 75,
 			itemtype = 23697,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -503,7 +503,7 @@ return {
 		{
 			icons = { "Dragon_Plant.png" },
 			name = "Dragon Plant",
-			price = 180,
+			price = 90,
 			itemtype = 37021,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -512,7 +512,7 @@ return {
 		{
 			icons = { "Drawing_Board.png" },
 			name = "Drawing Board",
-			price = 100,
+			price = 50,
 			itemtype = 34062,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -521,7 +521,7 @@ return {
 		{
 			icons = { "Dungeon_Scene_Painting.png" },
 			name = "Dungeon Scene Painting",
-			price = 100,
+			price = 50,
 			itemtype = 27697,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -530,7 +530,7 @@ return {
 		{
 			icons = { "Rolled-up_Emerald_Carpet.png" },
 			name = "Emerald Carpet",
-			price = 35,
+			price = 20,
 			itemtype = 23711,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -539,7 +539,7 @@ return {
 		{
 			icons = { "Rolled-up_Emerald_Carpet.png" },
 			name = "Emerald Carpet",
-			price = 175,
+			price = 90,
 			itemtype = 23711,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -548,7 +548,7 @@ return {
 		{
 			icons = { "Fennec.png" },
 			name = "Fennec",
-			price = 150,
+			price = 75,
 			itemtype = 28694,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} to trigger an animation feed it with meat, ham, dragon ham, haunch of a boar, roasted meat or bug meat\n{info} can be fed once every 65 seconds\n{backtoinbox}",
@@ -557,7 +557,7 @@ return {
 		{
 			icons = { "Ferumbras_Bust.png" },
 			name = "Ferumbras Dust",
-			price = 70,
+			price = 35,
 			itemtype = 27692,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{backtoinbox}\n{useicon} house owner can use it to display a duplicate of an owned Ferumbras' Hat on this bust - also works if the character has already turned Ferumbras' hat in to earn the outfit addon",
@@ -566,7 +566,7 @@ return {
 		{
 			icons = { "Ferumbras_Portrait.png" },
 			name = "Ferumbras Portrait",
-			price = 100,
+			price = 50,
 			itemtype = 27700,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -575,7 +575,7 @@ return {
 		{
 			icons = { "Ferumbras_Snowman.png" },
 			name = "Ferumbras Snowman",
-			price = 100,
+			price = 50,
 			itemtype = 32786,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -584,7 +584,7 @@ return {
 		{
 			icons = { "Festive_Filled_Shoes.png" },
 			name = "Festive Filled Shoes",
-			price = 50,
+			price = 25,
 			itemtype = 30227,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -593,7 +593,7 @@ return {
 		{
 			icons = { "Festive_Fireplace.png" },
 			name = "Festive Fireplace",
-			price = 180,
+			price = 90,
 			itemtype = 30233,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -602,7 +602,7 @@ return {
 		{
 			icons = { "Festive_Pile_of_Presents.png" },
 			name = "Festive Pile of Presents",
-			price = 50,
+			price = 25,
 			itemtype = 30245,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -611,7 +611,7 @@ return {
 		{
 			icons = { "Festive_Pyramid.png" },
 			name = "Festive Pyramid",
-			price = 120,
+			price = 60,
 			itemtype = 30248,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -620,7 +620,7 @@ return {
 		{
 			icons = { "Festive_Rocking_Chair.png" },
 			name = "Festive Rocking Chair",
-			price = 50,
+			price = 25,
 			itemtype = 30241,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -629,7 +629,7 @@ return {
 		{
 			icons = { "Festive_Sack_of_Presents.png" },
 			name = "Festive Sack of Presents",
-			price = 50,
+			price = 25,
 			itemtype = 30247,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -638,7 +638,7 @@ return {
 		{
 			icons = { "Festive_Sleigh.png" },
 			name = "Festive Sleigh",
-			price = 50,
+			price = 25,
 			itemtype = 30244,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -647,7 +647,7 @@ return {
 		{
 			icons = { "Festive_Table.png" },
 			name = "Festive Table",
-			price = 100,
+			price = 50,
 			itemtype = 30229,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -656,7 +656,7 @@ return {
 		{
 			icons = { "Festive_Tree.png" },
 			name = "Festive Tree",
-			price = 180,
+			price = 90,
 			itemtype = 30237,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -665,7 +665,7 @@ return {
 		{
 			icons = { "Fish_Hook_Board.png" },
 			name = "Fish Hook Board",
-			price = 50,
+			price = 25,
 			itemtype = 42304,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -674,7 +674,7 @@ return {
 		{
 			icons = { "Fish_in_a_Tank.png" },
 			name = "Fish Tank",
-			price = 180,
+			price = 90,
 			itemtype = 23691,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -683,7 +683,7 @@ return {
 		{
 			icons = { "Rolled-up_Flowery_Carpet.png" },
 			name = "Flowery Carpet",
-			price = 35,
+			price = 20,
 			itemtype = 24416,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -692,7 +692,7 @@ return {
 		{
 			icons = { "Rolled-up_Flowery_Carpet.png" },
 			name = "Flowery Carpet",
-			price = 175,
+			price = 90,
 			itemtype = 24416,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -701,7 +701,7 @@ return {
 		{
 			icons = { "Rolled-up_Flowery_Grass.png" },
 			name = "Flowery Grass",
-			price = 30,
+			price = 15,
 			itemtype = 39797,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -710,7 +710,7 @@ return {
 		{
 			icons = { "Rolled-up_Flowery_Grass.png" },
 			name = "Flowery Grass",
-			price = 150,
+			price = 75,
 			itemtype = 39797,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -719,7 +719,7 @@ return {
 		{
 			icons = { "Fluorescent_Fungi.png" },
 			name = "Fluorescent Fungi",
-			price = 60,
+			price = 30,
 			itemtype = 28920,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -728,7 +728,7 @@ return {
 		{
 			icons = { "Forge.png" },
 			name = "Forge",
-			price = 120,
+			price = 60,
 			itemtype = 35155,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -737,7 +737,7 @@ return {
 		{
 			icons = { "Forget-Me-Not.png" },
 			name = "Forget-Me-Not",
-			price = 50,
+			price = 25,
 			itemtype = 28698,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -746,7 +746,7 @@ return {
 		{
 			icons = { "Four_Hearts_Lamp.png" },
 			name = "Four Hearts Lamp",
-			price = 120,
+			price = 60,
 			itemtype = 33028,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -755,7 +755,7 @@ return {
 		{
 			icons = { "Rolled-up_Fur_Carpet.png" },
 			name = "Fur Carpet",
-			price = 30,
+			price = 15,
 			itemtype = 24419,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -764,7 +764,7 @@ return {
 		{
 			icons = { "Rolled-up_Fur_Carpet.png" },
 			name = "Fur Carpet",
-			price = 150,
+			price = 75,
 			itemtype = 24419,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -773,7 +773,7 @@ return {
 		{
 			icons = { "Gloomy_Poisonous_Fungi.png" },
 			name = "Gloomy Poisonous Fungi",
-			price = 60,
+			price = 30,
 			itemtype = 28926,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -782,7 +782,7 @@ return {
 		{
 			icons = { "Glowing_Sulphur_Fungi.png" },
 			name = "Glowing Sulphur Fungi",
-			price = 60,
+			price = 30,
 			itemtype = 28924,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -791,7 +791,7 @@ return {
 		{
 			icons = { "Glowworms.png" },
 			name = "Glowworms",
-			price = 180,
+			price = 90,
 			itemtype = 34270,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -800,7 +800,7 @@ return {
 		{
 			icons = { "Golden_Demon_Skull.png" },
 			name = "Golden Demon Skull",
-			price = 80,
+			price = 40,
 			itemtype = 31211,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -809,7 +809,7 @@ return {
 		{
 			icons = { "Golden_Dragon_Tapestry.png" },
 			name = "Golden Dragon Tapestry",
-			price = 70,
+			price = 35,
 			itemtype = 23723,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{info} drag the unwrapped tapestry to a wall to hang it up\n{backtoinbox}",
@@ -818,7 +818,7 @@ return {
 		{
 			icons = { "Golden_Minotaur_Skull.png" },
 			name = "Golden Minotaur Skull",
-			price = 100,
+			price = 50,
 			itemtype = 31209,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -827,7 +827,7 @@ return {
 		{
 			icons = { "Grandiose_Carpet.png" },
 			name = "Grandiose Carpet",
-			price = 35,
+			price = 20,
 			itemtype = 35942,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -836,7 +836,7 @@ return {
 		{
 			icons = { "Grandiose_Lamp.png" },
 			name = "Grandiose Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 35943,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -845,7 +845,7 @@ return {
 		{
 			icons = { "Grandiose_Painting.png" },
 			name = "Grandiose Painting",
-			price = 50,
+			price = 25,
 			itemtype = 35940,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -854,7 +854,7 @@ return {
 		{
 			icons = { "Grass.png" },
 			name = "Grass",
-			price = 30,
+			price = 15,
 			itemtype = 37019,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -863,7 +863,7 @@ return {
 		{
 			icons = { "Green_Round_Cushion.png" },
 			name = "Green Round Cushion",
-			price = 50,
+			price = 25,
 			itemtype = 31221,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -872,7 +872,7 @@ return {
 		{
 			icons = { "Green_Square_Cushion.png" },
 			name = "Green Square Cushion",
-			price = 50,
+			price = 25,
 			itemtype = 31218,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -881,7 +881,7 @@ return {
 		{
 			icons = { "Grinding_Wheel.png" },
 			name = "Grinding Wheel",
-			price = 80,
+			price = 40,
 			itemtype = 35177,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -890,7 +890,7 @@ return {
 		{
 			icons = { "Hamster_in_a_Wheel.png" },
 			name = "Hamster in a Wheel",
-			price = 180,
+			price = 90,
 			itemtype = 23444,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -899,7 +899,7 @@ return {
 		{
 			icons = { "Heart_Lamp.png" },
 			name = "Heart Lamp",
-			price = 180,
+			price = 90,
 			itemtype = 33026,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -908,7 +908,7 @@ return {
 		{
 			icons = { "Baby_Hedgehog.png" },
 			name = "Hedgehog",
-			price = 150,
+			price = 75,
 			itemtype = 31680,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -917,7 +917,7 @@ return {
 		{
 			icons = { "Hrodmir_Weapons_Rack.png" },
 			name = "Hrodmir Weapons Rack",
-			price = 90,
+			price = 45,
 			itemtype = 26081,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -926,7 +926,7 @@ return {
 		{
 			icons = { "Ice_Chandelier.png" },
 			name = "Ice_Chandelier",
-			price = 180,
+			price = 90,
 			itemtype = 32784,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -935,7 +935,7 @@ return {
 		{
 			icons = { "Idol_Lamp.png" },
 			name = "Idol Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 31214,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -944,7 +944,7 @@ return {
 		{
 			icons = { "Incomprehensible_Riches.png" },
 			name = "Incomprehensible Riches",
-			price = 90,
+			price = 45,
 			itemtype = 28944,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -953,7 +953,7 @@ return {
 		{
 			icons = { "King_Tibianus_Bust.png" },
 			name = "King Tibianus Bust",
-			price = 50,
+			price = 25,
 			itemtype = 27702,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -962,7 +962,7 @@ return {
 		{
 			icons = { "Kitchen_Clock.png" },
 			name = "Kitchen Clock",
-			price = 80,
+			price = 40,
 			itemtype = 34309,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -971,7 +971,7 @@ return {
 		{
 			icons = { "Kitchen_Lamp.png" },
 			name = "Kitchen Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 34304,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -980,7 +980,7 @@ return {
 		{
 			icons = { "Kitchen_Shelf.png" },
 			name = "Kitchen Shelf",
-			price = 80,
+			price = 40,
 			itemtype = 34282,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -989,7 +989,7 @@ return {
 		{
 			icons = { "Knightly_Candelabra.png" },
 			name = "Knightly Candelabra",
-			price = 60,
+			price = 30,
 			itemtype = 39498,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -998,7 +998,7 @@ return {
 		{
 			icons = { "Knightly_Candle_Holder.png" },
 			name = "Knightly Candle Holder",
-			price = 60,
+			price = 30,
 			itemtype = 39500,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1007,7 +1007,7 @@ return {
 		{
 			icons = { "Knightly_Fire_Bowl.png" },
 			name = "Knightly Fire Bowl",
-			price = 80,
+			price = 40,
 			itemtype = 39443,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1016,7 +1016,7 @@ return {
 		{
 			icons = { "Knightly_Guard.png" },
 			name = "Knightly Guard",
-			price = 250,
+			price = 125,
 			itemtype = 39508,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1025,7 +1025,7 @@ return {
 		{
 			icons = { "Knightly_Sword_Lamp.png" },
 			name = "Knightly Sword Lamp",
-			price = 60,
+			price = 30,
 			itemtype = 39496,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1034,7 +1034,7 @@ return {
 		{
 			icons = { "Knightly_Wall_Lamp.png" },
 			name = "Knightly Wall Lamp",
-			price = 60,
+			price = 30,
 			itemtype = 39446,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1043,7 +1043,7 @@ return {
 		{
 			icons = { "Kraken_Buoy_Lamp.png" },
 			name = "Kraken Buoy Lamp",
-			price = 60,
+			price = 30,
 			itemtype = 37187,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1052,7 +1052,7 @@ return {
 		{
 			icons = { "Kraken_Shelf.png" },
 			name = "Kraken Shelf",
-			price = 100,
+			price = 50,
 			itemtype = 37189,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1061,7 +1061,7 @@ return {
 		{
 			icons = { "Kraken_Tentacle_Lamp.png" },
 			name = "Kraken Tentacle Lamp",
-			price = 60,
+			price = 30,
 			itemtype = 37520,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1070,7 +1070,7 @@ return {
 		{
 			icons = { "Kraken_Watcher_Lamp.png" },
 			name = "Kraken Watcher Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 37700,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1079,7 +1079,7 @@ return {
 		{
 			icons = { "Life_Buoy.png" },
 			name = "Life Buoy",
-			price = 50,
+			price = 25,
 			itemtype = 42305,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1088,7 +1088,7 @@ return {
 		{
 			icons = { "Light_of_Change.png" },
 			name = "Light of Change",
-			price = 180,
+			price = 90,
 			itemtype = 27667,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1097,7 +1097,7 @@ return {
 		{
 			icons = { "Light_Parquet.png" },
 			name = "Light Parquet",
-			price = 30,
+			price = 15,
 			itemtype = 23712,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1106,7 +1106,7 @@ return {
 		{
 			icons = { "Lit_Predator_Lamp.png" },
 			name = "Lit Predator Lamp",
-			price = 60,
+			price = 30,
 			itemtype = 23436,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1115,7 +1115,7 @@ return {
 		{
 			icons = { "Lit_Protectress_Lamp.png" },
 			name = "Lit Protectress Lamp",
-			price = 90,
+			price = 45,
 			itemtype = 23440,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1124,7 +1124,7 @@ return {
 		{
 			icons = { "Lit_Skull_Lamp.png" },
 			name = "Lit Skull Lamp",
-			price = 90,
+			price = 45,
 			itemtype = 24435,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1133,7 +1133,7 @@ return {
 		{
 			icons = { "Little_Big_Flower_Lamp.png" },
 			name = "Little Big Flower Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 31697,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1142,7 +1142,7 @@ return {
 		{
 			icons = { "Loose_Opulent_Floor_Intarsia.png" },
 			name = "Loose Opulent Floor Intarsia",
-			price = 30,
+			price = 15,
 			itemtype = 42338,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1151,7 +1151,7 @@ return {
 		{
 			icons = { "Lordly_Tapestry.png" },
 			name = "Lordly Tapestry",
-			price = 50,
+			price = 25,
 			itemtype = 23448,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1160,7 +1160,7 @@ return {
 		{
 			icons = { "Luminescent_Fungi.png" },
 			name = "Luminescent Fungi",
-			price = 60,
+			price = 30,
 			itemtype = 28922,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1169,7 +1169,7 @@ return {
 		{
 			icons = { "Marble_Floor.png" },
 			name = "Marble Floor",
-			price = 30,
+			price = 15,
 			itemtype = 23720,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1178,7 +1178,7 @@ return {
 		{
 			icons = { "Menacing_Tapestry.png" },
 			name = "Menacing Tapestry",
-			price = 70,
+			price = 35,
 			itemtype = 23449,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1187,7 +1187,7 @@ return {
 		{
 			icons = { "Merchant_Portrait.png" },
 			name = "Merchant Portrait",
-			price = 100,
+			price = 50,
 			itemtype = 42343,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1196,7 +1196,7 @@ return {
 		{
 			icons = { "Mermaid_Figure_Head.png" },
 			name = "Mermaid Figure Head",
-			price = 120,
+			price = 60,
 			itemtype = 31949,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1205,7 +1205,7 @@ return {
 		{
 			icons = { "Metal_Wall_Lamp.png" },
 			name = "Metal Wall Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 35161,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1214,7 +1214,7 @@ return {
 		{
 			icons = { "Midnight_Panther_Rug.png" },
 			name = "Midnight Panther Rug",
-			price = 30,
+			price = 15,
 			itemtype = 35895,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1223,7 +1223,7 @@ return {
 		{
 			icons = { "Minotaur_Skull.png" },
 			name = "Minotaur Skull",
-			price = 70,
+			price = 35,
 			itemtype = 31210,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1232,7 +1232,7 @@ return {
 		{
 			icons = { "Model_Ship_Lamp.png" },
 			name = "Model Ship Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 31942,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1241,7 +1241,7 @@ return {
 		{
 			icons = { "Monkey.png" },
 			name = "Monkey",
-			price = 180,
+			price = 90,
 			itemtype = 31955,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1250,7 +1250,7 @@ return {
 		{
 			icons = { "Moon_Carpet.png" },
 			name = "Moon Carpet",
-			price = 35,
+			price = 20,
 			itemtype = 35898,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1259,7 +1259,7 @@ return {
 		{
 			icons = { "Rolled-up_Mystic_Carpet.png" },
 			name = "Mystic Carpet",
-			price = 35,
+			price = 20,
 			itemtype = 26118,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1268,7 +1268,7 @@ return {
 		{
 			icons = { "Rolled-up_Mystic_Carpet.png" },
 			name = "Mystic Carpet",
-			price = 175,
+			price = 90,
 			itemtype = 26118,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1277,7 +1277,7 @@ return {
 		{
 			icons = { "Natural_PomPom_Carpet.png" },
 			name = "Natural Pom-Pom Carpet",
-			price = 30,
+			price = 15,
 			itemtype = 35891,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1286,7 +1286,7 @@ return {
 		{
 			icons = { "Rolled-up_Night_Sky_Carpet.png" },
 			name = "Night Sky Carpet",
-			price = 25,
+			price = 15,
 			itemtype = 24422,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1295,7 +1295,7 @@ return {
 		{
 			icons = { "Rolled-up_Night_Sky_Carpet.png" },
 			name = "Night Sky Carpet",
-			price = 125,
+			price = 65,
 			itemtype = 24422,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1304,7 +1304,7 @@ return {
 		{
 			icons = { "Octoputz.png" },
 			name = "Octoputz",
-			price = 180,
+			price = 90,
 			itemtype = 37211,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1313,7 +1313,7 @@ return {
 		{
 			icons = { "Opulent_Floor_Intarsia.png" },
 			name = "Opulent Floor Intarsia",
-			price = 30,
+			price = 15,
 			itemtype = 42339,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1322,7 +1322,7 @@ return {
 		{
 			icons = { "Opulent_Floor_Lamp.png" },
 			name = "Opulent Floor Lamp",
-			price = 60,
+			price = 30,
 			itemtype = 42348,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1331,7 +1331,7 @@ return {
 		{
 			icons = { "Opulent_Wooden_Floor.png" },
 			name = "Opulent Wooden Floor",
-			price = 30,
+			price = 15,
 			itemtype = 42337,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1340,7 +1340,7 @@ return {
 		{
 			icons = { "Opulent_Wood_Floor_Planks.png" },
 			name = "Opulent Wood Floor Planks",
-			price = 30,
+			price = 15,
 			itemtype = 42336,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1349,7 +1349,7 @@ return {
 		{
 			icons = { "Oven.png" },
 			name = "Oven",
-			price = 120,
+			price = 60,
 			itemtype = 37272,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1358,7 +1358,7 @@ return {
 		{
 			icons = { "Owin_Rug.png" },
 			name = "Owin Rug",
-			price = 30,
+			price = 15,
 			itemtype = 35893,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1367,7 +1367,7 @@ return {
 		{
 			icons = { "Painting_of_Tibiasula.png" },
 			name = "Painting of Tibiasula",
-			price = 250,
+			price = 125,
 			itemtype = 28947,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1376,7 +1376,7 @@ return {
 		{
 			icons = { "Pair_of_Bellows.png" },
 			name = "Pair of Bellows",
-			price = 250,
+			price = 125,
 			itemtype = 35181,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1385,7 +1385,7 @@ return {
 		{
 			icons = { "Parrot.png" },
 			name = "Parrot",
-			price = 180,
+			price = 90,
 			itemtype = 24432,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1394,7 +1394,7 @@ return {
 		{
 			icons = { "Rolled-Up_Opulent_Carpet.png" },
 			name = "Rolled-Up Opulent Carpet",
-			price = 30,
+			price = 15,
 			itemtype = 42340,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1403,7 +1403,7 @@ return {
 		{
 			icons = { "Rolled-Up_Opulent_Carpet.png" },
 			name = "Rolled-Up Opulent Carpet",
-			price = 150,
+			price = 75,
 			itemtype = 42340,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1412,7 +1412,7 @@ return {
 		{
 			icons = { "Rolled-up_Patterned_Carpet.png" },
 			name = "Patterned Carpet",
-			price = 30,
+			price = 15,
 			itemtype = 24421,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1421,7 +1421,7 @@ return {
 		{
 			icons = { "Rolled-up_Patterned_Carpet.png" },
 			name = "Patterned Carpet",
-			price = 150,
+			price = 75,
 			itemtype = 24421,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1430,7 +1430,7 @@ return {
 		{
 			icons = { "Pile_of_Alchemistic_Books.png" },
 			name = "Pile of Alchemistic Books",
-			price = 120,
+			price = 60,
 			itemtype = 27687,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1439,7 +1439,7 @@ return {
 		{
 			icons = { "Pile_of_Riches.png" },
 			name = "Pile of Riches",
-			price = 90,
+			price = 45,
 			itemtype = 42342,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1448,7 +1448,7 @@ return {
 		{
 			icons = { "Pink_Roses.png" },
 			name = "Pink Roses",
-			price = 50,
+			price = 25,
 			itemtype = 25218,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1457,7 +1457,7 @@ return {
 		{
 			icons = { "Pink_Shroom_Lamp.png" },
 			name = "Pink Shroom Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 37018,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1466,7 +1466,7 @@ return {
 		{
 			icons = { "Pirate_Flag.png" },
 			name = "Pirate Flag",
-			price = 50,
+			price = 25,
 			itemtype = 31945,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1475,7 +1475,7 @@ return {
 		{
 			icons = { "Pirate_Ship_Ballista.png" },
 			name = "Pirate Ship Ballista",
-			price = 120,
+			price = 60,
 			itemtype = 31933,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1484,7 +1484,7 @@ return {
 		{
 			icons = { "Pirate_Skeleton_Cage.png" },
 			name = "Pirate Skeleton Cage",
-			price = 120,
+			price = 60,
 			itemtype = 31947,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1493,7 +1493,7 @@ return {
 		{
 			icons = { "Pirate_Treasure_Chest.png" },
 			name = "Pirate Treasure Chest",
-			price = 120,
+			price = 60,
 			itemtype = 31936,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1502,7 +1502,7 @@ return {
 		{
 			icons = { "Pirate_Treasure_Map.png" },
 			name = "Pirate Treasure Map",
-			price = 50,
+			price = 25,
 			itemtype = 31946,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1511,7 +1511,7 @@ return {
 		{
 			icons = { "Podium_of_Renown.png" },
 			name = "Podium of Renown",
-			price = 500,
+			price = 250,
 			itemtype = 35973,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1520,7 +1520,7 @@ return {
 		{
 			icons = { "Podium_of_Tenacity.png" },
 			name = "Podium of Tenacity",
-			price = 375,
+			price = 190,
 			itemtype = 42367,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1531,7 +1531,7 @@ return {
 		{
 			icons = { "Portable_Aqueduct.png" },
 			name = "Portable Aqueduct",
-			price = 250,
+			price = 125,
 			itemtype = 35949,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1540,7 +1540,7 @@ return {
 		{
 			icons = { "Purple_Flower_Lamp.png" },
 			name = "Purple Flower Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 39795,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1549,7 +1549,7 @@ return {
 		{
 			icons = { "Queen_Eloise_Bust.png" },
 			name = "Queen Eloise Bust",
-			price = 50,
+			price = 25,
 			itemtype = 27695,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1558,7 +1558,7 @@ return {
 		{
 			icons = { "Red_Geranium.png" },
 			name = "Red Geranium",
-			price = 50,
+			price = 25,
 			itemtype = 28699,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1567,7 +1567,7 @@ return {
 		{
 			icons = { "Red_Roses.png" },
 			name = "Red Roses",
-			price = 50,
+			price = 25,
 			itemtype = 25219,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1576,7 +1576,7 @@ return {
 		{
 			icons = { "Romantic_Carpet.png" },
 			name = "Romantic Carpet",
-			price = 30,
+			price = 15,
 			itemtype = 35899,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1585,7 +1585,7 @@ return {
 		{
 			icons = { "Sabertooth_Skull.png" },
 			name = "Sabertooth Skull",
-			price = 100,
+			price = 50,
 			itemtype = 34060,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1594,7 +1594,7 @@ return {
 		{
 			icons = { "Exalted_Sarcophagus.png" },
 			name = "Sarcophagus",
-			price = 120,
+			price = 60,
 			itemtype = 31683,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1603,7 +1603,7 @@ return {
 		{
 			icons = { "Scales_Wall_Lamp.png" },
 			name = "Scales Wall Lamp",
-			price = 60,
+			price = 30,
 			itemtype = 42345,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1612,7 +1612,7 @@ return {
 		{
 			icons = { "Sculpture_of_a_Fox.png" },
 			name = "Sculpture of a Fox",
-			price = 180,
+			price = 90,
 			itemtype = 37811,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1621,7 +1621,7 @@ return {
 		{
 			icons = { "Sculpture_of_a_Noblewoman.png" },
 			name = "Sculpture of a Noblewoman",
-			price = 120,
+			price = 60,
 			itemtype = 34064,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1630,7 +1630,7 @@ return {
 		{
 			icons = { "Sculpture_of_an_Ocotoputz.png" },
 			name = "Sculpture of an Octoputz",
-			price = 120,
+			price = 60,
 			itemtype = 37205,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1639,7 +1639,7 @@ return {
 		{
 			icons = { "Sea-devil_Wall_Lamp.png" },
 			name = "Sea-devil Wall Lamp",
-			price = 60,
+			price = 30,
 			itemtype = 42300,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1648,7 +1648,7 @@ return {
 		{
 			icons = { "Seafood_Bucket.png" },
 			name = "Seafood Bucket",
-			price = 60,
+			price = 30,
 			itemtype = 42301,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1657,7 +1657,7 @@ return {
 		{
 			icons = { "Seashell_Lamp.png" },
 			name = "Seashell Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 42292,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1666,7 +1666,7 @@ return {
 		{
 			icons = { "Rolled-up_Shaggy_Carpet.png" },
 			name = "Shaggy Carpet",
-			price = 30,
+			price = 15,
 			itemtype = 26116,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1675,7 +1675,7 @@ return {
 		{
 			icons = { "Rolled-up_Shaggy_Carpet.png" },
 			name = "Shaggy Carpet",
-			price = 150,
+			price = 75,
 			itemtype = 26116,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1684,7 +1684,7 @@ return {
 		{
 			icons = { "Ship_Bell.png" },
 			name = "Ship Bell",
-			price = 50,
+			price = 25,
 			itemtype = 42303,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1693,7 +1693,7 @@ return {
 		{
 			icons = { "Ship's_Wheel.png" },
 			name = "Ship's Wheel",
-			price = 50,
+			price = 25,
 			itemtype = 31948,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1702,7 +1702,7 @@ return {
 		{
 			icons = { "Small_Hearts_Lamp.png" },
 			name = "Small Hearts Lamp",
-			price = 90,
+			price = 45,
 			itemtype = 33030,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1711,7 +1711,7 @@ return {
 		{
 			icons = { "Rolled-up_Star_Carpet.png" },
 			name = "Star Carpet",
-			price = 25,
+			price = 15,
 			itemtype = 24423,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1720,7 +1720,7 @@ return {
 		{
 			icons = { "Rolled-up_Star_Carpet.png" },
 			name = "Star Carpet",
-			price = 125,
+			price = 65,
 			itemtype = 24423,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1729,7 +1729,7 @@ return {
 		{
 			icons = { "Piled-up_Stone_Tiles.png" },
 			name = "Stone Tiles",
-			price = 25,
+			price = 15,
 			itemtype = 26121,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1738,7 +1738,7 @@ return {
 		{
 			icons = { "Rolled-up_Striped_Carpet .png" },
 			name = "Striped Carpet",
-			price = 30,
+			price = 15,
 			itemtype = 24418,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1747,7 +1747,7 @@ return {
 		{
 			icons = { "Rolled-up_Striped_Carpet .png" },
 			name = "Striped Carpet",
-			price = 150,
+			price = 75,
 			itemtype = 24418,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1756,7 +1756,7 @@ return {
 		{
 			icons = { "Stuffed_Bear_Display.png" },
 			name = "Stuffed Bear Display",
-			price = 90,
+			price = 45,
 			itemtype = 28928,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1765,7 +1765,7 @@ return {
 		{
 			icons = { "Stuffed_Teddy_Display.png" },
 			name = "Stuffed Teddy Display",
-			price = 50,
+			price = 25,
 			itemtype = 28930,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1774,7 +1774,7 @@ return {
 		{
 			icons = { "Sulphur_Blossom_Lamp.png" },
 			name = "Sulphur Blossom Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 31723,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1783,7 +1783,7 @@ return {
 		{
 			icons = { "Sword_Tapestry.png" },
 			name = "Sword Tapestry",
-			price = 60,
+			price = 30,
 			itemtype = 23724,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1792,7 +1792,7 @@ return {
 		{
 			icons = { "Tendrils.png" },
 			name = "Tendrils",
-			price = 50,
+			price = 25,
 			itemtype = 39803,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1801,7 +1801,7 @@ return {
 		{
 			icons = { "Tentacle_Lamp.png" },
 			name = "Tentacle Lamp",
-			price = 80,
+			price = 40,
 			itemtype = 42298,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1810,7 +1810,7 @@ return {
 		{
 			icons = { "Terrarium_Snake.png" },
 			name = "Terrarium Snake",
-			price = 180,
+			price = 90,
 			itemtype = 26171,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1819,7 +1819,7 @@ return {
 		{
 			icons = { "Spider_in_a_Terrarium.png" },
 			name = "Terrarium Spider",
-			price = 180,
+			price = 90,
 			itemtype = 26078,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1828,7 +1828,7 @@ return {
 		{
 			icons = { "Tibia_Streets_Painting.png" },
 			name = "Tibia Streets Painting",
-			price = 100,
+			price = 50,
 			itemtype = 27699,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1837,7 +1837,7 @@ return {
 		{
 			icons = { "Torch_of_Change.png" },
 			name = "Torch of Change",
-			price = 120,
+			price = 60,
 			itemtype = 27673,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1846,7 +1846,7 @@ return {
 		{
 			icons = { "Turquoise_Flower_Lamp.png" },
 			name = "Turquoise Flower Lamp",
-			price = 60,
+			price = 30,
 			itemtype = 39793,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1855,7 +1855,7 @@ return {
 		{
 			icons = { "Vegetable_Basket.png" },
 			name = "Vegetable Basket",
-			price = 50,
+			price = 25,
 			itemtype = 34302,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1864,7 +1864,7 @@ return {
 		{
 			icons = { "Vengothic_Lamp.png" },
 			name = "Vengothic Lamp",
-			price = 180,
+			price = 90,
 			itemtype = 25210,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1873,7 +1873,7 @@ return {
 		{
 			icons = { "Venorean_Table_Clock.png" },
 			name = "Venorean Table Clock",
-			price = 120,
+			price = 60,
 			itemtype = 26112,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1882,7 +1882,7 @@ return {
 		{
 			icons = { "Rolled-up_Verdant_Carpet.png" },
 			name = "Verdant Carpet",
-			price = 30,
+			price = 15,
 			itemtype = 26114,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1891,7 +1891,7 @@ return {
 		{
 			icons = { "Rolled-up_Verdant_Carpet.png" },
 			name = "Verdant Carpet",
-			price = 150,
+			price = 75,
 			itemtype = 26114,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1900,7 +1900,7 @@ return {
 		{
 			icons = { "Violet_Round_Cushion.png" },
 			name = "Violet Round Cushion",
-			price = 50,
+			price = 25,
 			itemtype = 31220,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1909,7 +1909,7 @@ return {
 		{
 			icons = { "Violet_Square_Cushion.png" },
 			name = "Violet Square Cushion",
-			price = 50,
+			price = 25,
 			itemtype = 31217,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1918,7 +1918,7 @@ return {
 		{
 			icons = { "Volcanic_Basin.png" },
 			name = "Volcanic Basin",
-			price = 90,
+			price = 45,
 			itemtype = 36618,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1927,7 +1927,7 @@ return {
 		{
 			icons = { "Volcanic_Bulb.png" },
 			name = "Volcanic Bulb",
-			price = 80,
+			price = 40,
 			itemtype = 36624,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1936,7 +1936,7 @@ return {
 		{
 			icons = { "Volcanic_Mirror.png" },
 			name = "Volcanic Mirror",
-			price = 120,
+			price = 60,
 			itemtype = 36626,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1945,7 +1945,7 @@ return {
 		{
 			icons = { "Volcanic_Sphere.png" },
 			name = "Volcanic Sphere",
-			price = 90,
+			price = 45,
 			itemtype = 36620,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1954,7 +1954,7 @@ return {
 		{
 			icons = { "Volcanic_Spire.png" },
 			name = "Volcanic Spire",
-			price = 80,
+			price = 40,
 			itemtype = 36620,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1963,7 +1963,7 @@ return {
 		{
 			icons = { "Wall_Fern.png" },
 			name = "Wall Fern",
-			price = 50,
+			price = 25,
 			itemtype = 39800,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1972,7 +1972,7 @@ return {
 		{
 			icons = { "Wall_Flowers.png" },
 			name = "Wall Flowers",
-			price = 50,
+			price = 25,
 			itemtype = 39799,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1981,7 +1981,7 @@ return {
 		{
 			icons = { "Wall_Leaves.png" },
 			name = "Wall Leaves",
-			price = 50,
+			price = 25,
 			itemtype = 39801,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1990,7 +1990,7 @@ return {
 		{
 			icons = { "Wallcupboard.png" },
 			name = "Wallcupboard",
-			price = 50,
+			price = 25,
 			itemtype = 34280,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -1999,7 +1999,7 @@ return {
 		{
 			icons = { "Water_Bucket.png" },
 			name = "Water Bucket",
-			price = 60,
+			price = 30,
 			itemtype = 35188,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2008,7 +2008,7 @@ return {
 		{
 			icons = { "Water_Floor.png" },
 			name = "Water Floor",
-			price = 35,
+			price = 20,
 			itemtype = 49216,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use a bucket to pour it out or fill it back in\n{backtoinbox}",
@@ -2017,7 +2017,7 @@ return {
 		{
 			icons = { "Water_Floor.png" },
 			name = "Water Floor",
-			price = 175,
+			price = 90,
 			itemtype = 49216,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{useicon} use a bucket to pour it out or fill it back in\n{backtoinbox}",
@@ -2026,7 +2026,7 @@ return {
 		{
 			icons = { "Water_Nymph.png" },
 			name = "Water Nymph",
-			price = 180,
+			price = 90,
 			itemtype = 39805,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2035,7 +2035,7 @@ return {
 		{
 			icons = { "Rolled-up_Wheat_Carpet.png" },
 			name = "Wheat Carpet",
-			price = 30,
+			price = 15,
 			itemtype = 26151,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2044,7 +2044,7 @@ return {
 		{
 			icons = { "Rolled-up_Wheat_Carpet.png" },
 			name = "Wheat Carpet",
-			price = 150,
+			price = 75,
 			itemtype = 26151,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2053,7 +2053,7 @@ return {
 		{
 			icons = { "Rolled-up_White_Fur_Carpet.png" },
 			name = "White Fur Carpet",
-			price = 30,
+			price = 15,
 			itemtype = 23432,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2062,7 +2062,7 @@ return {
 		{
 			icons = { "Rolled-up_White_Fur_Carpet.png" },
 			name = "White Fur Carpet",
-			price = 150,
+			price = 75,
 			itemtype = 23432,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2071,7 +2071,7 @@ return {
 		{
 			icons = { "White_Shark_Trophy.png" },
 			name = "White Shark Trophy",
-			price = 80,
+			price = 40,
 			itemtype = 31951,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2080,7 +2080,7 @@ return {
 		{
 			icons = { "Rolled-up_Wooden_Planks.png" },
 			name = "Wooden Planks",
-			price = 25,
+			price = 15,
 			itemtype = 26123,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2089,7 +2089,7 @@ return {
 		{
 			icons = { "Rolled-up_Wooden_Planks.png" },
 			name = "Wooden Planks",
-			price = 125,
+			price = 65,
 			itemtype = 26123,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2098,7 +2098,7 @@ return {
 		{
 			icons = { "Wooden_Sandals.png" },
 			name = "Wooden Sandals",
-			price = 40,
+			price = 20,
 			itemtype = 37801,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2107,7 +2107,7 @@ return {
 		{
 			icons = { "Rolled-up_Yalaharian_Carpet.png" },
 			name = "Yalaharian Carpet",
-			price = 35,
+			price = 20,
 			itemtype = 23431,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2116,7 +2116,7 @@ return {
 		{
 			icons = { "Rolled-up_Yalaharian_Carpet.png" },
 			name = "Yalaharian Carpet",
-			price = 175,
+			price = 90,
 			itemtype = 23431,
 			count = 5,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2125,7 +2125,7 @@ return {
 		{
 			icons = { "Yellow_Roses.png" },
 			name = "Yellow Roses",
-			price = 50,
+			price = 25,
 			itemtype = 25220,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2134,7 +2134,7 @@ return {
 		{
 			icons = { "Yellow_Shroom_Lamp.png" },
 			name = "Yellow Shroom Lamp",
-			price = 60,
+			price = 30,
 			itemtype = 37015,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2143,7 +2143,7 @@ return {
 		{
 			icons = { "Zaoan_Bamboo_Tiles_1.png" },
 			name = "Zaoan Bamboo Tiles 1",
-			price = 30,
+			price = 15,
 			itemtype = 37763,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2152,7 +2152,7 @@ return {
 		{
 			icons = { "Zaoan_Bamboo_Tiles_2.png" },
 			name = "Zaoan Bamboo Tiles 2",
-			price = 30,
+			price = 15,
 			itemtype = 37764,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2161,7 +2161,7 @@ return {
 		{
 			icons = { "Zaoan_Bamboo_Tiles_3.png" },
 			name = "Zaoan Bamboo Tiles 3",
-			price = 30,
+			price = 15,
 			itemtype = 37765,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2170,7 +2170,7 @@ return {
 		{
 			icons = { "Zaoan_Bamboo_Tiles_4.png" },
 			name = "Zaoan Bamboo Tiles 4",
-			price = 30,
+			price = 15,
 			itemtype = 37766,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2179,7 +2179,7 @@ return {
 		{
 			icons = { "Zaoan_Bamboo_Tiles_5.png" },
 			name = "Zaoan Bamboo Tiles 5",
-			price = 30,
+			price = 15,
 			itemtype = 37767,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2188,7 +2188,7 @@ return {
 		{
 			icons = { "Zaoan_Bamboo_Tiles_6.png" },
 			name = "Zaoan Bamboo Tiles 6",
-			price = 30,
+			price = 15,
 			itemtype = 37768,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2197,7 +2197,7 @@ return {
 		{
 			icons = { "Zaoan_Bonsai.png" },
 			name = "Zaoan Bonsai",
-			price = 50,
+			price = 25,
 			itemtype = 37798,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2206,7 +2206,7 @@ return {
 		{
 			icons = { "Zaoan_Divider.png" },
 			name = "Zaoan Divider",
-			price = 60,
+			price = 30,
 			itemtype = 37815,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2215,7 +2215,7 @@ return {
 		{
 			icons = { "Zaoan_Drawing.png" },
 			name = "Zaoan Drawing",
-			price = 50,
+			price = 25,
 			itemtype = 37800,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2224,7 +2224,7 @@ return {
 		{
 			icons = { "Zaoan_Panel.png" },
 			name = "Zaoan Panel",
-			price = 50,
+			price = 25,
 			itemtype = 37776,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2233,7 +2233,7 @@ return {
 		{
 			icons = { "Zaoan_Panel_Base.png" },
 			name = "Zaoan Panel Base",
-			price = 50,
+			price = 25,
 			itemtype = 37775,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2242,7 +2242,7 @@ return {
 		{
 			icons = { "Zaoan_Paravent.png" },
 			name = "Zaoan Paravent",
-			price = 60,
+			price = 30,
 			itemtype = 37784,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2251,7 +2251,7 @@ return {
 		{
 			icons = { "Zaoan_Pot_Bamboo.png" },
 			name = "Zaoan Pot Bamboo",
-			price = 50,
+			price = 25,
 			itemtype = 37799,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2260,7 +2260,7 @@ return {
 		{
 			icons = { "Zaoan_Wall_Lamp.png" },
 			name = "Zaoan Wall Lamp",
-			price = 60,
+			price = 30,
 			itemtype = 37806,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
@@ -2269,7 +2269,7 @@ return {
 		{
 			icons = { "Zaoan_Wall_Lamps.png" },
 			name = "Zaoan Wall Lamps",
-			price = 60,
+			price = 30,
 			itemtype = 37808,
 			count = 1,
 			description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
