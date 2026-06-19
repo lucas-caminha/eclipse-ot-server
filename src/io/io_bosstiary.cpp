@@ -52,6 +52,69 @@ void IOBosstiary::loadBoostedBoss() {
 		}
 	}
 
+	if (const auto scheduledResult = database.storeQuery(
+		    "SELECT `id`, `boostname`, `raceid` "
+		    "FROM `scheduled_boosted` "
+		    "WHERE `type` = 'boss' AND `status` = 'pending' AND `scheduled_for` <= CURDATE() "
+		    "ORDER BY `scheduled_for` ASC, `id` ASC LIMIT 1"
+	    )) {
+		const auto scheduledId = scheduledResult->getNumber<uint32_t>("id");
+		std::string bossName = scheduledResult->getString("boostname");
+		uint16_t bossId = scheduledResult->getNumber<uint16_t>("raceid");
+		const auto bossType = getMonsterTypeByBossRaceId(bossId);
+
+		if (bossId != 0 && bossType && bossType->info.bosstiaryRace == BosstiaryRarity_t::RARITY_ARCHFOE) {
+			query = fmt::format(
+				"UPDATE `boosted_boss` SET `date` = '{}', `boostname` = {}, `raceid` = '{}', ",
+				today, database.escapeString(bossName), bossId
+			);
+
+			query += fmt::format(
+				"`looktypeEx` = {}, `looktype` = {}, `lookfeet` = {}, `looklegs` = {}, "
+				"`lookhead` = {}, `lookbody` = {}, `lookaddons` = {}, `lookmount` = {}, ",
+				static_cast<int>(bossType->info.outfit.lookTypeEx),
+				static_cast<int>(bossType->info.outfit.lookType),
+				static_cast<int>(bossType->info.outfit.lookFeet),
+				static_cast<int>(bossType->info.outfit.lookLegs),
+				static_cast<int>(bossType->info.outfit.lookHead),
+				static_cast<int>(bossType->info.outfit.lookBody),
+				static_cast<int>(bossType->info.outfit.lookAddons),
+				static_cast<int>(bossType->info.outfit.lookMount)
+			);
+			query += fmt::format("`raceid` = '{}'", bossId);
+
+			if (!database.executeQuery(query)) {
+				g_logger().error("[{}] Failed to apply scheduled boosted boss '{}'.", __FUNCTION__, bossName);
+				return;
+			}
+
+			database.executeQuery(
+				fmt::format(
+					"UPDATE `scheduled_boosted` SET `status` = 'applied', `applied_at` = NOW() WHERE `id` = {}",
+					scheduledId
+				)
+			);
+			database.executeQuery(fmt::format("UPDATE `player_bosstiary` SET `bossIdSlotOne` = 0 WHERE `bossIdSlotOne` = {}", bossId));
+			database.executeQuery(fmt::format("UPDATE `player_bosstiary` SET `bossIdSlotTwo` = 0 WHERE `bossIdSlotTwo` = {}", bossId));
+
+			setBossBoostedName(bossName);
+			setBossBoostedId(bossId);
+			g_logger().info("Scheduled boosted boss applied: {}", bossName);
+			return;
+		}
+
+		g_logger().warn(
+			"[{}] Scheduled boosted boss '{}' with raceid {} is invalid or not Archfoe. Falling back to random boosted boss.",
+			__FUNCTION__, bossName, bossId
+		);
+		database.executeQuery(
+			fmt::format(
+				"UPDATE `scheduled_boosted` SET `status` = 'cancelled', `applied_at` = NOW() WHERE `id` = {}",
+				scheduledId
+			)
+		);
+	}
+
 	// Filter only archfoe bosses
 	std::vector<std::pair<uint16_t, std::string>> bossInfo;
 	for (const auto &[infoBossRaceId, infoBossName] : bossMap) {

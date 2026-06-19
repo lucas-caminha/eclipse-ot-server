@@ -485,6 +485,68 @@ void Game::loadBoostedCreature() {
 	}
 
 	const auto oldRace = result->getNumber<uint16_t>("raceid");
+	uint32_t scheduledId = 0;
+	uint16_t scheduledRaceId = 0;
+	std::string scheduledName;
+
+	if (const auto scheduledResult = db.storeQuery(
+		    "SELECT `id`, `boostname`, `raceid` "
+		    "FROM `scheduled_boosted` "
+		    "WHERE `type` = 'creature' AND `status` = 'pending' AND `scheduled_for` <= CURDATE() "
+		    "ORDER BY `scheduled_for` ASC, `id` ASC LIMIT 1"
+	    )) {
+		scheduledId = scheduledResult->getNumber<uint32_t>("id");
+		scheduledRaceId = scheduledResult->getNumber<uint16_t>("raceid");
+		scheduledName = scheduledResult->getString("boostname");
+
+		if (scheduledRaceId != 0) {
+			const auto scheduledMonsterType = g_monsters().getMonsterType(scheduledName);
+			const auto &bestiaryList = getBestiaryList();
+			if (scheduledMonsterType && bestiaryList.contains(scheduledRaceId)) {
+				setBoostedName(scheduledName);
+
+				auto scheduledQuery = std::string("UPDATE `boosted_creature` SET ")
+					+ "`date` = '" + std::to_string(ltm->tm_mday) + "',"
+					+ "`boostname` = " + db.escapeString(scheduledName) + ","
+					+ "`looktype` = " + std::to_string(scheduledMonsterType->info.outfit.lookType) + ","
+					+ "`lookfeet` = " + std::to_string(scheduledMonsterType->info.outfit.lookFeet) + ","
+					+ "`looklegs` = " + std::to_string(scheduledMonsterType->info.outfit.lookLegs) + ","
+					+ "`lookhead` = " + std::to_string(scheduledMonsterType->info.outfit.lookHead) + ","
+					+ "`lookbody` = " + std::to_string(scheduledMonsterType->info.outfit.lookBody) + ","
+					+ "`lookaddons` = " + std::to_string(scheduledMonsterType->info.outfit.lookAddons) + ","
+					+ "`lookmount` = " + std::to_string(scheduledMonsterType->info.outfit.lookMount) + ","
+					+ "`raceid` = '" + std::to_string(scheduledRaceId) + "'";
+
+				if (!db.executeQuery(scheduledQuery)) {
+					g_logger().warn("[Game::loadBoostedCreature] - "
+					                "Failed to apply scheduled boosted creature '{}'.",
+					                scheduledName);
+					return;
+				}
+
+				db.executeQuery(
+					fmt::format(
+						"UPDATE `scheduled_boosted` SET `status` = 'applied', `applied_at` = NOW() WHERE `id` = {}",
+						scheduledId
+					)
+				);
+				g_logger().info("Scheduled boosted creature applied: {}", scheduledName);
+				return;
+			}
+
+			g_logger().warn(
+				"[Game::loadBoostedCreature] - Scheduled boosted creature '{}' with raceid {} is invalid. Falling back to random boosted creature.",
+				scheduledName, scheduledRaceId
+			);
+			db.executeQuery(
+				fmt::format(
+					"UPDATE `scheduled_boosted` SET `status` = 'cancelled', `applied_at` = NOW() WHERE `id` = {}",
+					scheduledId
+				)
+			);
+		}
+	}
+
 	const auto &monsterlist = getBestiaryList();
 
 	struct MonsterRace {
