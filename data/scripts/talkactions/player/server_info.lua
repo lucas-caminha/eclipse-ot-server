@@ -79,4 +79,5 @@ end
 
 serverInfo:separator(" ")
 serverInfo:groupType("normal")
+serverInfo:setDescription("- shows server rates, PvP rules and server save.")
 serverInfo:register()

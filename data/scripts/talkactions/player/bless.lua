@@ -6,4 +6,5 @@ function bless.onSay(player, words, param)
 end
 
 bless:groupType("normal")
+bless:setDescription("- buys all available blessings.")
 bless:register()

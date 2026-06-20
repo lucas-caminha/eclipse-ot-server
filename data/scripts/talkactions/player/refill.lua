@@ -41,4 +41,5 @@ end
 
 refill:separator(" ")
 refill:groupType("normal")
+refill:setDescription("- refills supported charge items using silver tokens.")
 refill:register()

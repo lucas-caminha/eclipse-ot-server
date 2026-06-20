@@ -72,4 +72,5 @@ end
 
 exerciseRewardModal:separator(" ")
 exerciseRewardModal:groupType("normal")
+exerciseRewardModal:setDescription("- claims your one-time exercise weapon reward.")
 exerciseRewardModal:register()

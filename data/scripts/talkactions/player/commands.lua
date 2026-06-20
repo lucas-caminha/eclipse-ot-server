@@ -11,7 +11,7 @@ function commands.onSay(player, words, param)
 			if talkaction:getGroupType() <= playerGroupId then
 				text = text .. talkaction:getName()
 
-				description = talkaction:getDescription()
+				local description = talkaction:getDescription()
 
 				if description ~= "" then
 					text = text .. " " .. talkaction:getDescription()
@@ -27,6 +27,6 @@ function commands.onSay(player, words, param)
 	return true
 end
 
-commands:setDescription("[Usage]: !commands to see each command with its description")
+commands:setDescription("- shows the available commands.")
 commands:groupType("normal")
 commands:register()

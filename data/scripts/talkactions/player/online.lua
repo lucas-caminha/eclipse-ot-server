@@ -50,4 +50,5 @@ function playersOnline.onSay(player, words, param)
 end
 
 playersOnline:groupType("normal")
+playersOnline:setDescription("- shows online players grouped by activity.")
 playersOnline:register()

@@ -14,4 +14,5 @@ function aol.onSay(player, words, param)
 end
 
 aol:groupType("normal")
+aol:setDescription("- buys an amulet of loss using bank balance.")
 aol:register()
