@@ -23,7 +23,7 @@ spell:id(281)
 spell:cooldown(10 * 60 * 1000) -- 10 minutes
 spell:groupCooldown(2 * 1000)
 spell:level(150)
-spell:mana(500)
+spell:mana(300)
 spell:isAggressive(false)
 spell:isPremium(true)
 spell:needLearn(false)

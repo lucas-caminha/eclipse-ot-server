@@ -19,7 +19,7 @@ local config = {
 		container = {
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
-			{ 268, 10 }, -- mana potion
+			{ 268, 50 }, -- mana potion
 		},
 	},
 
@@ -36,7 +36,7 @@ local config = {
 		container = {
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
-			{ 268, 10 }, -- mana potion
+			{ 268, 50 }, -- mana potion
 		},
 	},
 
@@ -52,7 +52,8 @@ local config = {
 		container = {
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
-			{ 266, 10 }, -- health potion
+			{ 266, 30 }, -- health potion
+			{ 268, 30 }, -- mana potion
 			{ 3447, 100 }, -- arrow
 		},
 	},
@@ -72,7 +73,7 @@ local config = {
 			{ 3311, 1 }, -- clerical mace
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
-			{ 266, 10 }, -- health potion
+			{ 266, 50 }, -- health potion
 		},
 	},
 
@@ -89,7 +90,8 @@ local config = {
 			{ 50181, 1 }, -- pair of monk fists
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
-			{ 266, 10 }, -- health potion
+			{ 266, 30 }, -- health potion
+			{ 268, 30 }, -- mana potion
 		},
 	},
 }
