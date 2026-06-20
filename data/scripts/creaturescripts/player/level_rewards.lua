@@ -4,6 +4,7 @@ local RewardType = {
 	ITEM = "item",
 	MOUNT = "mount",
 	OUTFIT = "outfit",
+	SKILL_ITEM = "skill_item",
 }
 
 local commonRewards = {
@@ -40,30 +41,54 @@ local vocationRewards = {
 		[250] = {
 			{ type = RewardType.OUTFIT, female = 141, male = 133, name = "Summoner outfit" },
 		},
+		[350] = {
+			{ type = RewardType.ITEM, id = 20090, count = 1, name = "umbral master spellbook" },
+		},
 	},
 	[VOCATION.BASE_ID.DRUID] = {
 		[250] = {
 			{ type = RewardType.OUTFIT, female = 148, male = 144, name = "Druid outfit" },
+		},
+		[350] = {
+			{ type = RewardType.ITEM, id = 20090, count = 1, name = "umbral master spellbook" },
 		},
 	},
 	[VOCATION.BASE_ID.PALADIN] = {
 		[250] = {
 			{ type = RewardType.OUTFIT, female = 137, male = 129, name = "Hunter outfit" },
 		},
+		[350] = {
+			{ type = RewardType.ITEM, id = 20084, count = 1, name = "umbral master bow" },
+			{ type = RewardType.ITEM, id = 20087, count = 1, name = "umbral master crossbow" },
+		},
 	},
 	[VOCATION.BASE_ID.KNIGHT] = {
 		[250] = {
 			{ type = RewardType.OUTFIT, female = 139, male = 131, name = "Knight outfit" },
+		},
+		[350] = {
+			{
+				type = RewardType.SKILL_ITEM,
+				name = "highest melee skill umbral master weapon",
+				choices = {
+					{ skill = SKILL_SWORD, id = 20066, count = 1, name = "umbral masterblade" },
+					{ skill = SKILL_AXE, id = 20072, count = 1, name = "umbral master axe" },
+					{ skill = SKILL_CLUB, id = 20078, count = 1, name = "umbral master mace" },
+				},
+			},
 		},
 	},
 	[VOCATION.BASE_ID.MONK] = {
 		[250] = {
 			{ type = RewardType.OUTFIT, female = 1825, male = 1824, name = "Monk outfit" },
 		},
+		[350] = {
+			{ type = RewardType.ITEM, id = 50165, count = 1, name = "umbral master katar" },
+		},
 	},
 }
 
-local levels = { 50, 100, 150, 200, 250, 275, 300 }
+local levels = { 50, 100, 150, 200, 250, 275, 300, 350 }
 
 local function appendRewards(target, source)
 	if not source then
@@ -75,7 +100,50 @@ local function appendRewards(target, source)
 	end
 end
 
-local function getLevelRewards(vocationId, level)
+local function resolveSkillItemReward(player, reward)
+	local selected
+	local selectedSkillLevel = -1
+
+	for i = 1, #reward.choices do
+		local choice = reward.choices[i]
+		local skillLevel = player:getSkillLevel(choice.skill)
+		if skillLevel > selectedSkillLevel then
+			selected = choice
+			selectedSkillLevel = skillLevel
+		end
+	end
+
+	if not selected then
+		return nil
+	end
+
+	return {
+		type = RewardType.ITEM,
+		id = selected.id,
+		count = selected.count or 1,
+		name = selected.name,
+	}
+end
+
+local function resolveRewards(player, rewards)
+	local resolved = {}
+
+	for i = 1, #rewards do
+		local reward = rewards[i]
+		if reward.type == RewardType.SKILL_ITEM then
+			local resolvedReward = resolveSkillItemReward(player, reward)
+			if resolvedReward then
+				resolved[#resolved + 1] = resolvedReward
+			end
+		else
+			resolved[#resolved + 1] = reward
+		end
+	end
+
+	return resolved
+end
+
+local function getLevelRewards(player, vocationId, level)
 	local levelRewards = {}
 
 	appendRewards(levelRewards, commonRewards[level])
@@ -85,7 +153,7 @@ local function getLevelRewards(vocationId, level)
 		appendRewards(levelRewards, rewardsByVocation[level])
 	end
 
-	return levelRewards
+	return resolveRewards(player, levelRewards)
 end
 
 local function getInboxSlotsNeeded(reward)
@@ -190,7 +258,7 @@ local function processLevelRewards(player, fromLevel, toLevel)
 	local kv = player:kv():scoped("level-rewards")
 	for i = 1, #levels do
 		local level = levels[i]
-		local rewards = getLevelRewards(vocationId, level)
+		local rewards = getLevelRewards(player, vocationId, level)
 		if fromLevel < level and toLevel >= level and #rewards > 0 and not kv:get(tostring(level)) then
 			if giveLevelReward(player, level, rewards) then
 				kv:set(tostring(level), true)
