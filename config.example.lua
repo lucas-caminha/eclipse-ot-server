@@ -298,9 +298,9 @@ onlyPremiumAccount = false
 -- NOTE: minTownIdToBankTransferFromMain blocks towns less than defined from receiving money transfers
 -- NOTE: enableSupportOutfit enable GODS and GMS to select support outfit (gamemaster, customer support or community manager)
 depotChest = 4
-autoLoot = false
+autoLoot = true
 autoBank = false
-toggleGoldPouchAllowAnything = false
+toggleGoldPouchAllowAnything = true
 toggleGoldPouchQuickLootOnly = false
 toggleServerIsRetroPVP = false
 toggleTravelsFree = false
@@ -365,8 +365,8 @@ toggleImbuementNonAggressiveFightOnly = false
 -- NOTE: Only quests that are in the "freequests.lua" script table will work
 -- toggleFreeQuest = enable/disable the system
 -- freeQuestStage = if you add more quests to the table, change this value to run freeQuest again
-toggleFreeQuest = false
-freeQuestStage = 1
+toggleFreeQuest = true
+freeQuestStage = 2
 
 -- Deaths
 -- NOTE: Leave deathLosePercent as -1 if you want to use the default
