@@ -61,7 +61,7 @@ end
 
 function adventurersStone.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local tile = Tile(player:getPosition())
-	if not tile:hasFlag(TILESTATE_PROTECTIONZONE) or tile:hasFlag(TILESTATE_HOUSE) or player:isPzLocked() then
+	if tile:hasFlag(TILESTATE_HOUSE) or player:isPzLocked() then
 		doNotTeleport(player)
 		return false
 	end
@@ -86,7 +86,7 @@ function adventurersStone.onUse(player, item, fromPosition, target, toPosition, 
 		end
 	end
 
-	if not allowed and config.enableAnyProtectionZone then
+	if not allowed and config.enableAnyProtectionZone and tile:hasFlag(TILESTATE_PROTECTIONZONE) then
 		allowed = true
 		townId = player:getTown():getId()
 	end
