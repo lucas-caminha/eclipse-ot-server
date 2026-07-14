@@ -30,13 +30,19 @@ These IDs require the Eclipse custom `data/items/appearances.dat`, whose object 
 ## Store
 
 The store category is `Eclipse Boxes`, defined in `data/modules/scripts/gamestore/catalog/eclipse_boxes.lua`.
+The `monk box` is registered as a usable reward box, but is not sold in the store.
 
 Default prices:
 
 | Offer | Price |
 | --- | --- |
-| Equipment family boxes | 250 coins |
-| Random Soul Core Box | 150 coins |
-| Misterious Bag | 300 coins |
+| Gnome Chest | 200 coins |
+| Lion Chest | 250 coins |
+| Cobra Box / Cobra Chest | 300 coins |
+| Falcon Chest | 350 coins |
+| Naga Chest | 450 coins |
+| Eldritch Chest | 550 coins |
+| Random Soul Core Box | 200 coins |
+| Misterious Bag | 600 coins |
 
 Adjust prices in the catalog file before deployment if the economy target changes.
