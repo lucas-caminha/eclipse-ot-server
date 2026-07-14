@@ -70,6 +70,137 @@ local rewardBags = {
 	},
 }
 
+local eclipseEquipmentBoxRewards = {
+	cobra = {
+		{ id = 30393, name = "cobra crossbow" },
+		{ id = 30394, name = "cobra boots" },
+		{ id = 30395, name = "cobra club" },
+		{ id = 30396, name = "cobra axe" },
+		{ id = 30397, name = "cobra hood" },
+		{ id = 30398, name = "cobra sword" },
+		{ id = 30399, name = "cobra wand" },
+		{ id = 30400, name = "cobra rod" },
+		{ id = 31631, name = "cobra amulet" },
+		{ id = 50167, name = "cobra bo" },
+	},
+	falcon = {
+		{ id = 28714, name = "falcon circlet" },
+		{ id = 28715, name = "falcon coif" },
+		{ id = 28716, name = "falcon rod" },
+		{ id = 28717, name = "falcon wand" },
+		{ id = 28718, name = "falcon bow" },
+		{ id = 28719, name = "falcon plate" },
+		{ id = 28720, name = "falcon greaves" },
+		{ id = 28721, name = "falcon shield" },
+		{ id = 28722, name = "falcon escutcheon" },
+		{ id = 28723, name = "falcon longsword" },
+		{ id = 28724, name = "falcon battleaxe" },
+		{ id = 28725, name = "falcon mace" },
+		{ id = 50161, name = "falcon sai" },
+	},
+	naga = {
+		{ id = 39155, name = "naga sword" },
+		{ id = 39156, name = "naga axe" },
+		{ id = 39157, name = "naga club" },
+		{ id = 39159, name = "naga crossbow" },
+		{ id = 39160, name = "naga quiver" },
+		{ id = 39162, name = "naga wand" },
+		{ id = 39163, name = "naga rod" },
+		{ id = 50160, name = "naga katar" },
+		{ id = 50262, name = "naga tanko" },
+	},
+	eldritch = {
+		{ id = 36656, name = "eldritch shield" },
+		{ id = 36657, name = "eldritch claymore" },
+		{ id = 36659, name = "eldritch warmace" },
+		{ id = 36661, name = "eldritch greataxe" },
+		{ id = 36663, name = "eldritch cuirass" },
+		{ id = 36664, name = "eldritch bow" },
+		{ id = 36666, name = "eldritch quiver" },
+		{ id = 36667, name = "eldritch breeches" },
+		{ id = 36668, name = "eldritch wand" },
+		{ id = 36670, name = "eldritch cowl" },
+		{ id = 36671, name = "eldritch hood" },
+		{ id = 36672, name = "eldritch folio" },
+		{ id = 36673, name = "eldritch tome" },
+		{ id = 36674, name = "eldritch rod" },
+		{ id = 50169, name = "eldritch crescent moon spade" },
+		{ id = 50266, name = "eldritch monk boots" },
+	},
+	lion = {
+		{ id = 34150, name = "lion longbow" },
+		{ id = 34151, name = "lion rod" },
+		{ id = 34152, name = "lion wand" },
+		{ id = 34153, name = "lion spellbook" },
+		{ id = 34154, name = "lion shield" },
+		{ id = 34155, name = "lion longsword" },
+		{ id = 34156, name = "lion spangenhelm" },
+		{ id = 34157, name = "lion plate" },
+		{ id = 34158, name = "lion amulet" },
+		{ id = 34253, name = "lion axe" },
+		{ id = 34254, name = "lion hammer" },
+		{ id = 50162, name = "lion claws" },
+	},
+	gnome = {
+		{ id = 27647, name = "gnome helmet" },
+		{ id = 27648, name = "gnome armor" },
+		{ id = 27649, name = "gnome legs" },
+		{ id = 27650, name = "gnome shield" },
+		{ id = 27651, name = "gnome sword" },
+	},
+	monk = {
+		{ id = 50181, name = "pair of monk fists" },
+		{ id = 50257, name = "plain monk robe" },
+		{ id = 50258, name = "monk robe" },
+		{ id = 50259, name = "zaoan monk robe" },
+	},
+}
+
+local function cloneRewards(rewards)
+	local cloned = {}
+	for _, reward in ipairs(rewards) do
+		table.insert(cloned, reward)
+	end
+	return cloned
+end
+
+local function mergeRewards(...)
+	local merged = {}
+	for _, rewards in ipairs({ ... }) do
+		for _, reward in ipairs(rewards) do
+			table.insert(merged, reward)
+		end
+	end
+	return merged
+end
+
+local function buildSoulCoreRewards()
+	local rewards = {}
+	for _, soulCore in ipairs(Game.getSoulCoreItems()) do
+		table.insert(rewards, { id = soulCore:getId(), name = soulCore:getName() })
+	end
+	return rewards
+end
+
+rewardBags[60058] = cloneRewards(eclipseEquipmentBoxRewards.cobra)
+rewardBags[60513] = cloneRewards(eclipseEquipmentBoxRewards.cobra)
+rewardBags[60514] = cloneRewards(eclipseEquipmentBoxRewards.falcon)
+rewardBags[60510] = cloneRewards(eclipseEquipmentBoxRewards.naga)
+rewardBags[60511] = cloneRewards(eclipseEquipmentBoxRewards.eldritch)
+rewardBags[60512] = cloneRewards(eclipseEquipmentBoxRewards.lion)
+rewardBags[60523] = cloneRewards(eclipseEquipmentBoxRewards.gnome)
+rewardBags[60508] = cloneRewards(eclipseEquipmentBoxRewards.monk)
+rewardBags[60525] = buildSoulCoreRewards()
+rewardBags[60509] = mergeRewards(
+	eclipseEquipmentBoxRewards.cobra,
+	eclipseEquipmentBoxRewards.falcon,
+	eclipseEquipmentBoxRewards.naga,
+	eclipseEquipmentBoxRewards.eldritch,
+	eclipseEquipmentBoxRewards.lion,
+	eclipseEquipmentBoxRewards.gnome,
+	eclipseEquipmentBoxRewards.monk
+)
+
 local randomItems = Action()
 local warnedLegacyChanceField = false
 _G.RewardBagSystem = _G.RewardBagSystem or {}
@@ -169,6 +300,11 @@ function randomItems.onUse(player, item, fromPosition, target, toPosition, isHot
 	local rewardBag = rewardBags[item.itemid]
 	if not rewardBag then
 		return false
+	end
+	if #rewardBag == 0 then
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This reward box is not configured yet.")
+		logger.warn(string.format("[reward_bags] empty_reward_pool player=%s bagId=%d bagName=%s", player:getName(), item.itemid, item:getName()))
+		return true
 	end
 
 	local rewardItem = selectReward(rewardBag)

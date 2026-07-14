@@ -85279,4 +85279,54 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="imbuement scrolls"/>
 		<attribute key="weight" value="250"/>
 	</item>
+	<item id="60058" article="a" name="cobra box">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="Open it to receive one random cobra item."/>
+		<attribute key="weight" value="1500"/>
+	</item>
+	<item id="60508" article="a" name="monk box">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="Open it to receive one random monk item."/>
+		<attribute key="weight" value="1500"/>
+	</item>
+	<item id="60509" article="a" name="misterious bag">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="Open it to receive one random Eclipse equipment item."/>
+		<attribute key="weight" value="1500"/>
+	</item>
+	<item id="60510" article="a" name="naga chest">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="Open it to receive one random naga item."/>
+		<attribute key="weight" value="1500"/>
+	</item>
+	<item id="60511" article="an" name="eldritch chest">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="Open it to receive one random eldritch item."/>
+		<attribute key="weight" value="1500"/>
+	</item>
+	<item id="60512" article="a" name="lion chest">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="Open it to receive one random lion item."/>
+		<attribute key="weight" value="1500"/>
+	</item>
+	<item id="60513" article="a" name="cobra chest">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="Open it to receive one random cobra item."/>
+		<attribute key="weight" value="1500"/>
+	</item>
+	<item id="60514" article="a" name="falcon chest">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="Open it to receive one random falcon item."/>
+		<attribute key="weight" value="1500"/>
+	</item>
+	<item id="60523" article="a" name="gnome chest">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="Open it to receive one random gnome item."/>
+		<attribute key="weight" value="1500"/>
+	</item>
+	<item id="60525" article="a" name="random soul core box">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="Open it to receive one random soul core."/>
+		<attribute key="weight" value="1500"/>
+	</item>
 </items>

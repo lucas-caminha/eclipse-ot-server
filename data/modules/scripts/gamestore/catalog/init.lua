@@ -19,6 +19,7 @@ local modules = {
 	"extras",
 	"extras_extras_services",
 	"extras_usefull_things",
+	"eclipse_boxes",
 }
 
 local basePath = CORE_DIRECTORY .. "/modules/scripts/gamestore/catalog/"
