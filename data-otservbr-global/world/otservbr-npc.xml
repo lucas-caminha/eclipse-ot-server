@@ -1,21 +1,12 @@
 <?xml version="1.0"?>
 <npcs>
-	<npc centerx="1045" centery="1031" centerz="6" radius="1">
-		<npc name="Rashid of Island" x="0" y="0" z="6" spawntime="60" />
-	</npc>
-	<npc centerx="1053" centery="1037" centerz="6" radius="1">
-		<npc name="Yasir" x="0" y="0" z="6" spawntime="60" />
-	</npc>
-	<npc centerx="1052" centery="1049" centerz="6" radius="1">
-		<npc name="Esrik" x="0" y="0" z="6" spawntime="60" />
-	</npc>
 	<npc centerx="1037" centery="1043" centerz="7" radius="1">
 		<npc name="Refil" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="1053" centery="1037" centerz="7" radius="1">
 		<npc name="The Lootmonger" x="0" y="0" z="7" spawntime="60" />
 	</npc>
-	<npc centerx="1038" centery="1048" centerz="7" radius="1">
+	<npc centerx="1037" centery="1037" centerz="7" radius="1">
 		<npc name="Scroll Sage" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="1053" centery="1043" centerz="7" radius="1">
