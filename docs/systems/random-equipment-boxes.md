@@ -4,20 +4,20 @@ Eclipse random equipment boxes are store-delivered consumables that roll one rew
 
 ## Boxes
 
-| Active item ID | Item name | Reward pool |
+| Item ID | Item name | Reward pool |
 | --- | --- | --- |
-| 51303 | cobra box | Cobra equipment |
-| 38756 | cobra chest | Cobra equipment |
-| 39396 | falcon chest | Falcon equipment |
-| 37561 | naga chest | Naga equipment |
-| 36980 | eldritch chest | Eldritch equipment |
-| 28905 | lion chest | Lion equipment |
-| 29433 | gnome chest | Gnome equipment |
-| 29436 | monk box | Monk equipment |
-| 30316 | random soul core box | Any item returned by `Game.getSoulCoreItems()` |
-| 35479 | misterious bag | All Eclipse equipment pools, excluding soul cores |
+| 60058 | cobra box | Cobra equipment |
+| 60513 | cobra chest | Cobra equipment |
+| 60514 | falcon chest | Falcon equipment |
+| 60510 | naga chest | Naga equipment |
+| 60511 | eldritch chest | Eldritch equipment |
+| 60512 | lion chest | Lion equipment |
+| 60523 | gnome chest | Gnome equipment |
+| 60508 | monk box | Monk equipment |
+| 60525 | random soul core box | Any item returned by `Game.getSoulCoreItems()` |
+| 60509 | misterious bag | All Eclipse equipment pools, excluding soul cores |
 
-The initially requested IDs `60058`, `60508`, `60509`, `60510`, `60511`, `60512`, `60513`, `60514`, `60523`, and `60525` are not present in the current protocol 15.11 `appearances.dat`, so Canary does not create valid item types for them. The active IDs above reuse valid protocol items and rename them as Eclipse boxes.
+These IDs require the Eclipse custom `data/items/appearances.dat`, whose object range includes the imported boxes.
 
 ## Behavior
 
