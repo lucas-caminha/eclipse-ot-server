@@ -50,7 +50,7 @@ function buyHouse.onSay(player, words, param)
 		player:sendCancelMessage("You do not have enough money.")
 		return true
 	end
-	metrics.addCounter("balance_decrease", remainsPrice, {
+	metrics.addCounter("balance_decrease", price, {
 		player = player:getName(),
 		context = "house_purchase",
 	})
