@@ -6,7 +6,7 @@ enabled with `rateUseStages = true` and configured in `data/stages.lua`.
 ## Experience
 
 The experience curve is intentionally generous through approximately level
-600, then slows progressively without a single severe rate drop.
+1500, then slows progressively for long-term progression.
 
 | Level | Rate |
 | --- | ---: |
@@ -30,7 +30,11 @@ The experience curve is intentionally generous through approximately level
 | 851-900 | 23x |
 | 901-950 | 15x |
 | 951-999 | 9x |
-| 1000+ | 5x |
+| 1000-1100 | 8x |
+| 1101-1200 | 7x |
+| 1201-1300 | 6x |
+| 1301-1500 | 5x |
+| 1501+ | 3x |
 
 `lowLevelBonusExp` is set to `0` so the advertised `800x` starting rate is not
 silently increased by another 50%. Stamina, scheduled events, VIP bonuses, and
@@ -38,18 +42,19 @@ other explicit boosts can still modify final experience gain.
 
 ## Combat Skills
 
-Skills remain fast through 100 and become progressively harder afterward.
+Skills remain fast through 140 and become harder afterward.
 
 | Skill level | Rate |
 | --- | ---: |
-| 0-50 | 30x |
-| 51-70 | 25x |
-| 71-85 | 20x |
-| 86-100 | 15x |
-| 101-110 | 10x |
-| 111-120 | 7x |
-| 121-130 | 5x |
-| 131+ | 3x |
+| 0-50 | 35x |
+| 51-70 | 30x |
+| 71-85 | 25x |
+| 86-100 | 20x |
+| 101-110 | 15x |
+| 111-120 | 12x |
+| 121-130 | 9x |
+| 131-140 | 6x |
+| 141+ | 3x |
 
 ## Magic Level
 
@@ -58,13 +63,15 @@ skills.
 
 | Magic level | Rate |
 | --- | ---: |
-| 0-50 | 15x |
-| 51-75 | 12x |
-| 76-90 | 9x |
-| 91-100 | 7x |
-| 101-110 | 5x |
-| 111-120 | 4x |
-| 121+ | 3x |
+| 0-50 | 18x |
+| 51-75 | 15x |
+| 76-90 | 12x |
+| 91-100 | 10x |
+| 101-110 | 8x |
+| 111-120 | 6x |
+| 121-130 | 5x |
+| 131-140 | 4x |
+| 141+ | 3x |
 
 ## Applying Changes
 
