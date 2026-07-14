@@ -14,6 +14,7 @@ end
 return {
 	icons = { "Category_UsefulThings.png" },
 	name = "Eclipse Boxes",
+	parent = "Extras",
 	rookgaard = false,
 	state = GameStore.States.STATE_NEW,
 	offers = {
