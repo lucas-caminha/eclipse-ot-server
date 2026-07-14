@@ -15,7 +15,7 @@ return {
 	icons = { "Category_UsefulThings.png" },
 	name = "Eclipse Boxes",
 	parent = "Extras",
-	rookgaard = false,
+	rookgaard = true,
 	state = GameStore.States.STATE_NEW,
 	offers = {
 		equipmentBoxOffer(60058, "Cobra Box", 250, "<i>Contains one random cobra item.</i>"),
