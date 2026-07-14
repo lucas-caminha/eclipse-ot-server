@@ -54972,8 +54972,9 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="primarytype" value="tables"/>
 	</item>
 	<item id="28904" article="a" name="frozen table"/>
-	<item id="28905" article="a" name="chest">
+	<item id="28905" article="a" name="lion chest">
 		<attribute key="primarytype" value="containers"/>
+		<attribute key="description" value="Open it to receive one random lion item."/>
 		<attribute key="containersize" value="15"/>
 		<attribute key="weight" value="12000"/>
 	</item>
@@ -55724,8 +55725,9 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="description" value="This mysterious lamp summons your very own personal hireling."/>
 		<attribute key="movable" value="0"/>
 	</item>
-	<item id="29433" article="a" name="chest">
+	<item id="29433" article="a" name="gnome chest">
 		<attribute key="primarytype" value="containers"/>
+		<attribute key="description" value="Open it to receive one random gnome item."/>
 		<attribute key="containersize" value="15"/>
 		<attribute key="weight" value="12000"/>
 	</item>
@@ -55735,8 +55737,9 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="containersize" value="15"/>
 		<attribute key="weight" value="12000"/>
 	</item>
-	<item id="29436" article="a" name="chest">
+	<item id="29436" article="a" name="monk box">
 		<attribute key="primarytype" value="containers"/>
+		<attribute key="description" value="Open it to receive one random monk item."/>
 		<attribute key="containersize" value="15"/>
 		<attribute key="weight" value="12000"/>
 	</item>
@@ -57033,7 +57036,8 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="primarytype" value="decoration"/>
 		<attribute key="weight" value="3000"/>
 	</item>
-	<item id="30316" article="a" name="surprise bag">
+	<item id="30316" article="a" name="random soul core box">
+		<attribute key="description" value="Open it to receive one random soul core."/>
 		<attribute key="weight" value="1000"/>
 	</item>
 	<item id="30317" article="a" name="Ferumbras puppet">
@@ -65881,7 +65885,8 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="decayTo" value="35379"/>
 		<attribute key="containersize" value="30"/>
 	</item>
-	<item id="35479" article="a" name="bag of smuggled goods">
+	<item id="35479" article="a" name="misterious bag">
+		<attribute key="description" value="Open it to receive one random Eclipse equipment item."/>
 		<attribute key="weight" value="800"/>
 	</item>
 	<item id="35495" article="a" name="lace-trimmed handkerchief">
@@ -68859,8 +68864,9 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="description" value="This hat represents the spirit of magic and fun. Awarded by VivaTibia.com"/>
 		<attribute key="weight" value="630"/>
 	</item>
-	<item id="36980" article="a" name="chest">
+	<item id="36980" article="an" name="eldritch chest">
 		<attribute key="primarytype" value="containers"/>
+		<attribute key="description" value="Open it to receive one random eldritch item."/>
 		<attribute key="containersize" value="15"/>
 		<attribute key="weight" value="12000"/>
 	</item>
@@ -70408,8 +70414,9 @@ Granted by TibiaGoals.com"/>
 		<attribute key="duration" value="2"/>
 		<attribute key="decayto" value="37557"/>
 	</item>
-	<item id="37561" article="an" name="exaltation chest" plural="exaltation chests">
+	<item id="37561" article="a" name="naga chest" plural="naga chests">
 		<attribute key="primarytype" value="containers"/>
+		<attribute key="description" value="Open it to receive one random naga item."/>
 		<attribute key="containersize" value="2"/>
 		<attribute key="weight" value="2000"/>
 	</item>
@@ -71222,7 +71229,9 @@ Granted by TibiaGoals.com"/>
 	<item fromid="38752" toid="38753" article="a" name="crystal stool"/>
 	<item id="38754" article="a" name="crystal handcart"/>
 	<item id="38755" article="a" name="quarry workplace"/>
-	<item id="38756" article="a" name="crystal box"/>
+	<item id="38756" article="a" name="cobra chest">
+		<attribute key="description" value="Open it to receive one random cobra item."/>
+	</item>
 	<item id="38757" article="a" name="fossile skull"/>
 	<item fromid="38758" toid="38821" article="a" name="mushroom house">
 		<attribute key="primarytype" value="mushrooms"/>
@@ -72695,8 +72704,9 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="creature products"/>
 		<attribute key="weight" value="10"/>
 	</item>
-	<item id="39396" article="an" name="ornamented chest">
+	<item id="39396" article="a" name="falcon chest">
 		<attribute key="primarytype" value="quest objects"/>
+		<attribute key="description" value="Open it to receive one random falcon item."/>
 	</item>
 	<item id="39397" article="a" name="coral powder">
 		<attribute key="weight" value="10"/>
@@ -84921,7 +84931,8 @@ Granted by TibiaGoals.com"/>
 		<attribute key="description" value="Drinking this potion temporarily increases your fist skill"/>
 		<attribute key="weight" value="290"/>
 	</item>
-	<item id="51303" article="a" name="transcendent box">
+	<item id="51303" article="a" name="cobra box">
+			<attribute key="description" value="Open it to receive one random cobra item."/>
 			<attribute key="weight" value="10"/>
 	</item>
 	<item id="51304" article="a" name="transcendent headband">
@@ -85278,55 +85289,5 @@ Granted by TibiaGoals.com"/>
 	<item id="51747" article="a" name="intricate void scroll">
 		<attribute key="primarytype" value="imbuement scrolls"/>
 		<attribute key="weight" value="250"/>
-	</item>
-	<item id="60058" article="a" name="cobra box">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="description" value="Open it to receive one random cobra item."/>
-		<attribute key="weight" value="1500"/>
-	</item>
-	<item id="60508" article="a" name="monk box">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="description" value="Open it to receive one random monk item."/>
-		<attribute key="weight" value="1500"/>
-	</item>
-	<item id="60509" article="a" name="misterious bag">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="description" value="Open it to receive one random Eclipse equipment item."/>
-		<attribute key="weight" value="1500"/>
-	</item>
-	<item id="60510" article="a" name="naga chest">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="description" value="Open it to receive one random naga item."/>
-		<attribute key="weight" value="1500"/>
-	</item>
-	<item id="60511" article="an" name="eldritch chest">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="description" value="Open it to receive one random eldritch item."/>
-		<attribute key="weight" value="1500"/>
-	</item>
-	<item id="60512" article="a" name="lion chest">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="description" value="Open it to receive one random lion item."/>
-		<attribute key="weight" value="1500"/>
-	</item>
-	<item id="60513" article="a" name="cobra chest">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="description" value="Open it to receive one random cobra item."/>
-		<attribute key="weight" value="1500"/>
-	</item>
-	<item id="60514" article="a" name="falcon chest">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="description" value="Open it to receive one random falcon item."/>
-		<attribute key="weight" value="1500"/>
-	</item>
-	<item id="60523" article="a" name="gnome chest">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="description" value="Open it to receive one random gnome item."/>
-		<attribute key="weight" value="1500"/>
-	</item>
-	<item id="60525" article="a" name="random soul core box">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="description" value="Open it to receive one random soul core."/>
-		<attribute key="weight" value="1500"/>
 	</item>
 </items>

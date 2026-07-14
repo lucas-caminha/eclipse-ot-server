@@ -182,16 +182,16 @@ local function buildSoulCoreRewards()
 	return rewards
 end
 
-rewardBags[60058] = cloneRewards(eclipseEquipmentBoxRewards.cobra)
-rewardBags[60513] = cloneRewards(eclipseEquipmentBoxRewards.cobra)
-rewardBags[60514] = cloneRewards(eclipseEquipmentBoxRewards.falcon)
-rewardBags[60510] = cloneRewards(eclipseEquipmentBoxRewards.naga)
-rewardBags[60511] = cloneRewards(eclipseEquipmentBoxRewards.eldritch)
-rewardBags[60512] = cloneRewards(eclipseEquipmentBoxRewards.lion)
-rewardBags[60523] = cloneRewards(eclipseEquipmentBoxRewards.gnome)
-rewardBags[60508] = cloneRewards(eclipseEquipmentBoxRewards.monk)
-rewardBags[60525] = buildSoulCoreRewards()
-rewardBags[60509] = mergeRewards(
+rewardBags[51303] = cloneRewards(eclipseEquipmentBoxRewards.cobra)
+rewardBags[38756] = cloneRewards(eclipseEquipmentBoxRewards.cobra)
+rewardBags[39396] = cloneRewards(eclipseEquipmentBoxRewards.falcon)
+rewardBags[37561] = cloneRewards(eclipseEquipmentBoxRewards.naga)
+rewardBags[36980] = cloneRewards(eclipseEquipmentBoxRewards.eldritch)
+rewardBags[28905] = cloneRewards(eclipseEquipmentBoxRewards.lion)
+rewardBags[29433] = cloneRewards(eclipseEquipmentBoxRewards.gnome)
+rewardBags[29436] = cloneRewards(eclipseEquipmentBoxRewards.monk)
+rewardBags[30316] = buildSoulCoreRewards()
+rewardBags[35479] = mergeRewards(
 	eclipseEquipmentBoxRewards.cobra,
 	eclipseEquipmentBoxRewards.falcon,
 	eclipseEquipmentBoxRewards.naga,
