@@ -299,22 +299,22 @@ onlyPremiumAccount = false
 -- NOTE: enableSupportOutfit enable GODS and GMS to select support outfit (gamemaster, customer support or community manager)
 depotChest = 4
 autoLoot = true
-autoBank = false
+autoBank = true
 toggleGoldPouchAllowAnything = true
 toggleGoldPouchQuickLootOnly = false
 toggleServerIsRetroPVP = false
-toggleTravelsFree = false
+toggleTravelsFree = true
 buyAolCommandFee = 0
 buyBlessCommandFee = 0
 teleportPlayerToVocationRoom = true
 toggleReceiveReward = true
-randomMonsterSpawn = false
+randomMonsterSpawn = true
 lootPouchMaxLimit = 2000
 quickLootMaxCorpses = 30
 storeInboxMaxLimit = 2000
 enablePlayerPutItemInAmmoSlot = false
 startStreakLevel = 0
-showLootsInBestiary = false
+showLootsInBestiary = true
 minTownIdToBankTransferFromMain = 4
 enableSupportOutfit = true
 
@@ -333,7 +333,7 @@ teleportSummons = false
 allowReload = false
 
 -- Stamina in Trainers
-staminaTrainer = false
+staminaTrainer = true
 staminaTrainerDelay = 5
 staminaTrainerGain = 1
 -- Stamina in PZ
@@ -622,11 +622,11 @@ discordWebhookDelayMs = 1000
 -- NOTE: GainCoin function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_coins.lua
 -- NOTE: GainToken function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_tokens.lua
 vipSystemEnabled = true
-vipBonusExp = 0
-vipBonusLoot = 0
-vipBonusSkill = 0
+vipBonusExp = 10
+vipBonusLoot = 10
+vipBonusSkill = 10
 vipAutoLootVipOnly = false
-vipStayOnline = false
+vipStayOnline = true
 vipFamiliarTimeCooldownReduction = 0
 vipKeepHouse = false
 
