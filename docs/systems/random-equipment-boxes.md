@@ -16,6 +16,9 @@ Eclipse random equipment boxes are store-delivered consumables that roll one rew
 | 60508 | monk box | Monk equipment |
 | 60525 | random soul core box | Any item returned by `Game.getSoulCoreItems()` |
 | 60509 | misterious bag | All Eclipse equipment pools, excluding soul cores |
+| 34109 | bag you desire | Soul War equipment |
+| 39546 | primal bag | Primal Ordeal equipment |
+| 43895 | bag you covet | Sanguine equipment |
 
 These IDs require the Eclipse custom `data/items/appearances.dat`, whose object range includes the imported boxes.
 
@@ -44,5 +47,8 @@ Default prices:
 | Eldritch Chest | 550 coins |
 | Random Soul Core Box | 200 coins |
 | Misterious Bag | 600 coins |
+| Bag You Desire | 800 coins |
+| Primal Bag | 1000 coins |
+| Bag You Covet | 1400 coins |
 
 Adjust prices in the catalog file before deployment if the economy target changes.
