@@ -1,6 +1,7 @@
 local config = {
 	enableTemples = true,
 	enableDepots = false,
+	enableAnyProtectionZone = true,
 
 	Temples = {
 		{ fromPos = Position(32727, 31632, 7), toPos = Position(32736, 31639, 7), townId = TOWNS_LIST.AB_DENDRIEL },
@@ -83,6 +84,11 @@ function adventurersStone.onUse(player, item, fromPosition, target, toPosition, 
 				break
 			end
 		end
+	end
+
+	if not allowed and config.enableAnyProtectionZone then
+		allowed = true
+		townId = player:getTown():getId()
 	end
 
 	if not allowed then
