@@ -1,5 +1,4 @@
 local config = {
-	enabled = false,
 	-- Position of the first position (line 1 column 1)
 	firstRoomPosition = { x = 1018, y = 1112, z = 7 },
 	-- X distance between each room (on the same line)
@@ -64,12 +63,6 @@ end
 local trainerEntrance = MoveEvent()
 function trainerEntrance.onStepIn(creature, item, position, fromPosition)
 	if not creature:isPlayer() then
-		return true
-	end
-
-	if not config.enabled then
-		creature:teleportTo(fromPosition, true)
-		creature:sendCancelMessage("The training room is currently disabled.")
 		return true
 	end
 
