@@ -4,12 +4,14 @@ local destinations = {
 	["1045:1034:7"] = Position(32369, 32241, 7),
 	["32365:32236:7"] = Position(1045, 1037, 7),
 	["32373:32236:7"] = Position(32317, 32258, 15),
+	["32313:32260:15"] = Position(32369, 32241, 7),
 }
 
 local positions = {
 	Position(1045, 1034, 7),
 	Position(32365, 32236, 7),
 	Position(32373, 32236, 7),
+	Position(32313, 32260, 15),
 }
 
 local function getPositionKey(position)
