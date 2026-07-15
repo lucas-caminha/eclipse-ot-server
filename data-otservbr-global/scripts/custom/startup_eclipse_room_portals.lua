@@ -8,6 +8,7 @@ local portals = {
 	{ name = "Grand Master Oberon boss entrance", position = Position(32316, 32257, 15), itemId = 28673 },
 	{ name = "Drume boss entrance", position = Position(32319, 32257, 15), itemId = 28673 },
 	{ name = "Scarlett Etzel boss entrance", position = Position(32322, 32257, 15), itemId = 28673 },
+	{ name = "Timira boss entrance", position = Position(32325, 32257, 15), itemId = 28673 },
 }
 
 function eclipseRoomPortals.onStartup()

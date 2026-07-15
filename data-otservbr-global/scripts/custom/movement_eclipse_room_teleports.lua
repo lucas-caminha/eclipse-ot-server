@@ -12,6 +12,8 @@ local teleports = {
 	{ name = "Drume boss exit", from = Position(32428, 32442, 7), to = Position(32315, 32260, 15) },
 	{ name = "Scarlett Etzel boss entrance", from = Position(32322, 32257, 15), to = Position(33393, 32622, 7) },
 	{ name = "Scarlett Etzel boss exit", from = Position(33392, 32621, 7), to = Position(32315, 32260, 15) },
+	{ name = "Timira boss entrance", from = Position(32325, 32257, 15), to = Position(33805, 32698, 4) },
+	{ name = "Timira boss exit", from = Position(33806, 32698, 4), to = Position(32315, 32260, 15) },
 }
 
 local function getPositionKey(position)
