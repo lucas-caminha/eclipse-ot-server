@@ -5,6 +5,7 @@ local portals = {
 	{ name = "Thais temple entrance to Eclipse room", position = Position(32365, 32236, 7), itemId = 25778 },
 	{ name = "Boss room entrance", position = Position(32373, 32236, 7), itemId = 28673 },
 	{ name = "Boss room exit", position = Position(32313, 32260, 15), itemId = 28673 },
+	{ name = "Grand Master Oberon boss entrance", position = Position(32316, 32257, 15), itemId = 28673 },
 }
 
 function eclipseRoomPortals.onStartup()
