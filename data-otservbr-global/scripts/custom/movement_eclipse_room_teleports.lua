@@ -8,6 +8,8 @@ local teleports = {
 	{ name = "Dawnport start portal to Eclipse room", from = Position(32068, 31898, 6), to = Position(1045, 1037, 7) },
 	{ name = "Grand Master Oberon boss entrance", from = Position(32316, 32257, 15), to = Position(33362, 31339, 7) },
 	{ name = "Grand Master Oberon boss exit", from = Position(33361, 31338, 7), to = Position(32315, 32260, 15) },
+	{ name = "Drume boss entrance", from = Position(32319, 32257, 15), to = Position(32427, 32443, 7) },
+	{ name = "Drume boss exit", from = Position(32428, 32442, 7), to = Position(32315, 32260, 15) },
 }
 
 local function getPositionKey(position)
