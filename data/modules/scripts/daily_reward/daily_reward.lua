@@ -122,13 +122,13 @@ DailyReward = {
 			items = DailyRewardExerciseWeapons,
 			freeAccount = 1,
 			premiumAccount = 1,
-			itemCharges = 1800,
+			itemCharges = 5000,
 		},
 		[2] = {
 			type = DAILY_REWARD_TYPE_PREY_REROLL,
 			systemType = DAILY_REWARD_SYSTEM_TYPE_TWO,
-			freeAccount = 1,
-			premiumAccount = 2,
+			freeAccount = 3,
+			premiumAccount = 5,
 		},
 		[3] = {
 			type = DAILY_REWARD_TYPE_XP_BOOST,
@@ -142,13 +142,13 @@ DailyReward = {
 			items = DailyRewardExerciseWeapons,
 			freeAccount = 1,
 			premiumAccount = 1,
-			itemCharges = 1800,
+			itemCharges = 5000,
 		},
 		[5] = {
 			type = DAILY_REWARD_TYPE_PREY_REROLL,
 			systemType = DAILY_REWARD_SYSTEM_TYPE_TWO,
-			freeAccount = 1,
-			premiumAccount = 2,
+			freeAccount = 3,
+			premiumAccount = 5,
 		},
 		[6] = {
 			type = DAILY_REWARD_TYPE_XP_BOOST,
@@ -162,7 +162,7 @@ DailyReward = {
 			items = DailyRewardExerciseWeapons,
 			freeAccount = 1,
 			premiumAccount = 1,
-			itemCharges = 1800,
+			itemCharges = 5000,
 		},
 		-- Storage reward template
 		--[[[5] = {
