@@ -181,6 +181,15 @@ end
 
 -- Game functions
 
+function Player.hasFreeQuestAccess(self, actionId)
+	actionId = tonumber(actionId)
+	if not actionId or actionId <= 0 or table.contains({ 101, 1001 }, actionId) then
+		return false
+	end
+
+	return configManager.getBoolean(configKeys.TOGGLE_FREE_QUEST)
+end
+
 function Player.hasTrackingQuest(self, questId, missionId)
 	-- Backward compatibility: allows calls as hasTrackingQuest(missionId).
 	-- New/correct identification should use the pair questId + missionId.

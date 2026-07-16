@@ -29,6 +29,17 @@ local keyDoor = Action()
 function keyDoor.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	-- It is locked msg
 	if table.contains(keyLockedDoor, item.itemid) or (table.contains(keyUnlockedDoor, item.itemid) and table.contains({ 1001, 101 }, item.actionid)) then
+		if player:hasFreeQuestAccess(item.actionid) then
+			for index, value in ipairs(KeyDoorTable) do
+				if value.lockedDoor == item.itemid then
+					item:transform(value.openDoor)
+					item:getPosition():sendSingleSoundEffect(SOUND_EFFECT_TYPE_ACTION_OPEN_DOOR)
+					player:teleportTo(toPosition, true)
+					return true
+				end
+			end
+		end
+
 		player:sendTextMessage(MESSAGE_LOOK, "It is locked.")
 		return true
 	end
