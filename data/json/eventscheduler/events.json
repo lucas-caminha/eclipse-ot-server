@@ -1,9 +1,111 @@
 {
 	"events": [
 		{
+			"name": "Double Exp",
+			"startdate": "7/17/2026",
+			"enddate": "7/20/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"exprate": 200
+			},
+			"description": "Double experience when hunting monsters.",
+			"colors": {
+				"colordark": "#234d00",
+				"colorlight": "#3a7500"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Loot",
+			"startdate": "7/17/2026",
+			"enddate": "7/20/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"lootrate": 200
+			},
+			"description": "Doubles the amount of loot obtained from monsters.",
+			"colors": {
+				"colordark": "#2a1d00",
+				"colorlight": "#4c3300"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Fast Respawn",
+			"startdate": "7/24/2026",
+			"enddate": "7/27/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"spawnrate": 200
+			},
+			"description": "Monsters respawn twice as fast.",
+			"colors": {
+				"colordark": "#4d2f00",
+				"colorlight": "#6e3e00"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Skill Boost",
+			"startdate": "7/24/2026",
+			"enddate": "7/27/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"skillrate": 150
+			},
+			"description": "Increases skill progression by 50%.",
+			"colors": {
+				"colordark": "#1f4c63",
+				"colorlight": "#2f6f8f"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Boss Loot Boost",
+			"startdate": "7/31/2026",
+			"enddate": "8/3/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"bosslootrate": 200
+			},
+			"description": "Doubles loot from bosses.",
+			"colors": {
+				"colordark": "#4a183d",
+				"colorlight": "#75245f"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
 			"name": "Forge Time",
-			"startdate": "11/12/2024",
-			"enddate": "11/17/2024",
+			"startdate": "7/31/2026",
+			"enddate": "8/3/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
 			"ingame": {
 				"forgechance": 120
 			},
@@ -20,8 +122,10 @@
 		},
 		{
 			"name": "Double Bestiary",
-			"startdate": "11/12/2024",
-			"enddate": "11/17/2024",
+			"startdate": "8/7/2026",
+			"enddate": "8/10/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
 			"ingame": {
 				"doublebestiary": true
 			},
@@ -37,9 +141,31 @@
 			}
 		},
 		{
+			"name": "Double Bosstiary",
+			"startdate": "8/7/2026",
+			"enddate": "8/10/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"doublebosstiary": true
+			},
+			"description": "Doubles the bosstiary counter for bosses.",
+			"colors": {
+				"colordark": "#3a005a",
+				"colorlight": "#4e0075"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
 			"name": "Fast Exercise",
-			"startdate": "11/12/2024",
-			"enddate": "11/17/2024",
+			"startdate": "8/14/2026",
+			"enddate": "8/17/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
 			"ingame": {
 				"fastexercise": true
 			},
@@ -55,45 +181,11 @@
 			}
 		},
 		{
-			"name": "50% Loot Bonus",
-			"startdate": "11/12/2024",
-			"enddate": "11/17/2024",
-			"ingame": {
-				"lootrate": 150
-			},
-			"description": "Increases loot by 50%.",
-			"colors": {
-				"colordark": "#2b1e10",
-				"colorlight": "#4a2e18"
-			},
-			"details": {
-				"displaypriority": 6,
-				"isseasonal": 0,
-				"specialevent": 1
-			}
-		},
-		{
-			"name": "50% Exp Bonus",
-			"startdate": "11/12/2024",
-			"enddate": "11/17/2024",
-			"ingame": {
-				"exprate": 150
-			},
-			"description": "Increases experience by 50%.",
-			"colors": {
-				"colordark": "#234d00",
-				"colorlight": "#3a7500"
-			},
-			"details": {
-				"displaypriority": 6,
-				"isseasonal": 0,
-				"specialevent": 1
-			}
-		},
-		{
 			"name": "Boss Cooldown Reduction",
-			"startdate": "11/12/2024",
-			"enddate": "11/17/2024",
+			"startdate": "8/14/2026",
+			"enddate": "8/17/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
 			"ingame": {
 				"bosscooldown": 150
 			},
@@ -110,26 +202,50 @@
 		},
 		{
 			"name": "Double Exp",
-			"startdate": "11/12/2024",
-			"enddate": "11/17/2024",
+			"startdate": "8/21/2026",
+			"enddate": "8/24/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
 			"ingame": {
 				"exprate": 200
 			},
 			"description": "Double experience when hunting monsters.",
 			"colors": {
-				"colordark": "#002d00",
-				"colorlight": "#004400"
+				"colordark": "#234d00",
+				"colorlight": "#3a7500"
 			},
 			"details": {
 				"displaypriority": 6,
-				"isseasonal": 1,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Fast Respawn",
+			"startdate": "8/21/2026",
+			"enddate": "8/24/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"spawnrate": 200
+			},
+			"description": "Monsters respawn twice as fast.",
+			"colors": {
+				"colordark": "#4d2f00",
+				"colorlight": "#6e3e00"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
 				"specialevent": 1
 			}
 		},
 		{
 			"name": "Double Loot",
-			"startdate": "11/12/2024",
-			"enddate": "11/17/2024",
+			"startdate": "8/28/2026",
+			"enddate": "8/31/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
 			"ingame": {
 				"lootrate": 200
 			},
@@ -140,18 +256,620 @@
 			},
 			"details": {
 				"displaypriority": 6,
-				"isseasonal": 1,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Boss Loot Boost",
+			"startdate": "8/28/2026",
+			"enddate": "8/31/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"bosslootrate": 200
+			},
+			"description": "Doubles loot from bosses.",
+			"colors": {
+				"colordark": "#4a183d",
+				"colorlight": "#75245f"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Skill Boost",
+			"startdate": "9/4/2026",
+			"enddate": "9/7/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"skillrate": 150
+			},
+			"description": "Increases skill progression by 50%.",
+			"colors": {
+				"colordark": "#1f4c63",
+				"colorlight": "#2f6f8f"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Forge Time",
+			"startdate": "9/4/2026",
+			"enddate": "9/7/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"forgechance": 120
+			},
+			"description": "Increases the success rate of forges by 20%.",
+			"colors": {
+				"colordark": "#2b3e50",
+				"colorlight": "#3d5a73"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Bestiary",
+			"startdate": "9/11/2026",
+			"enddate": "9/14/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"doublebestiary": true
+			},
+			"description": "Doubles the bestiary counter when defeating monsters.",
+			"colors": {
+				"colordark": "#3a4f2a",
+				"colorlight": "#4f713a"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Fast Exercise",
+			"startdate": "9/11/2026",
+			"enddate": "9/14/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"fastexercise": true
+			},
+			"description": "Exercise weapons are faster, doubling their speed.",
+			"colors": {
+				"colordark": "#5a3a2a",
+				"colorlight": "#7b4f3a"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
 				"specialevent": 1
 			}
 		},
 		{
 			"name": "Double Bosstiary",
-			"startdate": "11/12/2024",
-			"enddate": "11/17/2024",
+			"startdate": "9/18/2026",
+			"enddate": "9/21/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
 			"ingame": {
 				"doublebosstiary": true
 			},
-			"description": "Doubles the bestiary counter for bosses.",
+			"description": "Doubles the bosstiary counter for bosses.",
+			"colors": {
+				"colordark": "#3a005a",
+				"colorlight": "#4e0075"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Boss Cooldown Reduction",
+			"startdate": "9/18/2026",
+			"enddate": "9/21/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"bosscooldown": 150
+			},
+			"description": "Reduces boss cooldown time by 50%.",
+			"colors": {
+				"colordark": "#2d3c5a",
+				"colorlight": "#4a5f7d"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Exp",
+			"startdate": "9/25/2026",
+			"enddate": "9/28/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"exprate": 200
+			},
+			"description": "Double experience when hunting monsters.",
+			"colors": {
+				"colordark": "#234d00",
+				"colorlight": "#3a7500"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Boss Loot Boost",
+			"startdate": "9/25/2026",
+			"enddate": "9/28/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"bosslootrate": 200
+			},
+			"description": "Doubles loot from bosses.",
+			"colors": {
+				"colordark": "#4a183d",
+				"colorlight": "#75245f"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Loot",
+			"startdate": "10/2/2026",
+			"enddate": "10/5/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"lootrate": 200
+			},
+			"description": "Doubles the amount of loot obtained from monsters.",
+			"colors": {
+				"colordark": "#2a1d00",
+				"colorlight": "#4c3300"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Skill Boost",
+			"startdate": "10/2/2026",
+			"enddate": "10/5/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"skillrate": 150
+			},
+			"description": "Increases skill progression by 50%.",
+			"colors": {
+				"colordark": "#1f4c63",
+				"colorlight": "#2f6f8f"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Fast Respawn",
+			"startdate": "10/9/2026",
+			"enddate": "10/12/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"spawnrate": 200
+			},
+			"description": "Monsters respawn twice as fast.",
+			"colors": {
+				"colordark": "#4d2f00",
+				"colorlight": "#6e3e00"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Forge Time",
+			"startdate": "10/9/2026",
+			"enddate": "10/12/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"forgechance": 120
+			},
+			"description": "Increases the success rate of forges by 20%.",
+			"colors": {
+				"colordark": "#2b3e50",
+				"colorlight": "#3d5a73"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Bestiary",
+			"startdate": "10/16/2026",
+			"enddate": "10/19/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"doublebestiary": true
+			},
+			"description": "Doubles the bestiary counter when defeating monsters.",
+			"colors": {
+				"colordark": "#3a4f2a",
+				"colorlight": "#4f713a"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Boss Cooldown Reduction",
+			"startdate": "10/16/2026",
+			"enddate": "10/19/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"bosscooldown": 150
+			},
+			"description": "Reduces boss cooldown time by 50%.",
+			"colors": {
+				"colordark": "#2d3c5a",
+				"colorlight": "#4a5f7d"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Bosstiary",
+			"startdate": "10/23/2026",
+			"enddate": "10/26/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"doublebosstiary": true
+			},
+			"description": "Doubles the bosstiary counter for bosses.",
+			"colors": {
+				"colordark": "#3a005a",
+				"colorlight": "#4e0075"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Fast Exercise",
+			"startdate": "10/23/2026",
+			"enddate": "10/26/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"fastexercise": true
+			},
+			"description": "Exercise weapons are faster, doubling their speed.",
+			"colors": {
+				"colordark": "#5a3a2a",
+				"colorlight": "#7b4f3a"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Exp",
+			"startdate": "10/30/2026",
+			"enddate": "11/2/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"exprate": 200
+			},
+			"description": "Double experience when hunting monsters.",
+			"colors": {
+				"colordark": "#234d00",
+				"colorlight": "#3a7500"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Forge Time",
+			"startdate": "10/30/2026",
+			"enddate": "11/2/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"forgechance": 120
+			},
+			"description": "Increases the success rate of forges by 20%.",
+			"colors": {
+				"colordark": "#2b3e50",
+				"colorlight": "#3d5a73"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Loot",
+			"startdate": "11/6/2026",
+			"enddate": "11/9/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"lootrate": 200
+			},
+			"description": "Doubles the amount of loot obtained from monsters.",
+			"colors": {
+				"colordark": "#2a1d00",
+				"colorlight": "#4c3300"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Bestiary",
+			"startdate": "11/6/2026",
+			"enddate": "11/9/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"doublebestiary": true
+			},
+			"description": "Doubles the bestiary counter when defeating monsters.",
+			"colors": {
+				"colordark": "#3a4f2a",
+				"colorlight": "#4f713a"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Fast Respawn",
+			"startdate": "11/13/2026",
+			"enddate": "11/16/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"spawnrate": 200
+			},
+			"description": "Monsters respawn twice as fast.",
+			"colors": {
+				"colordark": "#4d2f00",
+				"colorlight": "#6e3e00"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Bosstiary",
+			"startdate": "11/13/2026",
+			"enddate": "11/16/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"doublebosstiary": true
+			},
+			"description": "Doubles the bosstiary counter for bosses.",
+			"colors": {
+				"colordark": "#3a005a",
+				"colorlight": "#4e0075"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Skill Boost",
+			"startdate": "11/20/2026",
+			"enddate": "11/23/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"skillrate": 150
+			},
+			"description": "Increases skill progression by 50%.",
+			"colors": {
+				"colordark": "#1f4c63",
+				"colorlight": "#2f6f8f"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Fast Exercise",
+			"startdate": "11/20/2026",
+			"enddate": "11/23/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"fastexercise": true
+			},
+			"description": "Exercise weapons are faster, doubling their speed.",
+			"colors": {
+				"colordark": "#5a3a2a",
+				"colorlight": "#7b4f3a"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Boss Loot Boost",
+			"startdate": "11/27/2026",
+			"enddate": "11/30/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"bosslootrate": 200
+			},
+			"description": "Doubles loot from bosses.",
+			"colors": {
+				"colordark": "#4a183d",
+				"colorlight": "#75245f"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Boss Cooldown Reduction",
+			"startdate": "11/27/2026",
+			"enddate": "11/30/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"bosscooldown": 150
+			},
+			"description": "Reduces boss cooldown time by 50%.",
+			"colors": {
+				"colordark": "#2d3c5a",
+				"colorlight": "#4a5f7d"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Exp",
+			"startdate": "12/4/2026",
+			"enddate": "12/7/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"exprate": 200
+			},
+			"description": "Double experience when hunting monsters.",
+			"colors": {
+				"colordark": "#234d00",
+				"colorlight": "#3a7500"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Bestiary",
+			"startdate": "12/4/2026",
+			"enddate": "12/7/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"doublebestiary": true
+			},
+			"description": "Doubles the bestiary counter when defeating monsters.",
+			"colors": {
+				"colordark": "#3a4f2a",
+				"colorlight": "#4f713a"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Loot",
+			"startdate": "12/11/2026",
+			"enddate": "12/14/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"lootrate": 200
+			},
+			"description": "Doubles the amount of loot obtained from monsters.",
+			"colors": {
+				"colordark": "#2a1d00",
+				"colorlight": "#4c3300"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Double Bosstiary",
+			"startdate": "12/11/2026",
+			"enddate": "12/14/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"doublebosstiary": true
+			},
+			"description": "Doubles the bosstiary counter for bosses.",
 			"colors": {
 				"colordark": "#3a005a",
 				"colorlight": "#4e0075"
@@ -164,8 +882,10 @@
 		},
 		{
 			"name": "Fast Respawn",
-			"startdate": "11/01/2024",
-			"enddate": "11/15/2024",
+			"startdate": "12/18/2026",
+			"enddate": "12/21/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
 			"ingame": {
 				"spawnrate": 200
 			},
@@ -176,7 +896,67 @@
 			},
 			"details": {
 				"displaypriority": 6,
-				"isseasonal": 1,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Fast Exercise",
+			"startdate": "12/18/2026",
+			"enddate": "12/21/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"fastexercise": true
+			},
+			"description": "Exercise weapons are faster, doubling their speed.",
+			"colors": {
+				"colordark": "#5a3a2a",
+				"colorlight": "#7b4f3a"
+			},
+			"details": {
+				"displaypriority": 5,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Skill Boost",
+			"startdate": "12/25/2026",
+			"enddate": "12/28/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"skillrate": 150
+			},
+			"description": "Increases skill progression by 50%.",
+			"colors": {
+				"colordark": "#1f4c63",
+				"colorlight": "#2f6f8f"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
+				"specialevent": 1
+			}
+		},
+		{
+			"name": "Boss Cooldown Reduction",
+			"startdate": "12/25/2026",
+			"enddate": "12/28/2026",
+			"starthour": "06:00:00",
+			"endhour": "06:00:00",
+			"ingame": {
+				"bosscooldown": 150
+			},
+			"description": "Reduces boss cooldown time by 50%.",
+			"colors": {
+				"colordark": "#2d3c5a",
+				"colorlight": "#4a5f7d"
+			},
+			"details": {
+				"displaypriority": 6,
+				"isseasonal": 0,
 				"specialevent": 1
 			}
 		}
