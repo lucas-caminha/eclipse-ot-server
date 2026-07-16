@@ -53,7 +53,7 @@ function trainerRoomTeleports.onStepIn(creature, item, position, fromPosition)
 end
 
 for _, itemId in ipairs(trainerRoomTeleportItemIds) do
-	trainerRoomTeleports:itemid(itemId)
+	trainerRoomTeleports:id(itemId)
 end
 
 trainerRoomTeleports:register()
