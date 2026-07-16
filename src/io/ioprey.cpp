@@ -17,6 +17,96 @@
 #include "lib/metrics/metrics.hpp"
 #include "server/network/message/networkmessage.hpp"
 
+#include <array>
+
+namespace {
+constexpr uint8_t PREY_GRID_SIZE = 9;
+constexpr uint8_t PREY_TIER_COUNT = 4;
+constexpr uint8_t PREY_TIER_EASY = 0;
+constexpr uint8_t PREY_TIER_MEDIUM = 1;
+constexpr uint8_t PREY_TIER_HARD = 2;
+constexpr uint8_t PREY_TIER_CHALLENGER = 3;
+
+uint8_t getPreyTierByBestiaryStars(uint8_t stars) {
+	if (stars <= 1) {
+		return PREY_TIER_EASY;
+	}
+	if (stars == 2) {
+		return PREY_TIER_MEDIUM;
+	}
+	if (stars == 3) {
+		return PREY_TIER_HARD;
+	}
+	return PREY_TIER_CHALLENGER;
+}
+
+std::array<uint8_t, PREY_TIER_COUNT> getPreyTierQuotas(uint32_t level) {
+	if (level < 300) {
+		// Tier 1: low/mid level hunts, focused on easy and medium creatures.
+		return { 5, 4, 0, 0 };
+	}
+	if (level < 800) {
+		// Tier 2: level 300+ hunts, focused on medium and hard creatures.
+		return { 0, 5, 4, 0 };
+	}
+	if (level < 1500) {
+		// Tier 3: level 800+ hunts, focused on hard and challenger creatures.
+		return { 0, 0, 5, 4 };
+	}
+
+	// Tier 4: endgame and boss-adjacent hunts, focused on challenger creatures.
+	return { 0, 0, 0, 9 };
+}
+
+bool isValidPreyMonster(uint16_t raceId, const std::vector<uint16_t> &blackList) {
+	if (std::count(blackList.begin(), blackList.end(), raceId) != 0) {
+		return false;
+	}
+
+	const auto mtype = g_monsters().getMonsterTypeByRaceId(raceId);
+	return mtype && mtype->info.experience != 0 && mtype->info.isPreyable && !mtype->info.isPreyExclusive;
+}
+
+void appendRandomRaceIds(std::vector<uint16_t> &targetList, std::vector<uint16_t> &pool, uint8_t amount) {
+	while (!pool.empty() && amount > 0 && targetList.size() < PREY_GRID_SIZE) {
+		const auto index = uniform_random(0, static_cast<int32_t>(pool.size() - 1));
+		targetList.push_back(pool[index]);
+		pool.erase(pool.begin() + index);
+		--amount;
+	}
+}
+
+void reloadTieredMonsterGrid(std::vector<uint16_t> &raceIdList, const std::vector<uint16_t> &blackList, uint32_t level) {
+	std::array<std::vector<uint16_t>, PREY_TIER_COUNT> tierPools;
+
+	for (const auto &[raceId, name] : g_game().getBestiaryList()) {
+		if (!isValidPreyMonster(raceId, blackList)) {
+			continue;
+		}
+
+		const auto mtype = g_monsters().getMonsterType(name);
+		if (!mtype) {
+			continue;
+		}
+
+		tierPools[getPreyTierByBestiaryStars(mtype->info.bestiaryStars)].push_back(raceId);
+	}
+
+	const auto quotas = getPreyTierQuotas(level);
+	for (uint8_t tier = 0; tier < PREY_TIER_COUNT; ++tier) {
+		appendRandomRaceIds(raceIdList, tierPools[tier], quotas[tier]);
+	}
+
+	// Fallback: if a tier does not have enough valid creatures, fill the grid from
+	// the remaining valid preyable creatures so the client still receives 9 choices.
+	std::vector<uint16_t> fallbackPool;
+	for (auto &pool : tierPools) {
+		fallbackPool.insert(fallbackPool.end(), pool.begin(), pool.end());
+	}
+	appendRandomRaceIds(raceIdList, fallbackPool, PREY_GRID_SIZE);
+}
+}
+
 // Prey class
 PreySlot::PreySlot(PreySlot_t id) :
 	id(id) {
@@ -70,64 +160,7 @@ void PreySlot::reloadMonsterGrid(std::vector<uint16_t> blackList, uint32_t level
 		return;
 	}
 
-	uint8_t stageOne;
-	uint8_t stageTwo;
-	uint8_t stageThree;
-	uint8_t stageFour;
-	if (auto levelStage = static_cast<uint32_t>(std::floor(level / 100));
-	    levelStage == 0) { // From level 0 to 99
-		stageOne = 3;
-		stageTwo = 3;
-		stageThree = 2;
-		stageFour = 1;
-	} else if (levelStage <= 2) { // From level 100 to 299
-		stageOne = 1;
-		stageTwo = 3;
-		stageThree = 3;
-		stageFour = 2;
-	} else if (levelStage <= 4) { // From level 300 to 499
-		stageOne = 1;
-		stageTwo = 2;
-		stageThree = 3;
-		stageFour = 3;
-	} else { // From level 500 to ...
-		stageOne = 1;
-		stageTwo = 1;
-		stageThree = 3;
-		stageFour = 4;
-	}
-
-	uint8_t tries = 0;
-	auto maxIndex = static_cast<int32_t>(bestiary.size() - 1);
-	while (raceIdList.size() < 9) {
-		uint16_t raceId = (*(std::next(bestiary.begin(), uniform_random(0, maxIndex)))).first;
-		tries++;
-
-		if (std::count(blackList.begin(), blackList.end(), raceId) != 0) {
-			continue;
-		}
-
-		blackList.push_back(raceId);
-		const auto mtype = g_monsters().getMonsterTypeByRaceId(raceId);
-		if (!mtype || mtype->info.experience == 0 || !mtype->info.isPreyable || mtype->info.isPreyExclusive) {
-			continue;
-		} else if (stageOne != 0 && mtype->info.bestiaryStars <= 1) {
-			raceIdList.push_back(raceId);
-			--stageOne;
-		} else if (stageTwo != 0 && mtype->info.bestiaryStars == 2) {
-			raceIdList.push_back(raceId);
-			--stageTwo;
-		} else if (stageThree != 0 && mtype->info.bestiaryStars == 3) {
-			raceIdList.push_back(raceId);
-			--stageThree;
-		} else if (stageFour != 0 && mtype->info.bestiaryStars >= 4) {
-			raceIdList.push_back(raceId);
-			--stageFour;
-		} else if (tries >= 10) {
-			raceIdList.push_back(raceId);
-			tries = 0;
-		}
-	}
+	reloadTieredMonsterGrid(raceIdList, blackList, level);
 }
 
 // Task hunting class
@@ -151,64 +184,7 @@ void TaskHuntingSlot::reloadMonsterGrid(std::vector<uint16_t> blackList, uint32_
 		return;
 	}
 
-	uint8_t stageOne;
-	uint8_t stageTwo;
-	uint8_t stageThree;
-	uint8_t stageFour;
-	if (auto levelStage = static_cast<uint32_t>(std::floor(level / 100));
-	    levelStage == 0) { // From level 0 to 99
-		stageOne = 3;
-		stageTwo = 3;
-		stageThree = 2;
-		stageFour = 1;
-	} else if (levelStage <= 2) { // From level 100 to 299
-		stageOne = 1;
-		stageTwo = 3;
-		stageThree = 3;
-		stageFour = 2;
-	} else if (levelStage <= 4) { // From level 300 to 499
-		stageOne = 1;
-		stageTwo = 2;
-		stageThree = 3;
-		stageFour = 3;
-	} else { // From level 500 to ...
-		stageOne = 1;
-		stageTwo = 1;
-		stageThree = 3;
-		stageFour = 4;
-	}
-
-	uint8_t tries = 0;
-	auto maxIndex = static_cast<int32_t>(bestiary.size() - 1);
-	while (raceIdList.size() < 9) {
-		uint16_t raceId = (*(std::next(bestiary.begin(), uniform_random(0, maxIndex)))).first;
-		tries++;
-
-		if (std::count(blackList.begin(), blackList.end(), raceId) != 0) {
-			continue;
-		}
-
-		blackList.push_back(raceId);
-		const auto mtype = g_monsters().getMonsterTypeByRaceId(raceId);
-		if (!mtype || mtype->info.experience == 0 || !mtype->info.isPreyable || mtype->info.isPreyExclusive) {
-			continue;
-		} else if (stageOne != 0 && mtype->info.bestiaryStars <= 1) {
-			raceIdList.push_back(raceId);
-			--stageOne;
-		} else if (stageTwo != 0 && mtype->info.bestiaryStars == 2) {
-			raceIdList.push_back(raceId);
-			--stageTwo;
-		} else if (stageThree != 0 && mtype->info.bestiaryStars == 3) {
-			raceIdList.push_back(raceId);
-			--stageThree;
-		} else if (stageFour != 0 && mtype->info.bestiaryStars >= 4) {
-			raceIdList.push_back(raceId);
-			--stageFour;
-		} else if (tries >= 10) {
-			raceIdList.push_back(raceId);
-			tries = 0;
-		}
-	}
+	reloadTieredMonsterGrid(raceIdList, blackList, level);
 }
 
 void TaskHuntingSlot::reloadReward() {
