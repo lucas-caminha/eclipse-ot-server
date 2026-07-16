@@ -7,6 +7,10 @@ local RewardType = {
 	SKILL_ITEM = "skill_item",
 }
 
+local function itemReward(id, count, name)
+	return { type = RewardType.ITEM, id = id, count = count or 1, name = name }
+end
+
 local commonRewards = {
 	[50] = {
 		{ type = RewardType.ITEM, id = CRYSTAL_COIN_ID, count = 5, name = "5 crystal coins" },
@@ -38,6 +42,43 @@ local commonRewards = {
 
 local vocationRewards = {
 	[VOCATION.BASE_ID.SORCERER] = {
+		[40] = {
+			itemReward(8092, 1, "wand of starstorm"),
+			itemReward(8073, 1, "spellbook of warding"),
+		},
+		[50] = {
+			itemReward(8074, 1, "spellbook of mind control"),
+			itemReward(9103, 1, "batwing hat"),
+		},
+		[60] = {
+			itemReward(8075, 1, "spellbook of lost souls"),
+			itemReward(10439, 1, "Zaoan robe"),
+		},
+		[75] = {
+			itemReward(8039, 1, "dragon robe"),
+		},
+		[80] = {
+			itemReward(8864, 1, "yalahari mask"),
+		},
+		[100] = {
+			itemReward(11687, 1, "royal scale robe"),
+			itemReward(11691, 1, "snake god's wristguard"),
+		},
+		[130] = {
+			itemReward(16107, 1, "spellbook of vigilance"),
+			itemReward(19391, 1, "furious frock"),
+		},
+		[150] = {
+			itemReward(14769, 1, "spellbook of ancient arcana"),
+			itemReward(35522, 1, "jungle wand"),
+		},
+		[180] = {
+			itemReward(29431, 1, "spirit guide"),
+			itemReward(32618, 1, "soulful legs"),
+		},
+		[200] = {
+			itemReward(27457, 1, "wand of destruction"),
+		},
 		[250] = {
 			{ type = RewardType.OUTFIT, female = 141, male = 133, name = "Summoner outfit" },
 		},
@@ -46,6 +87,43 @@ local vocationRewards = {
 		},
 	},
 	[VOCATION.BASE_ID.DRUID] = {
+		[40] = {
+			itemReward(8082, 1, "underworld rod"),
+			itemReward(8073, 1, "spellbook of warding"),
+		},
+		[50] = {
+			itemReward(8074, 1, "spellbook of mind control"),
+			itemReward(9103, 1, "batwing hat"),
+		},
+		[60] = {
+			itemReward(8075, 1, "spellbook of lost souls"),
+			itemReward(10439, 1, "Zaoan robe"),
+		},
+		[75] = {
+			itemReward(8038, 1, "robe of the ice queen"),
+		},
+		[80] = {
+			itemReward(8864, 1, "yalahari mask"),
+		},
+		[100] = {
+			itemReward(11687, 1, "royal scale robe"),
+			itemReward(11691, 1, "snake god's wristguard"),
+		},
+		[130] = {
+			itemReward(16107, 1, "spellbook of vigilance"),
+			itemReward(19391, 1, "furious frock"),
+		},
+		[150] = {
+			itemReward(14769, 1, "spellbook of ancient arcana"),
+			itemReward(35521, 1, "jungle rod"),
+		},
+		[180] = {
+			itemReward(29431, 1, "spirit guide"),
+			itemReward(32618, 1, "soulful legs"),
+		},
+		[200] = {
+			itemReward(27458, 1, "rod of destruction"),
+		},
 		[250] = {
 			{ type = RewardType.OUTFIT, female = 148, male = 144, name = "Druid outfit" },
 		},
@@ -54,6 +132,37 @@ local vocationRewards = {
 		},
 	},
 	[VOCATION.BASE_ID.PALADIN] = {
+		[50] = {
+			itemReward(8027, 1, "composite hornbow"),
+			itemReward(10384, 1, "Zaoan armor"),
+		},
+		[60] = {
+			itemReward(8022, 1, "chain bolter"),
+			itemReward(3394, 1, "amazon armor"),
+		},
+		[80] = {
+			itemReward(8026, 1, "warsinger bow"),
+			itemReward(8863, 1, "yalahari leg piece"),
+		},
+		[100] = {
+			itemReward(8060, 1, "master archer's armor"),
+			itemReward(11689, 1, "elite draken helmet"),
+		},
+		[120] = {
+			itemReward(22866, 1, "rift bow"),
+			itemReward(16110, 1, "prismatic armor"),
+		},
+		[150] = {
+			itemReward(13994, 1, "depth lorica"),
+			itemReward(16111, 1, "prismatic legs"),
+			itemReward(35518, 1, "jungle bow"),
+		},
+		[180] = {
+			itemReward(29427, 1, "dark whispers"),
+		},
+		[200] = {
+			itemReward(27455, 1, "bow of destruction"),
+		},
 		[250] = {
 			{ type = RewardType.OUTFIT, female = 137, male = 129, name = "Hunter outfit" },
 		},
@@ -63,6 +172,44 @@ local vocationRewards = {
 		},
 	},
 	[VOCATION.BASE_ID.KNIGHT] = {
+		[40] = {
+			itemReward(7386, 1, "mercenary sword"),
+			itemReward(7413, 1, "titan axe"),
+		},
+		[50] = {
+			itemReward(7391, 1, "thaian sword"),
+			itemReward(3335, 1, "twin axe"),
+			itemReward(3279, 1, "war hammer"),
+			itemReward(10384, 1, "Zaoan armor"),
+		},
+		[75] = {
+			itemReward(6527, 1, "avenger"),
+			itemReward(20064, 1, "crude umbral blade"),
+			itemReward(20070, 1, "crude umbral axe"),
+			itemReward(20076, 1, "crude umbral mace"),
+		},
+		[80] = {
+			itemReward(8862, 1, "yalahari armor"),
+			itemReward(11688, 1, "shield of corruption"),
+		},
+		[100] = {
+			itemReward(8053, 1, "fireborn giant armor"),
+		},
+		[130] = {
+			itemReward(14000, 1, "ornate shield"),
+		},
+		[150] = {
+			itemReward(16109, 1, "prismatic helmet"),
+		},
+		[180] = {
+			itemReward(29430, 1, "ectoplasmic shield"),
+			itemReward(13999, 1, "ornate legs"),
+		},
+		[200] = {
+			itemReward(27449, 1, "blade of destruction"),
+			itemReward(27451, 1, "axe of destruction"),
+			itemReward(27453, 1, "mace of destruction"),
+		},
 		[250] = {
 			{ type = RewardType.OUTFIT, female = 139, male = 131, name = "Knight outfit" },
 		},
@@ -79,6 +226,43 @@ local vocationRewards = {
 		},
 	},
 	[VOCATION.BASE_ID.MONK] = {
+		[40] = {
+			itemReward(50182, 1, "nunchaku"),
+			itemReward(50269, 1, "legs of enlightenment"),
+		},
+		[50] = {
+			itemReward(50273, 1, "nunchaku of enlightenment"),
+			itemReward(50259, 1, "Zaoan monk robe"),
+		},
+		[70] = {
+			itemReward(50274, 1, "coned hat of enlightenment"),
+		},
+		[80] = {
+			itemReward(50187, 1, "legs of wisdom"),
+			itemReward(50289, 1, "yalahari footwraps"),
+		},
+		[100] = {
+			itemReward(50272, 1, "sai of enlightenment"),
+			itemReward(50263, 1, "merudri scale mail"),
+		},
+		[125] = {
+			itemReward(50261, 1, "merudri nanbando"),
+		},
+		[135] = {
+			itemReward(50176, 1, "depth claws"),
+			itemReward(50186, 1, "jungle survivor legs"),
+		},
+		[150] = {
+			itemReward(50270, 1, "bambus jo"),
+			itemReward(50268, 1, "robe of enlightenment"),
+			itemReward(50290, 1, "gnomish footwraps"),
+		},
+		[180] = {
+			itemReward(50190, 1, "dark vision bandana"),
+		},
+		[200] = {
+			itemReward(50168, 1, "nunchaku of destruction"),
+		},
 		[250] = {
 			{ type = RewardType.OUTFIT, female = 1825, male = 1824, name = "Monk outfit" },
 		},
@@ -88,7 +272,7 @@ local vocationRewards = {
 	},
 }
 
-local levels = { 50, 100, 150, 200, 250, 275, 300, 350 }
+local levels = { 40, 50, 60, 70, 75, 80, 100, 120, 125, 130, 135, 150, 180, 200, 250, 275, 300, 350 }
 
 local function appendRewards(target, source)
 	if not source then
