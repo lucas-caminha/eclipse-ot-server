@@ -75,9 +75,13 @@ local progressionRewards = {
 		[180] = {
 			itemReward(29431, 1, "spirit guide"),
 			itemReward(32618, 1, "soulful legs"),
+			itemReward(29423, 1, "dream shroud"),
 		},
 		[200] = {
 			itemReward(27457, 1, "wand of destruction"),
+		},
+		[220] = {
+			itemReward(30402, 1, "enchanted theurgic amulet"),
 		},
 	},
 	[VOCATION.BASE_ID.DRUID] = {
@@ -114,9 +118,13 @@ local progressionRewards = {
 		[180] = {
 			itemReward(29431, 1, "spirit guide"),
 			itemReward(32618, 1, "soulful legs"),
+			itemReward(29423, 1, "dream shroud"),
 		},
 		[200] = {
 			itemReward(27458, 1, "rod of destruction"),
+		},
+		[220] = {
+			itemReward(30402, 1, "enchanted theurgic amulet"),
 		},
 	},
 	[VOCATION.BASE_ID.PALADIN] = {
@@ -138,18 +146,23 @@ local progressionRewards = {
 		},
 		[120] = {
 			itemReward(22866, 1, "rift bow"),
+			itemReward(22867, 1, "rift crossbow"),
 			itemReward(16110, 1, "prismatic armor"),
 		},
 		[150] = {
 			itemReward(13994, 1, "depth lorica"),
 			itemReward(16111, 1, "prismatic legs"),
 			itemReward(35518, 1, "jungle bow"),
+			itemReward(35524, 1, "jungle quiver"),
 		},
 		[180] = {
 			itemReward(29427, 1, "dark whispers"),
 		},
 		[200] = {
 			itemReward(27455, 1, "bow of destruction"),
+		},
+		[220] = {
+			itemReward(31617, 1, "winged boots"),
 		},
 	},
 	[VOCATION.BASE_ID.KNIGHT] = {
@@ -190,6 +203,10 @@ local progressionRewards = {
 			itemReward(27449, 1, "blade of destruction"),
 			itemReward(27451, 1, "axe of destruction"),
 			itemReward(27453, 1, "mace of destruction"),
+			itemReward(13993, 1, "ornate chestplate"),
+		},
+		[225] = {
+			itemReward(32617, 1, "fabulous legs"),
 		},
 	},
 	[VOCATION.BASE_ID.MONK] = {
@@ -229,6 +246,10 @@ local progressionRewards = {
 		},
 		[200] = {
 			itemReward(50168, 1, "nunchaku of destruction"),
+		},
+		[250] = {
+			itemReward(50291, 1, "iks footwraps"),
+			itemReward(50170, 1, "eldritch crescent moon spade"),
 		},
 	},
 }
@@ -285,7 +306,7 @@ local vocationRewards = {
 	},
 }
 
-local levels = { 40, 50, 60, 70, 75, 80, 100, 120, 125, 130, 135, 150, 180, 200, 250, 275, 300, 350 }
+local levels = { 40, 50, 60, 70, 75, 80, 100, 120, 125, 130, 135, 150, 180, 200, 220, 225, 250, 275, 300, 350 }
 
 local function appendRewards(target, source)
 	if not source then
