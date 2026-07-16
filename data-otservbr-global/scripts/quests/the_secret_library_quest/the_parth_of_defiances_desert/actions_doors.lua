@@ -15,7 +15,7 @@ local actions_desert_doors = Action()
 function actions_desert_doors.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	for _, p in pairs(doors) do
 		if (item:getPosition() == p.doorPosition) and not (Tile(item:getPosition()):getTopCreature()) and isInArray({ 8361, 8355, 20450 }, item.itemid) then
-			if player:getStorageValue(p.storage) >= p.value then
+			if player:getStorageValue(p.storage) >= p.value or player:hasFreeQuestAccess(item:getActionId()) then
 				player:teleportTo(toPosition, true)
 				item:transform(item.itemid + 1)
 			else

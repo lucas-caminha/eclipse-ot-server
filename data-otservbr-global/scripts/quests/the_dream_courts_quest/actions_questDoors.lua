@@ -119,7 +119,7 @@ function actions_questDoors.onUse(player, item, fromPosition, target, toPosition
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				addEvent(closeDoor, 2000, iPos, item.itemid)
 			elseif p.help == "Lock" then
-				if player:getStorageValue(p.storage) >= p.value then
+				if player:getStorageValue(p.storage) >= p.value or player:hasFreeQuestAccess(item:getActionId()) then
 					local newPos = (iPos.y < player:getPosition().y) and Position(iPos.x, iPos.y - 1, iPos.z) or Position(iPos.x, iPos.y + 1, iPos.z)
 					player:teleportTo(newPos)
 					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
@@ -129,11 +129,11 @@ function actions_questDoors.onUse(player, item, fromPosition, target, toPosition
 					return true
 				end
 			elseif p.help == "Open/Close" then
-				if player:getStorageValue(p.storage) >= p.value then
+				if player:getStorageValue(p.storage) >= p.value or player:hasFreeQuestAccess(item:getActionId()) then
 					item:transform((item.itemid == 30033) and 30035 or 30033)
 				end
 			else
-				if player:getStorageValue(p.storage) >= p.value then
+				if player:getStorageValue(p.storage) >= p.value or player:hasFreeQuestAccess(item:getActionId()) then
 					player:teleportTo(toPosition, true)
 					item:transform(item.itemid + 1)
 					addEvent(closeDoor, 2000, iPos, item.itemid)

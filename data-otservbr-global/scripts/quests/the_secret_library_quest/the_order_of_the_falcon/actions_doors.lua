@@ -40,7 +40,7 @@ function actions_falcon_doors.onUse(player, item, fromPosition, target, toPositi
 			local door = p.doorPosition
 			local value = p.value
 			if (item:getPosition() == door) and not (Tile(item:getPosition()):getTopCreature()) then
-				if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.FalconBastion.KillingBosses) >= value then
+				if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.FalconBastion.KillingBosses) >= value or player:hasFreeQuestAccess(item:getActionId()) then
 					player:teleportTo(toPosition, true)
 					item:transform(item.itemid + 1)
 				else
@@ -55,7 +55,7 @@ function actions_falcon_doors.onUse(player, item, fromPosition, target, toPositi
 			local toPos = p.toPosition
 			local message = p.message
 			if item:getPosition() == boat then
-				if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.FalconBastion.KillingBosses) >= value then
+				if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.FalconBastion.KillingBosses) >= value or player:hasFreeQuestAccess(item:getActionId()) then
 					player:teleportTo(toPos, true)
 					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 					if message then

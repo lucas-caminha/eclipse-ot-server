@@ -76,7 +76,7 @@ function movements_acessTeleports.onStepIn(creature, item, position, fromPositio
 	local nightmareTeleport = Position(32211, 32081, 15)
 
 	if item:getPosition() == nightmareTeleport then
-		if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.DreamScar.BossCount) >= 5 then
+		if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.DreamScar.BossCount) >= 5 or player:hasFreeQuestAccess(item:getActionId()) then
 			if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.DreamScar.NightmareTimer) > os.time() then
 				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wait to challenge The Nightmare Beast again!")
 				player:teleportTo(fromPosition)
@@ -91,7 +91,7 @@ function movements_acessTeleports.onStepIn(creature, item, position, fromPositio
 
 	for _, k in pairs(default) do
 		if k.itemPosition == iPos then
-			if player:getStorageValue(k.neededStorage) >= k.value then
+			if player:getStorageValue(k.neededStorage) >= k.value or player:hasFreeQuestAccess(item:getActionId()) then
 				player:teleportTo(k.toPosition)
 				if k.msg then
 					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, k.msg)
@@ -104,7 +104,7 @@ function movements_acessTeleports.onStepIn(creature, item, position, fromPositio
 	end
 
 	if iPos == dreamScarTeleport then
-		if player:getStorageValue(permission) >= 1 then
+		if player:getStorageValue(permission) >= 1 or player:hasFreeQuestAccess(item:getActionId()) then
 			for i = 1, #dreamScar do
 				if os.date("%A") == dreamScar[i].day then
 					if player:getStorageValue(dreamScar[i].storageTimer) > os.time() then
