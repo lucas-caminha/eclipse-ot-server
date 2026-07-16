@@ -187078,6 +187078,31 @@
 		<monster name="Mahrdis" x="1" y="4" z="15" spawntime="90" />
 		<monster name="Flamethrower" x="4" y="4" z="15" spawntime="90" />
 	</monster>
+	<!-- Eclipse OT boss room decorative boss spawns. Real boss mechanics remain handled by their quest scripts. -->
+	<monster centerx="32316" centery="32255" centerz="15" radius="1">
+		<monster name="Grand Master Oberon" x="0" y="0" z="15" spawntime="60" />
+	</monster>
+	<monster centerx="32319" centery="32255" centerz="15" radius="1">
+		<monster name="Drume" x="0" y="0" z="15" spawntime="60" />
+	</monster>
+	<monster centerx="32322" centery="32255" centerz="15" radius="1">
+		<monster name="Scarlett Etzel" x="0" y="0" z="15" spawntime="60" />
+	</monster>
+	<monster centerx="32325" centery="32255" centerz="15" radius="1">
+		<monster name="Timira the Many-Headed" x="0" y="0" z="15" spawntime="60" />
+	</monster>
+	<monster centerx="32328" centery="32255" centerz="15" radius="1">
+		<monster name="King Zelos" x="0" y="0" z="15" spawntime="60" />
+	</monster>
+	<monster centerx="32331" centery="32255" centerz="15" radius="1">
+		<monster name="The Nightmare Beast" x="0" y="0" z="15" spawntime="60" />
+	</monster>
+	<monster centerx="32334" centery="32255" centerz="15" radius="1">
+		<monster name="World Devourer" x="0" y="0" z="15" spawntime="60" />
+	</monster>
+	<monster centerx="32336" centery="32255" centerz="15" radius="1">
+		<monster name="The Scourge of Oblivion" x="0" y="0" z="15" spawntime="60" />
+	</monster>
 	<!-- Eclipse OT custom Training Monk spawns imported from D:\otserver\maps-custom\Custom\Trainers.zip\Trainers -->
 <monster centerx="1152" centery="1037" centerz="4" radius="1">
 		<monster name="Training Monk" x="-1" y="1" z="4" spawntime="60" direction="2" />
