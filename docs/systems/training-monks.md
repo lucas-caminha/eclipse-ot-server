@@ -15,6 +15,20 @@
 The monster type is defined in `data-otservbr-global/monster/custom/training_monk.lua`.
 Spawn positions must be supplied by the trainer map or spawn XML.
 
+## Trainer Room Teleports
+
+The custom trainer package at `D:\otserver\maps-custom\Custom\Trainers.zip\Trainers`
+uses Training Monk spawns in this approximate area:
+
+- `x = 1141..1181`
+- `y = 1038..1058`
+- `z = 4..9`
+
+`data-otservbr-global/scripts/custom/movement_trainer_exit.lua` handles trainer room
+exits without requiring Action IDs on every teleport tile. Magic forcefields (`1949`)
+and vortexes (`28673`) inside that area teleport the player to their town temple when
+stepped on.
+
 ## Operations
 
 After deploying the monster file, load it without restarting Canary:
