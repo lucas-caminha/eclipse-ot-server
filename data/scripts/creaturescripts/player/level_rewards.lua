@@ -40,7 +40,7 @@ local commonRewards = {
 	},
 }
 
-local vocationRewards = {
+local progressionRewards = {
 	[VOCATION.BASE_ID.SORCERER] = {
 		[40] = {
 			itemReward(8092, 1, "wand of starstorm"),
@@ -78,12 +78,6 @@ local vocationRewards = {
 		},
 		[200] = {
 			itemReward(27457, 1, "wand of destruction"),
-		},
-		[250] = {
-			{ type = RewardType.OUTFIT, female = 141, male = 133, name = "Summoner outfit" },
-		},
-		[350] = {
-			{ type = RewardType.ITEM, id = 20090, count = 1, name = "umbral master spellbook" },
 		},
 	},
 	[VOCATION.BASE_ID.DRUID] = {
@@ -124,12 +118,6 @@ local vocationRewards = {
 		[200] = {
 			itemReward(27458, 1, "rod of destruction"),
 		},
-		[250] = {
-			{ type = RewardType.OUTFIT, female = 148, male = 144, name = "Druid outfit" },
-		},
-		[350] = {
-			{ type = RewardType.ITEM, id = 20090, count = 1, name = "umbral master spellbook" },
-		},
 	},
 	[VOCATION.BASE_ID.PALADIN] = {
 		[50] = {
@@ -162,13 +150,6 @@ local vocationRewards = {
 		},
 		[200] = {
 			itemReward(27455, 1, "bow of destruction"),
-		},
-		[250] = {
-			{ type = RewardType.OUTFIT, female = 137, male = 129, name = "Hunter outfit" },
-		},
-		[350] = {
-			{ type = RewardType.ITEM, id = 20084, count = 1, name = "umbral master bow" },
-			{ type = RewardType.ITEM, id = 20087, count = 1, name = "umbral master crossbow" },
 		},
 	},
 	[VOCATION.BASE_ID.KNIGHT] = {
@@ -210,20 +191,6 @@ local vocationRewards = {
 			itemReward(27451, 1, "axe of destruction"),
 			itemReward(27453, 1, "mace of destruction"),
 		},
-		[250] = {
-			{ type = RewardType.OUTFIT, female = 139, male = 131, name = "Knight outfit" },
-		},
-		[350] = {
-			{
-				type = RewardType.SKILL_ITEM,
-				name = "highest melee skill umbral master weapon",
-				choices = {
-					{ skill = SKILL_SWORD, id = 20066, count = 1, name = "umbral masterblade" },
-					{ skill = SKILL_AXE, id = 20072, count = 1, name = "umbral master axe" },
-					{ skill = SKILL_CLUB, id = 20078, count = 1, name = "umbral master mace" },
-				},
-			},
-		},
 	},
 	[VOCATION.BASE_ID.MONK] = {
 		[40] = {
@@ -263,6 +230,52 @@ local vocationRewards = {
 		[200] = {
 			itemReward(50168, 1, "nunchaku of destruction"),
 		},
+	},
+}
+
+local vocationRewards = {
+	[VOCATION.BASE_ID.SORCERER] = {
+		[250] = {
+			{ type = RewardType.OUTFIT, female = 141, male = 133, name = "Summoner outfit" },
+		},
+		[350] = {
+			{ type = RewardType.ITEM, id = 20090, count = 1, name = "umbral master spellbook" },
+		},
+	},
+	[VOCATION.BASE_ID.DRUID] = {
+		[250] = {
+			{ type = RewardType.OUTFIT, female = 148, male = 144, name = "Druid outfit" },
+		},
+		[350] = {
+			{ type = RewardType.ITEM, id = 20090, count = 1, name = "umbral master spellbook" },
+		},
+	},
+	[VOCATION.BASE_ID.PALADIN] = {
+		[250] = {
+			{ type = RewardType.OUTFIT, female = 137, male = 129, name = "Hunter outfit" },
+		},
+		[350] = {
+			{ type = RewardType.ITEM, id = 20084, count = 1, name = "umbral master bow" },
+			{ type = RewardType.ITEM, id = 20087, count = 1, name = "umbral master crossbow" },
+		},
+	},
+	[VOCATION.BASE_ID.KNIGHT] = {
+		[250] = {
+			{ type = RewardType.OUTFIT, female = 139, male = 131, name = "Knight outfit" },
+		},
+		[350] = {
+			{
+				type = RewardType.SKILL_ITEM,
+				name = "highest melee skill umbral master weapon",
+				choices = {
+					{ skill = SKILL_SWORD, id = 20066, count = 1, name = "umbral masterblade" },
+					{ skill = SKILL_AXE, id = 20072, count = 1, name = "umbral master axe" },
+					{ skill = SKILL_CLUB, id = 20078, count = 1, name = "umbral master mace" },
+				},
+			},
+		},
+	},
+	[VOCATION.BASE_ID.MONK] = {
 		[250] = {
 			{ type = RewardType.OUTFIT, female = 1825, male = 1824, name = "Monk outfit" },
 		},
@@ -338,6 +351,15 @@ local function getLevelRewards(player, vocationId, level)
 	end
 
 	return resolveRewards(player, levelRewards)
+end
+
+local function getProgressionRewards(player, vocationId, level)
+	local rewardsByVocation = progressionRewards[vocationId]
+	if not rewardsByVocation then
+		return {}
+	end
+
+	return resolveRewards(player, rewardsByVocation[level] or {})
 end
 
 local function getInboxSlotsNeeded(reward)
@@ -442,10 +464,16 @@ local function processLevelRewards(player, fromLevel, toLevel)
 	local kv = player:kv():scoped("level-rewards")
 	for i = 1, #levels do
 		local level = levels[i]
-		local rewards = getLevelRewards(player, vocationId, level)
-		if fromLevel < level and toLevel >= level and #rewards > 0 and not kv:get(tostring(level)) then
-			if giveLevelReward(player, level, rewards) then
+		if fromLevel < level and toLevel >= level then
+			local rewards = getLevelRewards(player, vocationId, level)
+			if #rewards > 0 and not kv:get(tostring(level)) and giveLevelReward(player, level, rewards) then
 				kv:set(tostring(level), true)
+			end
+
+			local progressionKey = string.format("progression-vocation-%d-%d", vocationId, level)
+			local progressionLevelRewards = getProgressionRewards(player, vocationId, level)
+			if #progressionLevelRewards > 0 and not kv:get(progressionKey) and giveLevelReward(player, level, progressionLevelRewards) then
+				kv:set(progressionKey, true)
 			end
 		end
 	end
